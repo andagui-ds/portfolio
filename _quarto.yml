@@ -1,0 +1,106 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "index.qmd"
+    - "proyectos/Sprint_1_python.ipynb"
+    - "proyectos/Sprint_2_pythonb.ipynb"
+    - "proyectos/Sprint_3_dw.ipynb"
+    - "proyectos/Sprint_4_dwb.ipynb"
+    - "proyectos/Sprint_5_eda.ipynb"
+    - "proyectos/Sprint_6_proyecto_modulo_1.ipynb"
+    - "proyectos/Sprint_8_sql.ipynb"
+    - "proyectos/Sprint_10_ml.ipynb"
+    - "proyectos/Sprint_11_aprensuper.ipynb"
+    - "proyectos/Sprint_12_aprenauto.ipynb"
+    - "proyectos/Sprint_13_proyecto_modulo_2.ipynb"
+    - "proyectos/Sprint_14_algline.ipynb"
+    - "proyectos/Sprint_15_metnume.ipynb"
+
+execute:
+  
+  ze: true
+
+website:
+  title: "Andrés Aguirre"
+  description: "Portafolio de Ciencia de Datos — Análisis, Machine Learning y Visualización."
+  site-url: "https://andagui-ds.github.io"
+
+  navbar:
+    background: primary
+    foreground: light
+    pinned: true
+    search: true
+    left:
+      - href: index.qmd
+        text: Inicio
+        icon: house
+      - text: "Proyectos"
+        menu:
+          - text: "--- Módulo 1: Análisis Exploratorio & SQL ---"
+          - href: "proyectos/Sprint_1_python.ipynb"
+            text: "Sprint 1: Python Básico"
+          - href: "proyectos/Sprint_2_pythonb.ipynb"
+            text: "Sprint 2: Python Avanzado"
+          - href: "proyectos/Sprint_3_dw.ipynb"
+            text: "Sprint 3: Data Wrangling"
+          - href: "proyectos/Sprint_4_dwb.ipynb"
+            text: "Sprint 4: Data Wrangling Avanzado"
+          - href: "proyectos/Sprint_5_eda.ipynb"
+            text: "Sprint 5: Análisis Exploratorio (EDA)"
+          - href: "proyectos/Sprint_6_proyecto_modulo_1.ipynb"
+            text: "🎮 Proyecto Módulo 1: Ventas Gamer"
+          - href: "proyectos/Sprint_8_sql.ipynb"
+            text: "Sprint 8: Consultas SQL"
+          - text: "--- Módulo 2: Machine Learning ---"
+          - href: "proyectos/Sprint_10_ml.ipynb"
+            text: "Sprint 10: Clasificación (Churn Bancario)"
+          - href: "proyectos/Sprint_11_aprensuper.ipynb"
+            text: "Sprint 11: Regresión & Bootstrapping (OilyGiant)"
+          - href: "proyectos/Sprint_12_aprenauto.ipynb"
+            text: "Sprint 12: Aprendizaje No Supervisado"
+          - href: "proyectos/Sprint_13_proyecto_modulo_2.ipynb"
+            text: "⛏️ Proyecto Módulo 2: Zyfra Gold Recovery"
+          - href: "proyectos/Sprint_14_algline.ipynb"
+            text: "Sprint 14: Álgebra Lineal & Privacidad"
+          - href: "proyectos/Sprint_15_metnume.ipynb"
+            text: "Sprint 15: Métodos Numéricos & Optimización"
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/andagui-ds/
+        text: LinkedIn
+      - icon: github
+        href: https://github.com/andagui-ds
+        text: GitHub
+      - icon: envelope
+        href: mailto:andagui.ds@gmail.com
+        text: Contacto
+
+  page-footer:
+    left: |
+      © 2026 **Andrés Aguirre** · Data Scientist
+    center: |
+      Hecho con [Quarto](https://quarto.org) + ❤️
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/andagui-ds/
+      - icon: github
+        href: https://github.com/andagui-ds
+      - icon: envelope
+        href: mailto:andagui.ds@gmail.com
+
+format:
+  html:
+    theme:
+      light: [flatly, custom.scss]
+      dark: [darkly, custom.scss]
+    toc: true
+    toc-title: "En esta página"
+    toc-location: right
+    code-fold: true
+    code-summary: "🔍 Ver código Python"
+    code-tools: true
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+    link-external-icon: true

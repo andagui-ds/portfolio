@@ -1,0 +1,122 @@
+---
+title: "Andrés Aguirre Gómez"
+subtitle: "Data Scientist & Analytics · Machine Learning · 9 años de experiencia"
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/andagui-ds/
+    - icon: github
+      text: GitHub
+      href: https://github.com/andagui-ds
+    - icon: envelope
+      text: Email
+      href: mailto:andagui.ds@gmail.com
+---
+
+::: {.stats-row}
+::: {.stat-card}
+::: {.stat-number}
+9+
+:::
+::: {.stat-label}
+Años de experiencia
+:::
+:::
+
+::: {.stat-card}
+::: {.stat-number}
+13
+:::
+::: {.stat-label}
+Proyectos técnicos
+:::
+:::
+
+::: {.stat-card}
+::: {.stat-number}
+6
+:::
+::: {.stat-label}
+Sprints de ML
+:::
+:::
+
+::: {.stat-card}
+::: {.stat-number}
+2
+:::
+::: {.stat-label}
+Módulos completados
+:::
+:::
+:::
+
+---
+
+## 🚀 Proyectos Destacados
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .h-100 .shadow-sm}
+::: {.card-body}
+### 🎮 Análisis de Ventas Gamer
+Modelado estadístico y análisis exploratorio de ventas globales de videojuegos, calificaciones de la crítica y patrones por plataforma.
+
+`Pandas` `EDA` `Streamlit` `Visualización`
+
+[Ver proyecto →](proyectos/Sprint_6_proyecto_modulo_1.ipynb){.btn .btn-outline-primary .btn-sm .mt-2}
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .h-100 .shadow-sm}
+::: {.card-body}
+### ⛏️ Zyfra Gold Recovery
+Predicción de tasa de recuperación de oro en procesos industriales con métricas sMAPE y modelos de Machine Learning.
+
+`Scikit-Learn` `Machine Learning` `sMAPE` `Feature Engineering`
+
+[Ver proyecto →](proyectos/Sprint_13_proyecto_modulo_2.ipynb){.btn .btn-outline-primary .btn-sm .mt-2}
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .h-100 .shadow-sm}
+::: {.card-body}
+### 🏦 Clasificación y Churn Bancario
+Modelo predictivo para anticipar la pérdida de clientes en Beta Bank controlando el desequilibrio de clases.
+
+`Random Forest` `Clasificación` `Handling Imbalance`
+
+[Ver proyecto →](proyectos/Sprint_10_ml.ipynb){.btn .btn-outline-primary .btn-sm .mt-2}
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .h-100 .shadow-sm}
+::: {.card-body}
+### 🛢️ Selección de Pozos (OilyGiant)
+Optimización de ubicación de pozos petroleros mediante Regresión Lineal y estimación de riesgo con Bootstrap.
+
+`Linear Regression` `Bootstrapping` `Riesgo Financiero`
+
+[Ver proyecto →](proyectos/Sprint_11_aprensuper.ipynb){.btn .btn-outline-primary .btn-sm .mt-2}
+:::
+:::
+:::
+
+:::
+
+---
+
+## 🛠️ Habilidades Técnicas
+
+- **Machine Learning & Estadística:** Clasificación, Regresión, Métodos Numéricos, Álgebra Lineal, Bootstrap, Privacidad de Datos.
+- **Programación & Herramientas:** Python (Pandas, NumPy, Scikit-Learn, SciPy), SQL, Quarto, VS Code, Git/GitHub, SASS.
+- **Deployments:** Dashboards interactivos en Streamlit / Render, repositorios automatizados.

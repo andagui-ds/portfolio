@@ -1,0 +1,24 @@
+/* Animación suave para las tarjetas de proyectos */
+.card {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Ajustes de tipografía y espaciado */
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: 500;
+    color: #2c3e50;
+}
