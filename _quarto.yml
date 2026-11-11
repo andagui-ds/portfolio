@@ -1,8 +1,10 @@
 project:
   type: website
   output-dir: _site
-  ignore:
-    - "proyectos/**"
+  render:
+    - "*.qmd"
+    - "*/*.md"
+    - "!proyectos/**"
 
 execute:
   eval: false
