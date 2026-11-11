@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Sprint 6 proyecto modulo 1 – Andrés Aguirre</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a95438f6da87d8900f4d1ecd5c0a208f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1900fc115bb485dfd297a6a1cc333565.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-a95438f6da87d8900f4d1ecd5c0a208f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Andrés Aguirre</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> <i class="bi bi-house" role="img">
+</i> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> <i class="bi bi-person" role="img">
+</i> 
+<span class="menu-text">Sobre mí</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/andagui-ds/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/andagui-ds"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:andagui.ds@gmail.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#inicialización" id="toc-inicialización" class="nav-link active" data-scroll-target="#inicialización">0.0 Inicialización</a></li>
+  <li><a href="#cargar-y-verificar-datos" id="toc-cargar-y-verificar-datos" class="nav-link" data-scroll-target="#cargar-y-verificar-datos">1.0 Cargar y verificar datos</a></li>
+  <li><a href="#prepara-los-datos" id="toc-prepara-los-datos" class="nav-link" data-scroll-target="#prepara-los-datos">2.0 Prepara los datos</a></li>
+  <li><a href="#paso-2.-prepara-los-datos" id="toc-paso-2.-prepara-los-datos" class="nav-link" data-scroll-target="#paso-2.-prepara-los-datos">Paso 2. Prepara los datos</a>
+  <ul class="collapse">
+  <li><a href="#transformación-de-formatos-e-imputación-estratégica" id="toc-transformación-de-formatos-e-imputación-estratégica" class="nav-link" data-scroll-target="#transformación-de-formatos-e-imputación-estratégica">1. Transformación de Formatos e Imputación Estratégica</a></li>
+  <li><a href="#por-qué-existen-valores-ausentes-en-el-dataset" id="toc-por-qué-existen-valores-ausentes-en-el-dataset" class="nav-link" data-scroll-target="#por-qué-existen-valores-ausentes-en-el-dataset">2. ¿Por qué existen valores ausentes en el Dataset?</a></li>
+  <li><a href="#analiza-los-datos" id="toc-analiza-los-datos" class="nav-link" data-scroll-target="#analiza-los-datos">3.0 Analiza los datos</a></li>
+  </ul></li>
+  <li><a href="#paso-3.-análisis-del-impacto-de-las-reseñas-en-las-ventas-caso-ps4" id="toc-paso-3.-análisis-del-impacto-de-las-reseñas-en-las-ventas-caso-ps4" class="nav-link" data-scroll-target="#paso-3.-análisis-del-impacto-de-las-reseñas-en-las-ventas-caso-ps4">Paso 3. Análisis del Impacto de las Reseñas en las Ventas (Caso: PS4)</a>
+  <ul class="collapse">
+  <li><a href="#reseñas-de-la-crítica-profesional-impacto-moderado-y-positivo" id="toc-reseñas-de-la-crítica-profesional-impacto-moderado-y-positivo" class="nav-link" data-scroll-target="#reseñas-de-la-crítica-profesional-impacto-moderado-y-positivo">1. Reseñas de la Crítica Profesional: Impacto Moderado y Positivo</a></li>
+  <li><a href="#reseñas-de-usuarios-sin-impacto-significativo-en-las-ventas" id="toc-reseñas-de-usuarios-sin-impacto-significativo-en-las-ventas" class="nav-link" data-scroll-target="#reseñas-de-usuarios-sin-impacto-significativo-en-las-ventas">2. Reseñas de Usuarios: Sin Impacto Significativo en las Ventas</a></li>
+  </ul></li>
+  <li><a href="#paso-3.-análisis-de-los-géneros-más-rentables" id="toc-paso-3.-análisis-de-los-géneros-más-rentables" class="nav-link" data-scroll-target="#paso-3.-análisis-de-los-géneros-más-rentables">Paso 3. Análisis de los Géneros más Rentables</a>
+  <ul class="collapse">
+  <li><a href="#generalizaciones-sobre-géneros-con-ventas-altas-y-bajas" id="toc-generalizaciones-sobre-géneros-con-ventas-altas-y-bajas" class="nav-link" data-scroll-target="#generalizaciones-sobre-géneros-con-ventas-altas-y-bajas">Generalizaciones sobre Géneros con Ventas Altas y Bajas</a></li>
+  <li><a href="#crea-un-perfil-de-usuario-para-cada-región" id="toc-crea-un-perfil-de-usuario-para-cada-región" class="nav-link" data-scroll-target="#crea-un-perfil-de-usuario-para-cada-región">4.0 Crea un perfil de usuario para cada región</a></li>
+  <li><a href="#prueba-las-siguientes-hipótesis" id="toc-prueba-las-siguientes-hipótesis" class="nav-link" data-scroll-target="#prueba-las-siguientes-hipótesis">5.0 Prueba las siguientes hipótesis</a></li>
+  <li><a href="#conclusión-y-justificación-prueba-de-hipótesis-1" id="toc-conclusión-y-justificación-prueba-de-hipótesis-1" class="nav-link" data-scroll-target="#conclusión-y-justificación-prueba-de-hipótesis-1">Conclusión y Justificación (Prueba de Hipótesis 1)</a></li>
+  </ul></li>
+  <li><a href="#conclusiones-del-análisis-de-hipótesis-estadísticas-paso-5" id="toc-conclusiones-del-análisis-de-hipótesis-estadísticas-paso-5" class="nav-link" data-scroll-target="#conclusiones-del-análisis-de-hipótesis-estadísticas-paso-5">Conclusiones del Análisis de Hipótesis Estadísticas (Paso 5)</a>
+  <ul class="collapse">
+  <li><a href="#hipótesis-1-calificaciones-de-usuarios-en-xbox-one-vs.-pc" id="toc-hipótesis-1-calificaciones-de-usuarios-en-xbox-one-vs.-pc" class="nav-link" data-scroll-target="#hipótesis-1-calificaciones-de-usuarios-en-xbox-one-vs.-pc">Hipótesis 1: Calificaciones de Usuarios en Xbox One vs.&nbsp;PC</a></li>
+  <li><a href="#hipótesis-2-calificaciones-de-usuarios-en-los-géneros-de-acción-vs.-deportes" id="toc-hipótesis-2-calificaciones-de-usuarios-en-los-géneros-de-acción-vs.-deportes" class="nav-link" data-scroll-target="#hipótesis-2-calificaciones-de-usuarios-en-los-géneros-de-acción-vs.-deportes">Hipótesis 2: Calificaciones de Usuarios en los Géneros de Acción vs.&nbsp;Deportes</a></li>
+  <li><a href="#explicaciónes-finales-del-paso-5" id="toc-explicaciónes-finales-del-paso-5" class="nav-link" data-scroll-target="#explicaciónes-finales-del-paso-5">Explicaciónes finales del paso 5</a></li>
+  <li><a href="#formulación-de-las-hipótesis-nula-y-alternativa" id="toc-formulación-de-las-hipótesis-nula-y-alternativa" class="nav-link" data-scroll-target="#formulación-de-las-hipótesis-nula-y-alternativa">1. Formulación de las Hipótesis Nula y Alternativa</a></li>
+  <li><a href="#criterio-utilizado-para-probar-las-hipótesis-y-justificación" id="toc-criterio-utilizado-para-probar-las-hipótesis-y-justificación" class="nav-link" data-scroll-target="#criterio-utilizado-para-probar-las-hipótesis-y-justificación">2. Criterio Utilizado para Probar las Hipótesis y Justificación</a></li>
+  </ul></li>
+  <li><a href="#paso-6.-conclusión-general-del-proyecto" id="toc-paso-6.-conclusión-general-del-proyecto" class="nav-link" data-scroll-target="#paso-6.-conclusión-general-del-proyecto">Paso 6. Conclusión General del Proyecto</a>
+  <ul class="collapse">
+  <li><a href="#síntesis-de-la-preparación-de-los-datos" id="toc-síntesis-de-la-preparación-de-los-datos" class="nav-link" data-scroll-target="#síntesis-de-la-preparación-de-los-datos">1. Síntesis de la Preparación de los Datos</a></li>
+  <li><a href="#dinámica-del-mercado-y-ciclo-de-vida" id="toc-dinámica-del-mercado-y-ciclo-de-vida" class="nav-link" data-scroll-target="#dinámica-del-mercado-y-ciclo-de-vida">2. Dinámica del Mercado y Ciclo de Vida</a></li>
+  <li><a href="#perfil-comercial-y-potencial-de-rentabilidad-para-2017" id="toc-perfil-comercial-y-potencial-de-rentabilidad-para-2017" class="nav-link" data-scroll-target="#perfil-comercial-y-potencial-de-rentabilidad-para-2017">3. Perfil Comercial y Potencial de Rentabilidad para 2017</a></li>
+  <li><a href="#segmentación-regional-estratégica" id="toc-segmentación-regional-estratégica" class="nav-link" data-scroll-target="#segmentación-regional-estratégica">4. Segmentación Regional Estratégica</a></li>
+  <li><a href="#diagnóstico-estadístico-final" id="toc-diagnóstico-estadístico-final" class="nav-link" data-scroll-target="#diagnóstico-estadístico-final">5. Diagnóstico Estadístico Final</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Sprint 6 proyecto modulo 1</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>title: “Proyecto Módulo 1 - Ventas Gamer” format: html</p>
+<section id="inicialización" class="level3">
+<h3 class="anchored" data-anchor-id="inicialización">0.0 Inicialización</h3>
+<div id="cell-3" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargar todas las librerías</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math <span class="im">as</span> mt</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> factorial</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats <span class="im">as</span> st</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="cargar-y-verificar-datos" class="level3">
+<h3 class="anchored" data-anchor-id="cargar-y-verificar-datos">1.0 Cargar y verificar datos</h3>
+<div id="cell-5" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carga los archivos de datos en DataFrames</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"/datasets/games.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div id="cell-6" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Name</th>
+<th data-quarto-table-cell-role="th">Platform</th>
+<th data-quarto-table-cell-role="th">Year_of_Release</th>
+<th data-quarto-table-cell-role="th">Genre</th>
+<th data-quarto-table-cell-role="th">NA_sales</th>
+<th data-quarto-table-cell-role="th">EU_sales</th>
+<th data-quarto-table-cell-role="th">JP_sales</th>
+<th data-quarto-table-cell-role="th">Other_sales</th>
+<th data-quarto-table-cell-role="th">Critic_Score</th>
+<th data-quarto-table-cell-role="th">User_Score</th>
+<th data-quarto-table-cell-role="th">Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>Wii Sports</td>
+<td>Wii</td>
+<td>2006.0</td>
+<td>Sports</td>
+<td>41.36</td>
+<td>28.96</td>
+<td>3.77</td>
+<td>8.45</td>
+<td>76.0</td>
+<td>8</td>
+<td>E</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Super Mario Bros.</td>
+<td>NES</td>
+<td>1985.0</td>
+<td>Platform</td>
+<td>29.08</td>
+<td>3.58</td>
+<td>6.81</td>
+<td>0.77</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>Mario Kart Wii</td>
+<td>Wii</td>
+<td>2008.0</td>
+<td>Racing</td>
+<td>15.68</td>
+<td>12.76</td>
+<td>3.79</td>
+<td>3.29</td>
+<td>82.0</td>
+<td>8.3</td>
+<td>E</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Wii Sports Resort</td>
+<td>Wii</td>
+<td>2009.0</td>
+<td>Sports</td>
+<td>15.61</td>
+<td>10.93</td>
+<td>3.28</td>
+<td>2.95</td>
+<td>80.0</td>
+<td>8</td>
+<td>E</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Pokemon Red/Pokemon Blue</td>
+<td>GB</td>
+<td>1996.0</td>
+<td>Role-Playing</td>
+<td>11.27</td>
+<td>8.89</td>
+<td>10.22</td>
+<td>1.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="cell-7" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 16715 entries, 0 to 16714
+Data columns (total 11 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   Name             16713 non-null  object 
+ 1   Platform         16715 non-null  object 
+ 2   Year_of_Release  16446 non-null  float64
+ 3   Genre            16713 non-null  object 
+ 4   NA_sales         16715 non-null  float64
+ 5   EU_sales         16715 non-null  float64
+ 6   JP_sales         16715 non-null  float64
+ 7   Other_sales      16715 non-null  float64
+ 8   Critic_Score     8137 non-null   float64
+ 9   User_Score       10014 non-null  object 
+ 10  Rating           9949 non-null   object 
+dtypes: float64(6), object(5)
+memory usage: 1.4+ MB</code></pre>
+</div>
+</div>
+</section>
+<section id="prepara-los-datos" class="level3">
+<h3 class="anchored" data-anchor-id="prepara-los-datos">2.0 Prepara los datos</h3>
+<div id="cell-9" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reemplaza los nombres de las columnas (en minúsculas)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> df.columns.<span class="bu">str</span>.lower()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div id="cell-10" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reemplazamos el string "TBD" por un nulo estadístico reconocido por Python "nan"</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'user_score'</span>] <span class="op">=</span> df[<span class="st">'user_score'</span>].replace(<span class="st">'tbd'</span>, np.nan)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Conversión de tipos de datos necesarios</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'year_of_release'</span>] <span class="op">=</span> df[<span class="st">'year_of_release'</span>].astype(<span class="st">'Int64'</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'user_score'</span>] <span class="op">=</span> df[<span class="st">'user_score'</span>].astype(<span class="bu">float</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Tratamiento de valores ausentes específicos</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">'name'</span>, <span class="st">'genre'</span>])  <span class="co"># Eliminar las 2 filas huérfanas</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'rating'</span>] <span class="op">=</span> df[<span class="st">'rating'</span>].fillna(<span class="st">'Unknown'</span>)  <span class="co"># Categorizar nulos en una nueva clasificación llamada Unknown</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="paso-2.-prepara-los-datos" class="level2">
+<h2 class="anchored" data-anchor-id="paso-2.-prepara-los-datos">Paso 2. Prepara los datos</h2>
+<p>Tratamiento y Justificación de Valores Ausentes</p>
+<section id="transformación-de-formatos-e-imputación-estratégica" class="level3">
+<h3 class="anchored" data-anchor-id="transformación-de-formatos-e-imputación-estratégica">1. Transformación de Formatos e Imputación Estratégica</h3>
+<p>Al comenzar a trabajar con el Dataset, todas las columnas venían con mayúsculas, por lo que se procedió a cambiar los nombres por completo a minúsculas para estandarizar el código.</p>
+<ul>
+<li><strong>Columna <code>user_score</code>:</strong> Se identificó la abreviatura <strong>TBD</strong> (<em>To Be Determined</em>). Dado que representa información que aún no existe, se reemplazó sistemáticamente por valores nulos legítimos (<code>NaN</code>), permitiendo transformar con éxito el tipo de dato de la columna de tipo genérico (<code>object</code>) a un tipo flotante analítico (<code>float64</code>).</li>
+<li><strong>Columna <code>year_of_release</code>:</strong> Se modificó su tipo de dato de <code>float64</code> a un formato entero nativo (<code>Int64</code>) para representar correctamente los años cronológicos. Los valores ausentes en esta columna se imputaron cruzando la información basándose en otras plataformas del mismo juego; se utilizó el método <code>.transform('max')</code> agrupado por el nombre del juego (<code>name</code>) para <strong>heredar el año de lanzamiento</strong> si este se encontraba disponible en otra fila. Los registros restantes sin coincidencia se mantuvieron nulos para evitar sesgar las tendencias temporales.</li>
+<li><strong>Columna <code>rating</code>:</strong> Los valores vacíos se rellenaron con la etiqueta categórica <strong>“Unknown”</strong>. Esta decisión evita la pérdida masiva de datos de ventas en análisis posteriores y resulta fundamental para evaluar si los videojuegos sin clasificación pertenecen a dinámicas de mercados regionales específicos (como el caso de Japón).</li>
+</ul>
+</section>
+<section id="por-qué-existen-valores-ausentes-en-el-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="por-qué-existen-valores-ausentes-en-el-dataset">2. ¿Por qué existen valores ausentes en el Dataset?</h3>
+<p>La presencia de datos nulos en las columnas críticas de calificaciones (<code>critic_score</code>, <code>user_score</code>) y clasificaciones (<code>rating</code>) obedece a razones operacionales e históricas de la propia industria:</p>
+<ul>
+<li><strong>Anacronismo de Plataformas de Agregación:</strong> Muchos de los videojuegos presentes en el dataset pertenecen a las décadas de <strong>1890 y 1990</strong>. En aquella época no existían plataformas de recopilación masiva de reseñas web como <em>Metacritic</em>, por lo que las notas de la crítica y de los usuarios para esos títulos antiguos nunca existieron digitalmente.</li>
+<li><strong>Falta de Masa Crítica / Exclusividades:</strong> Los títulos independientes, juegos de nicho o lanzamientos exclusivos de regiones muy específicas no lograron acumular el volumen mínimo necesario de análisis de prensa o votos de la comunidad digital requeridos para generar un promedio estadístico estable.</li>
+<li><strong>Sesgo Geográfico del Sistema ESRB:</strong> El sistema de clasificación por edades <strong>ESRB</strong> nació formalmente en <strong>1994</strong> y su enfoque operativo está diseñado casi exclusivamente para el mercado de <strong>América del Norte</strong>. Por lo tanto, los videojuegos lanzados antes de ese año, o aquellos desarrollados de manera exclusiva para el mercado asiático (que influyen directamente en <code>jp_sales</code>), carecen por completo de esta certificación norteamericana.</li>
+</ul>
+<div id="cell-12" class="cell" data-execution_count="7">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+Int64Index: 16713 entries, 0 to 16714
+Data columns (total 11 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   name             16713 non-null  object 
+ 1   platform         16713 non-null  object 
+ 2   year_of_release  16444 non-null  Int64  
+ 3   genre            16713 non-null  object 
+ 4   na_sales         16713 non-null  float64
+ 5   eu_sales         16713 non-null  float64
+ 6   jp_sales         16713 non-null  float64
+ 7   other_sales      16713 non-null  float64
+ 8   critic_score     8137 non-null   float64
+ 9   user_score       7590 non-null   float64
+ 10  rating           16713 non-null  object 
+dtypes: Int64(1), float64(6), object(4)
+memory usage: 1.5+ MB</code></pre>
+</div>
+</div>
+<div id="cell-13" class="cell" data-execution_count="8">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.isnull().<span class="bu">sum</span>())</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Datos duplicados: </span><span class="sc">{</span>df<span class="sc">.</span>duplicated()<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>name                  0
+platform              0
+year_of_release     269
+genre                 0
+na_sales              0
+eu_sales              0
+jp_sales              0
+other_sales           0
+critic_score       8576
+user_score         9123
+rating                0
+dtype: int64
+
+Datos duplicados: 0</code></pre>
+</div>
+</div>
+<div id="cell-14" class="cell" data-execution_count="9">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Rellena los años vacíos usando el año conocido del mismo juego en otra plataforma</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'year_of_release'</span>] <span class="op">=</span> df[<span class="st">'year_of_release'</span>].fillna(df.groupby(<span class="st">'name'</span>)[<span class="st">'year_of_release'</span>].transform(<span class="st">'max'</span>))</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'rating'</span>] <span class="op">=</span> df[<span class="st">'rating'</span>].fillna(<span class="st">'Unknown'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div id="cell-15" class="cell" data-execution_count="10">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.isnull().<span class="bu">sum</span>())</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Datos duplicados: </span><span class="sc">{</span>df<span class="sc">.</span>duplicated()<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>name                  0
+platform              0
+year_of_release     146
+genre                 0
+na_sales              0
+eu_sales              0
+jp_sales              0
+other_sales           0
+critic_score       8576
+user_score         9123
+rating                0
+dtype: int64
+
+Datos duplicados: 0</code></pre>
+</div>
+</div>
+<div id="cell-16" class="cell" data-execution_count="11">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">platform</th>
+<th data-quarto-table-cell-role="th">year_of_release</th>
+<th data-quarto-table-cell-role="th">genre</th>
+<th data-quarto-table-cell-role="th">na_sales</th>
+<th data-quarto-table-cell-role="th">eu_sales</th>
+<th data-quarto-table-cell-role="th">jp_sales</th>
+<th data-quarto-table-cell-role="th">other_sales</th>
+<th data-quarto-table-cell-role="th">critic_score</th>
+<th data-quarto-table-cell-role="th">user_score</th>
+<th data-quarto-table-cell-role="th">rating</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>Wii Sports</td>
+<td>Wii</td>
+<td>2006</td>
+<td>Sports</td>
+<td>41.36</td>
+<td>28.96</td>
+<td>3.77</td>
+<td>8.45</td>
+<td>76.0</td>
+<td>8.0</td>
+<td>E</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Super Mario Bros.</td>
+<td>NES</td>
+<td>1985</td>
+<td>Platform</td>
+<td>29.08</td>
+<td>3.58</td>
+<td>6.81</td>
+<td>0.77</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Unknown</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>Mario Kart Wii</td>
+<td>Wii</td>
+<td>2008</td>
+<td>Racing</td>
+<td>15.68</td>
+<td>12.76</td>
+<td>3.79</td>
+<td>3.29</td>
+<td>82.0</td>
+<td>8.3</td>
+<td>E</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Wii Sports Resort</td>
+<td>Wii</td>
+<td>2009</td>
+<td>Sports</td>
+<td>15.61</td>
+<td>10.93</td>
+<td>3.28</td>
+<td>2.95</td>
+<td>80.0</td>
+<td>8.0</td>
+<td>E</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Pokemon Red/Pokemon Blue</td>
+<td>GB</td>
+<td>1996</td>
+<td>Role-Playing</td>
+<td>11.27</td>
+<td>8.89</td>
+<td>10.22</td>
+<td>1.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Unknown</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="cell-17" class="cell" data-execution_count="12">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+Int64Index: 16713 entries, 0 to 16714
+Data columns (total 11 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   name             16713 non-null  object 
+ 1   platform         16713 non-null  object 
+ 2   year_of_release  16567 non-null  Int64  
+ 3   genre            16713 non-null  object 
+ 4   na_sales         16713 non-null  float64
+ 5   eu_sales         16713 non-null  float64
+ 6   jp_sales         16713 non-null  float64
+ 7   other_sales      16713 non-null  float64
+ 8   critic_score     8137 non-null   float64
+ 9   user_score       7590 non-null   float64
+ 10  rating           16713 non-null  object 
+dtypes: Int64(1), float64(6), object(4)
+memory usage: 1.5+ MB</code></pre>
+</div>
+</div>
+<div id="cell-18" class="cell" data-execution_count="13">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Calculamos la suma de todas las regiones y la guardamos en la nueva columna 'total_sales'</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'total_sales'</span>] <span class="op">=</span> df[<span class="st">'na_sales'</span>] <span class="op">+</span> df[<span class="st">'eu_sales'</span>] <span class="op">+</span> df[<span class="st">'jp_sales'</span>] <span class="op">+</span> df[<span class="st">'other_sales'</span>]</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Verificamos que la columna aparezca al final a la derecha y tenga los valores correctos</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[[<span class="st">'name'</span>, <span class="st">'na_sales'</span>, <span class="st">'eu_sales'</span>, <span class="st">'jp_sales'</span>, <span class="st">'other_sales'</span>, <span class="st">'total_sales'</span>]].head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>                       name  na_sales  eu_sales  jp_sales  other_sales  \
+0                Wii Sports     41.36     28.96      3.77         8.45   
+1         Super Mario Bros.     29.08      3.58      6.81         0.77   
+2            Mario Kart Wii     15.68     12.76      3.79         3.29   
+3         Wii Sports Resort     15.61     10.93      3.28         2.95   
+4  Pokemon Red/Pokemon Blue     11.27      8.89     10.22         1.00   
+
+   total_sales  
+0        82.54  
+1        40.24  
+2        35.52  
+3        32.77  
+4        31.38  </code></pre>
+</div>
+</div>
+</section>
+<section id="analiza-los-datos" class="level3">
+<h3 class="anchored" data-anchor-id="analiza-los-datos">3.0 Analiza los datos</h3>
+<div id="cell-20" class="cell" data-execution_count="14">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cantidad de juegos lanzados por año y relevancia de los períodos</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar lanzamientos por año</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>juegos_por_anio <span class="op">=</span> df.groupby(<span class="st">'year_of_release'</span>)[<span class="st">'name'</span>].count()</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Graficar la tendencia histórica</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">5</span>))</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>sns.lineplot(data<span class="op">=</span>juegos_por_anio, marker<span class="op">=</span><span class="st">'o'</span>, color<span class="op">=</span><span class="st">'teal'</span>)</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Cantidad de Videojuegos Lanzados por Año'</span>)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Año de Lanzamiento'</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Cantidad de Juegos'</span>)</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"De 1980 a 1990 los juegos no pasaban de 200 lanzados por año"</span>)</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"De 1995 a 2010 los juegos lanzados ascendieron de 200 a más de 1400 juegos por año"</span>)</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"De 2010 a 2015 los juegos lanzados pasaron de más de 1400 por año a menos de 600"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="01-analisis-regional_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>De 1980 a 1990 los juegos no pasaban de 200 lanzados por año
+De 1995 a 2010 los juegos lanzados ascendieron de 200 a más de 1400 juegos por año
+De 2010 a 2015 los juegos lanzados pasaron de más de 1400 por año a menos de 600</code></pre>
+</div>
+</div>
+<div id="cell-21" class="cell" data-execution_count="27">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ciclo de vida de las plataformas y líderes históricos</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Encontrar las plataformas con mayores ventas de toda la historia</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>top_plataformas <span class="op">=</span> df.groupby(<span class="st">'platform'</span>)[<span class="st">'total_sales'</span>].<span class="bu">sum</span>().sort_values(ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">6</span>).index</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Filtrar el dataset para estas plataformas y ver su distribución anual</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>df_top <span class="op">=</span> df[df[<span class="st">'platform'</span>].isin(top_plataformas)]</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>tabla_plataformas <span class="op">=</span> df_top.pivot_table(index<span class="op">=</span><span class="st">'year_of_release'</span>, columns<span class="op">=</span><span class="st">'platform'</span>, values<span class="op">=</span><span class="st">'total_sales'</span>, aggfunc<span class="op">=</span><span class="st">'sum'</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Graficar la distribución analizando nacimientos y muertes de consolas</span></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>tabla_plataformas.plot(figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">6</span>), linewidth<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Distribución Anual de Ventas de las Plataformas Top Históricas'</span>)</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Ventas Totales (Millones de USD)'</span>)</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Año'</span>)</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Las plataformas líderes en Ventas son PS2 y Wii, siguiendolos de cerca PS y X360"</span>)</span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="01-analisis-regional_files/figure-html/cell-16-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Las plataformas líderes en Ventas son PS2 y Wii, siguiendolos de cerca PS y X360
+</code></pre>
+</div>
+</div>
+<div id="cell-22" class="cell" data-execution_count="16">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Determinar el período relevante para el modelo 2017</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrado estratégico para construir el modelo hacia 2017</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>df_reciente <span class="op">=</span> df[df[<span class="st">'year_of_release'</span>] <span class="op">&gt;=</span> <span class="dv">2014</span>].copy()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div id="cell-23" class="cell" data-execution_count="17">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Líderes actuales: ¿Cuáles crecen y cuáles se reducen?</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>ventas_recientes <span class="op">=</span> df_reciente.pivot_table(index<span class="op">=</span><span class="st">'year_of_release'</span>, columns<span class="op">=</span><span class="st">'platform'</span>, values<span class="op">=</span><span class="st">'total_sales'</span>, aggfunc<span class="op">=</span><span class="st">'sum'</span>)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(ventas_recientes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>platform           3DS     PC    PS3     PS4   PSP    PSV   Wii   WiiU   X360  \
+year_of_release                                                                 
+2014             43.76  13.63  47.76  100.00  0.24  11.90  3.75  22.03  34.74   
+2015             27.78   8.52  16.82  118.90  0.12   6.25  1.14  16.35  11.96   
+2016             15.14   5.25   3.60   69.25   NaN   4.25  0.18   4.60   1.52   
+
+platform          XOne  
+year_of_release         
+2014             54.07  
+2015             60.14  
+2016             26.15  </code></pre>
+</div>
+</div>
+<div id="cell-24" class="cell" data-execution_count="29">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Diagramas de caja (Boxplots) por plataforma</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">13</span>, <span class="dv">7</span>))</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">'platform'</span>, y<span class="op">=</span><span class="st">'total_sales'</span>, data<span class="op">=</span>df_reciente)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Diagrama de Caja de Ventas Globales por Plataforma (2014 - Actualidad)'</span>)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Ventas Totales (Millones de USD)'</span>)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Plataforma'</span>)</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Acercar el gráfico para ver mejor las cajas principales sin que los "outliers" gigantes las aplasten</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">0</span>, <span class="dv">2</span>) </span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Las ventas de PS4, XOne, WiiU, X360 y Wii sobrepasan las ventas de 0.50 millones de USD del 2014-Actualidad"</span>)</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Teniendo un promedio entre 0.50 millones y 075 millones del 2014-Actualidad"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="01-analisis-regional_files/figure-html/cell-19-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Las ventas de PS4, XOne, WiiU, X360 y Wii sobrepasan las ventas de 0.50 millones de USD del 2014-Actualidad
+Teniendo un promedio entre 0.50 millones y 075 millones del 2014-Actualidad</code></pre>
+</div>
+</div>
+<div id="cell-25" class="cell" data-execution_count="19">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Impacto de las reseñas en las ventas (Caso: PS4)</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Aislar los datos de la PS4 que tengan calificaciones válidas</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>df_ps4 <span class="op">=</span> df_reciente[(df_reciente[<span class="st">'platform'</span>] <span class="op">==</span> <span class="st">'PS4'</span>) <span class="op">&amp;</span> (df_reciente[<span class="st">'critic_score'</span>].notna()) <span class="op">&amp;</span> (df_reciente[<span class="st">'user_score'</span>].notna())]</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Gráfico de dispersión para Crítica</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">5</span>))</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x<span class="op">=</span><span class="st">'critic_score'</span>, y<span class="op">=</span><span class="st">'total_sales'</span>, data<span class="op">=</span>df_ps4, alpha<span class="op">=</span><span class="fl">0.6</span>, color<span class="op">=</span><span class="st">'blue'</span>)</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'PS4: Ventas vs Reseñas de la Crítica'</span>)</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Gráfico de dispersión para Usuarios</span></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x<span class="op">=</span><span class="st">'user_score'</span>, y<span class="op">=</span><span class="st">'total_sales'</span>, data<span class="op">=</span>df_ps4, alpha<span class="op">=</span><span class="fl">0.6</span>, color<span class="op">=</span><span class="st">'orange'</span>)</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'PS4: Ventas vs Reseñas de Usuarios'</span>)</span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular correlaciones</span></span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Correlación Ventas vs Crítica:"</span>, df_ps4[<span class="st">'total_sales'</span>].corr(df_ps4[<span class="st">'critic_score'</span>]))</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Correlación Ventas vs Usuarios:"</span>, df_ps4[<span class="st">'total_sales'</span>].corr(df_ps4[<span class="st">'user_score'</span>]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="01-analisis-regional_files/figure-html/cell-20-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Correlación Ventas vs Crítica: 0.40190287811475334
+Correlación Ventas vs Usuarios: -0.04318585997193634</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="paso-3.-análisis-del-impacto-de-las-reseñas-en-las-ventas-caso-ps4" class="level2">
+<h2 class="anchored" data-anchor-id="paso-3.-análisis-del-impacto-de-las-reseñas-en-las-ventas-caso-ps4">Paso 3. Análisis del Impacto de las Reseñas en las Ventas (Caso: PS4)</h2>
+<p>Para entender cómo influyen las opiniones en el éxito comercial de la plataforma líder (PS4), evaluamos la relación entre las puntuaciones y las ventas totales mediante gráficos de dispersión y coeficientes de correlación de Pearson:</p>
+<section id="reseñas-de-la-crítica-profesional-impacto-moderado-y-positivo" class="level3">
+<h3 class="anchored" data-anchor-id="reseñas-de-la-crítica-profesional-impacto-moderado-y-positivo">1. Reseñas de la Crítica Profesional: Impacto Moderado y Positivo</h3>
+<ul>
+<li><strong>Métrica:</strong> El coeficiente de correlación es de aproximadamente <strong>0.40</strong>. En estadística, este valor representa una <strong>correlación positiva moderada</strong>.</li>
+<li><strong>Conclusión:</strong> Existe una tendencia lineal clara: a medida que aumenta la puntuación dada por los críticos profesionales (<code>critic_score</code>), las ventas totales del juego (<code>total_sales</code>) también tienden a crecer. Los títulos con calificaciones sobresalientes (80-90+) concentran la mayor parte de los éxitos comerciales masivos (los puntos más altos en el eje vertical). Esto sugiere que las reseñas profesionales son un indicador confiable del potencial comercial de un juego, ya sea porque influyen directamente en la decisión de compra del público o porque reflejan el éxito de grandes campañas de marketing asociadas a proyectos de alta calidad.</li>
+</ul>
+</section>
+<section id="reseñas-de-usuarios-sin-impacto-significativo-en-las-ventas" class="level3">
+<h3 class="anchored" data-anchor-id="reseñas-de-usuarios-sin-impacto-significativo-en-las-ventas">2. Reseñas de Usuarios: Sin Impacto Significativo en las Ventas</h3>
+<ul>
+<li><strong>Métrica:</strong> El coeficiente de correlación es de aproximadamente <strong>-0.04</strong>. Al estar tan extremadamente cercano a cero, indica una <strong>correlación prácticamente nula</strong> (el signo negativo es tan pequeño que resulta estadísticamente despreciable).</li>
+<li><strong>Conclusión:</strong> La puntuación de los usuarios (<code>user_score</code>) no está relacionada de manera lineal con el éxito financiero. La nube de puntos en el gráfico se muestra completamente dispersa de forma horizontal: existen juegos con bajas calificaciones que registran ventas millonarias, y títulos aclamados por la comunidad con ingresos muy bajos. Este fenómeno suele responder a dos factores principales:
+<ul>
+<li><strong>Sesgo emocional:</strong> Los usuarios suelen calificar los juegos motivados por el entusiasmo extremo o por controversias específicas de la industria (fenómenos como el <em>review bombing</em>), situaciones que alteran la puntuación digital pero no detienen las compras masivas en las tiendas físicas o digitales (como ocurre con las franquicias anuales).</li>
+<li><strong>Representatividad de la muestra:</strong> El perfil del consumidor que se toma el tiempo de asignar una calificación numérica en plataformas web no representa necesariamente el comportamiento del comprador promedio de PS4.</li>
+</ul></li>
+</ul>
+<blockquote class="blockquote">
+<h3 id="implicación-comercial-para-el-modelo-predictivo-2017" class="anchored">📈 Implicación Comercial para el Modelo Predictivo 2017</h3>
+<p>Si se desea predecir el éxito comercial de un título en la plataforma PS4, es <strong>mucho más confiable guiarse por las reseñas de los críticos profesionales</strong> que por las puntuaciones de los usuarios. Las buenas calificaciones de la crítica funcionan como un predictor “saludable” e idóneo para estimar el volumen de ingresos, mientras que la opinión de los usuarios —aunque valiosa para la gestión de comunidades y reputación a largo plazo— no ejerce un impacto directo ni predecible sobre la facturación inmediata.</p>
+</blockquote>
+<div id="cell-27" class="cell" data-execution_count="20">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comparación de los mismos juegos en otras plataformas</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Buscar juegos multiplataforma populares en el periodo reciente</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>juegos_multi <span class="op">=</span> df_reciente[df_reciente[<span class="st">'platform'</span>].isin([<span class="st">'PS4'</span>, <span class="st">'XOne'</span>, <span class="st">'PC'</span>])].groupby(<span class="st">'name'</span>).<span class="bu">filter</span>(<span class="kw">lambda</span> x: <span class="bu">len</span>(x) <span class="op">&gt;</span> <span class="dv">1</span>)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Comparar visualmente las ventas de los mismos juegos por plataforma</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">6</span>))</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">'name'</span>, y<span class="op">=</span><span class="st">'total_sales'</span>, hue<span class="op">=</span><span class="st">'platform'</span>, data<span class="op">=</span>juegos_multi.head(<span class="dv">25</span>), palette<span class="op">=</span><span class="st">'Set2'</span>)</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">90</span>)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Comparativa de Ventas del Mismo Juego en Diferentes Plataformas'</span>)</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Ventas en Millones'</span>)</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="01-analisis-regional_files/figure-html/cell-21-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-28" class="cell" data-execution_count="21">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Distribución de juegos por género y rentabilidad</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Agrupar por género y calcular cantidad de juegos y ventas totales</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>generos_analisis <span class="op">=</span> df_reciente.groupby(<span class="st">'genre'</span>).agg({<span class="st">'name'</span>: <span class="st">'count'</span>, <span class="st">'total_sales'</span>: <span class="st">'sum'</span>, <span class="st">'na_sales'</span>: <span class="st">'mean'</span>}).sort_values(by<span class="op">=</span><span class="st">'total_sales'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(generos_analisis)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>              name  total_sales  na_sales
+genre                                    
+Action         620       199.71  0.117081
+Shooter        128       170.94  0.617344
+Sports         161       109.48  0.286522
+Role-Playing   221       101.44  0.151448
+Misc           113        37.55  0.133186
+Fighting        60        28.22  0.207167
+Racing          69        27.52  0.126667
+Platform        38        18.09  0.178684
+Adventure      185        17.55  0.030486
+Simulation      44        13.13  0.059773
+Strategy        37         3.96  0.026486
+Puzzle          14         2.21  0.046429</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="paso-3.-análisis-de-los-géneros-más-rentables" class="level2">
+<h2 class="anchored" data-anchor-id="paso-3.-análisis-de-los-géneros-más-rentables">Paso 3. Análisis de los Géneros más Rentables</h2>
+<p>Al observar los líderes en ventas totales (<code>total_sales</code>), destacan de forma contundente los géneros de <strong>Action</strong> (Acción) y <strong>Shooter</strong> (Disparos):</p>
+<ul>
+<li><strong>Action (Acción): El líder en volumen total.</strong> Tiene las ventas acumuladas más altas con <strong>199.71 millones</strong>. Sin embargo, esto se debe principalmente a que es el género con mayor cantidad de títulos lanzados (<strong>620 juegos</strong>). Su promedio de ventas por juego en Norteamérica (<code>na_sales</code> promedio de <strong>~0.11</strong>) es relativamente bajo, reflejando un mercado muy saturado y altamente competitivo.</li>
+<li><strong>Shooter (Disparos): El verdadero gigante en rentabilidad individual.</strong> Aunque solo cuenta con <strong>128 juegos</strong> lanzados (menos de una quinta parte de los de Acción), ha recaudado la impresionante cifra de <strong>170.94 millones</strong>. Al observar la columna <code>na_sales</code> (promedio por juego), un <em>Shooter</em> promedia <strong>0.61 millones</strong>, lo que significa que, en promedio, un juego de disparos vende casi 6 veces más que uno de acción.</li>
+<li><strong>Sports (Deportes) y Role-Playing (RPG):</strong> Se consolidan sólidamente en el tercer y cuarto lugar superando los <strong>100 millones</strong> en ventas totales, respaldados por una cantidad considerable de lanzamientos (<strong>161</strong> y <strong>221</strong> respectivamente) y promedios de ventas estables.</li>
+</ul>
+<section id="generalizaciones-sobre-géneros-con-ventas-altas-y-bajas" class="level3">
+<h3 class="anchored" data-anchor-id="generalizaciones-sobre-géneros-con-ventas-altas-y-bajas">Generalizaciones sobre Géneros con Ventas Altas y Bajas</h3>
+<p>Podemos clasificar los géneros en tres grandes grupos comerciales según su comportamiento y rendimiento en el mercado:</p>
+<section id="a.-géneros-de-ventas-altas-y-alto-impacto-blockbusters" class="level4">
+<h4 class="anchored" data-anchor-id="a.-géneros-de-ventas-altas-y-alto-impacto-blockbusters">A. Géneros de Ventas Altas y Alto Impacto (Blockbusters)</h4>
+<ul>
+<li><strong>Géneros:</strong> <em>Action, Shooter, Sports, Role-Playing</em>.</li>
+<li><strong>Características:</strong> Dominan de forma absoluta el mercado. Concentran la inmensa mayoría del presupuesto de los consumidores y de las campañas de marketing. Se caracterizan por albergar los grandes lanzamientos AAA (como <em>Call of Duty, FIFA o Grand Theft Auto</em>, que justamente sobresalen en las métricas de plataformas líderes).</li>
+</ul>
+</section>
+<section id="b.-géneros-de-ventas-moderadas-mercado-medio-nichos-populares" class="level4">
+<h4 class="anchored" data-anchor-id="b.-géneros-de-ventas-moderadas-mercado-medio-nichos-populares">B. Géneros de Ventas Moderadas (Mercado Medio / Nichos Populares)</h4>
+<ul>
+<li><strong>Géneros:</strong> <em>Misc, Fighting, Racing, Platform</em>.</li>
+<li><strong>Características:</strong> Tienen ingresos totales que oscilan entre los <strong>18 y 37 millones</strong>. Cuentan con comunidades fieles y, en casos específicos como <em>Fighting</em> (Lucha) o <em>Platform</em> (Plataformas), muestran ventas promedio por juego bastante saludables (<code>na_sales</code> de <strong>~0.20</strong> y <strong>~0.17</strong> respectivamente), lo que demuestra que, aunque se producen pocos títulos, los que salen suelen vender bien.</li>
+</ul>
+</section>
+<section id="c.-géneros-de-ventas-bajas-nichos-reducidos" class="level4">
+<h4 class="anchored">C. Géneros de Ventas Bajas (Nichos Reducidos)</h4>
+<ul>
+<li><strong>Géneros:</strong> <em>Adventure, Simulation, Strategy, Puzzle</em>.</li>
+<li><strong>Características:</strong> Se encuentran en el fondo de la tabla de rentabilidad. El caso de <strong>Adventure</strong> (Aventura) es muy particular: tiene un volumen alto de juegos (<strong>185</strong>), pero sus ventas totales son de apenas <strong>17.55 millones</strong> y su promedio de venta unitario es el más bajo de todo el dataset (<code>na_sales</code> de <strong>~0.03</strong>).</li>
+<li><strong>Generalización:</strong> Los géneros como la estrategia, los rompecabezas o la simulación requieren dinámicas de juego más lentas o específicas (frecuentemente ligadas al público tradicional de PC), por lo que en el mercado global y de consolas no logran competir contra la inmediatez y espectacularidad de los géneros de acción y disparos.</li>
+</ul>
+<blockquote class="blockquote">
+<h3 id="conclusión-estratégica-de-negocio" class="anchored" data-anchor-id="c.-géneros-de-ventas-bajas-nichos-reducidos">🎯 Conclusión Estratégica de Negocio</h3>
+<p>Para maximizar las ganancias en el año inmediato, la estrategia de distribución debe concentrarse fuertemente en <strong>Shooters</strong> y <strong>Action</strong>. Desarrollar o distribuir juegos de <em>Strategy</em> o <em>Puzzle</em> representa un riesgo comercial alto si se busca un retorno de inversión masivo, debiendo reservarse únicamente para proyectos de nicho o presupuestos optimizados.</p>
+</blockquote>
+</section>
+</section>
+<section id="crea-un-perfil-de-usuario-para-cada-región" class="level3">
+<h3 class="anchored" data-anchor-id="crea-un-perfil-de-usuario-para-cada-región">4.0 Crea un perfil de usuario para cada región</h3>
+<div id="cell-31" class="cell" data-execution_count="22">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtener los perfiles regionales</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtramos primero para trabajar solo con el período relevante (2014-2016)</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>df_reciente <span class="op">=</span> df[df[<span class="st">'year_of_release'</span>] <span class="op">&gt;=</span> <span class="dv">2014</span>].copy()</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>regiones <span class="op">=</span> [<span class="st">'na_sales'</span>, <span class="st">'eu_sales'</span>, <span class="st">'jp_sales'</span>]</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"=== TOP 5 PLATAFORMAS POR REGIÓN ==="</span>)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> r <span class="kw">in</span> regiones:</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Plataformas líderes en </span><span class="sc">{</span>r<span class="sc">.</span>upper()<span class="sc">}</span><span class="ss">:"</span>)</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df_reciente.groupby(<span class="st">'platform'</span>)[r].<span class="bu">sum</span>().sort_values(ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">5</span>))</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">=== TOP 5 GÉNEROS POR REGIÓN ==="</span>)</span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> r <span class="kw">in</span> regiones:</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Géneros líderes en </span><span class="sc">{</span>r<span class="sc">.</span>upper()<span class="sc">}</span><span class="ss">:"</span>)</span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df_reciente.groupby(<span class="st">'genre'</span>)[r].<span class="bu">sum</span>().sort_values(ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">5</span>))</span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">=== VENTAS POR CLASIFICACIÓN ESRB POR REGIÓN ==="</span>)</span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> r <span class="kw">in</span> regiones:</span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Clasificación ESRB en </span><span class="sc">{</span>r<span class="sc">.</span>upper()<span class="sc">}</span><span class="ss">:"</span>)</span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df_reciente.groupby(<span class="st">'rating'</span>)[r].<span class="bu">sum</span>().sort_values(ascending<span class="op">=</span><span class="va">False</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>=== TOP 5 PLATAFORMAS POR REGIÓN ===
+
+Plataformas líderes en NA_SALES:
+platform
+PS4     98.61
+XOne    81.27
+X360    28.30
+3DS     22.64
+PS3     22.05
+Name: na_sales, dtype: float64
+
+Plataformas líderes en EU_SALES:
+platform
+PS4     130.04
+XOne     46.25
+PS3      25.54
+PC       18.22
+3DS      16.12
+Name: eu_sales, dtype: float64
+
+Plataformas líderes en JP_SALES:
+platform
+3DS     44.24
+PS4     15.02
+PSV     14.54
+PS3     11.22
+WiiU     7.31
+Name: jp_sales, dtype: float64
+
+=== TOP 5 GÉNEROS POR REGIÓN ===
+
+Géneros líderes en NA_SALES:
+genre
+Shooter         79.02
+Action          72.59
+Sports          46.13
+Role-Playing    33.47
+Misc            15.05
+Name: na_sales, dtype: float64
+
+Géneros líderes en EU_SALES:
+genre
+Action          74.93
+Shooter         65.52
+Sports          45.73
+Role-Playing    28.17
+Racing          14.13
+Name: eu_sales, dtype: float64
+
+Géneros líderes en JP_SALES:
+genre
+Role-Playing    31.16
+Action          29.58
+Fighting         6.37
+Misc             5.61
+Shooter          4.87
+Name: jp_sales, dtype: float64
+
+=== VENTAS POR CLASIFICACIÓN ESRB POR REGIÓN ===
+
+Clasificación ESRB en NA_SALES:
+rating
+M          96.48
+Unknown    64.72
+E          50.74
+T          38.95
+E10+       33.23
+Name: na_sales, dtype: float64
+
+Clasificación ESRB en EU_SALES:
+rating
+M          93.69
+Unknown    58.95
+E          58.06
+T          34.07
+E10+       26.16
+Name: eu_sales, dtype: float64
+
+Clasificación ESRB en JP_SALES:
+rating
+Unknown    56.90
+T          14.78
+E           8.94
+M           8.01
+E10+        4.46
+Name: jp_sales, dtype: float64</code></pre>
+</div>
+</div>
+</section>
+<section id="prueba-las-siguientes-hipótesis" class="level3">
+<h3 class="anchored" data-anchor-id="prueba-las-siguientes-hipótesis">5.0 Prueba las siguientes hipótesis</h3>
+<div id="cell-33" class="cell" data-execution_count="33">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Aseguramos trabajar con el dataset filtrado del período reciente (2014-2016)</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>df_reciente <span class="op">=</span> df[df[<span class="st">'year_of_release'</span>] <span class="op">&gt;=</span> <span class="dv">2014</span>].copy()</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el umbral de significancia estadística alfa</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>alpha <span class="op">=</span> <span class="fl">0.05</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"=== PRUEBAS DE HIPÓTESIS ESTADÍSTICAS ===</span><span class="ch">\n</span><span class="st">"</span>)</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Extraemos las calificaciones de usuarios para cada plataforma (eliminando nulos)</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>user_xbox <span class="op">=</span> df_reciente[(df_reciente[<span class="st">'platform'</span>] <span class="op">==</span> <span class="st">'XOne'</span>) <span class="op">&amp;</span> (df_reciente[<span class="st">'user_score'</span>].notna())][<span class="st">'user_score'</span>]</span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>user_pc <span class="op">=</span> df_reciente[(df_reciente[<span class="st">'platform'</span>] <span class="op">==</span> <span class="st">'PC'</span>) <span class="op">&amp;</span> (df_reciente[<span class="st">'user_score'</span>].notna())][<span class="st">'user_score'</span>]</span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Ejecutamos la prueba t de Student para muestras independientes</span></span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Usamos equal_var=False porque no asumimos que las varianzas de ambas poblaciones sean iguales (Prueba de Welch)</span></span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a>results <span class="op">=</span> st.ttest_ind(user_xbox, user_pc, equal_var<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-17"><a href="#cb36-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Mostramos los resultados obtenidos</span></span>
+<span id="cb36-18"><a href="#cb36-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Calificación promedio en Xbox One: </span><span class="sc">{</span>user_xbox<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb36-19"><a href="#cb36-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Calificación promedio en PC:       </span><span class="sc">{</span>user_pc<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb36-20"><a href="#cb36-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Valor p (p-value):                 </span><span class="sc">{</span>results<span class="sc">.</span>pvalue<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span>)</span>
+<span id="cb36-21"><a href="#cb36-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-22"><a href="#cb36-22" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Evaluamos la decisión estadística frente a nuestro umbral alfa</span></span>
+<span id="cb36-23"><a href="#cb36-23" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> results.pvalue <span class="op">&lt;</span> alpha:</span>
+<span id="cb36-24"><a href="#cb36-24" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Resultado: Se rechaza la hipótesis nula (H0)."</span>)</span>
+<span id="cb36-25"><a href="#cb36-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Conclusión: Las calificaciones promedio de los usuarios para Xbox One y PC SON diferentes."</span>)</span>
+<span id="cb36-26"><a href="#cb36-26" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb36-27"><a href="#cb36-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Resultado: No se puede rechazar la hipótesis nula (H0)."</span>)</span>
+<span id="cb36-28"><a href="#cb36-28" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Conclusión: No hay evidencia estadística suficiente para decir que son diferentes. Las calificaciones promedio son las mismas."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>=== PRUEBAS DE HIPÓTESIS ESTADÍSTICAS ===
+
+Calificación promedio en Xbox One: 6.59
+Calificación promedio en PC:       6.32
+Valor p (p-value):                 0.139237120435483
+
+Resultado: No se puede rechazar la hipótesis nula (H0).
+Conclusión: No hay evidencia estadística suficiente para decir que son diferentes. Las calificaciones promedio son las mismas.</code></pre>
+</div>
+</div>
+</section>
+<section id="conclusión-y-justificación-prueba-de-hipótesis-1" class="level3">
+<h3 class="anchored" data-anchor-id="conclusión-y-justificación-prueba-de-hipótesis-1">Conclusión y Justificación (Prueba de Hipótesis 1)</h3>
+<p><strong>Resultado Estadístico:</strong> * <strong>Valor p (<em>p-value</em>):</strong> <span class="math inline">\(0.1392\)</span> (13.92%) * <strong>Alfa (<span class="math inline">\(\alpha\)</span>):</strong> <span class="math inline">\(0.05\)</span> (5%)</p>
+<p><strong>Justificación:</strong> Dado que el valor p resultante (<span class="math inline">\(0.1392\)</span>) es <strong>mayor</strong> que nuestro nivel de significancia establecido (<span class="math inline">\(\alpha = 0.05\)</span>), <strong>no tenemos evidencia estadística suficiente para rechazar la hipótesis nula (<span class="math inline">\(H_0\)</span>)</strong>.</p>
+<p>En términos estadísticos, la diferencia observada entre la calificación promedio de Xbox One (6.59) y la de PC (6.32) no es lo suficientemente grande como para considerarse significativa; esta variación de 0.27 puntos entra perfectamente dentro del margen del error muestral o fluctuaciones normales del azar.</p>
+<p><strong>Conclusión:</strong> Se acepta la premisa de la hipótesis nula. Podemos afirmar con seguridad que <strong>las calificaciones promedio de los usuarios para las plataformas Xbox One y PC son las mismas</strong> en el período analizado (2014-2016). Comercialmente, esto indica que las comunidades de ambas plataformas muestran un nivel de satisfacción y comportamiento crítico equivalente al evaluar los videojuegos del catálogo compartido.</p>
+<div id="cell-35" class="cell" data-execution_count="31">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Extraer los datos limpiando los valores nulos para cada plataforma</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>user_xbox <span class="op">=</span> df_reciente[(df_reciente[<span class="st">'platform'</span>] <span class="op">==</span> <span class="st">'XOne'</span>) <span class="op">&amp;</span> (df_reciente[<span class="st">'user_score'</span>].notna())][<span class="st">'user_score'</span>]</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>user_pc <span class="op">=</span> df_reciente[(df_reciente[<span class="st">'platform'</span>] <span class="op">==</span> <span class="st">'PC'</span>) <span class="op">&amp;</span> (df_reciente[<span class="st">'user_score'</span>].notna())][<span class="st">'user_score'</span>]</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Ejecutar la prueba t de Student (equal_var=False porque las varianzas de las muestras pueden diferir)</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>results_h1 <span class="op">=</span> st.ttest_ind(user_xbox, user_pc, equal_var<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Prueba 1: Xbox One vs. PC"</span>)</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Calificación promedio Xbox One: </span><span class="sc">{</span>user_xbox<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Calificación promedio PC: </span><span class="sc">{</span>user_pc<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Valor p (p-value): </span><span class="sc">{</span>results_h1<span class="sc">.</span>pvalue<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> results_h1.pvalue <span class="op">&lt;</span> alpha:</span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Resultado: Se rechaza la hipótesis nula (Las calificaciones promedio NO son las mismas)."</span>)</span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Resultado: No se puede rechazar la hipótesis nula (No hay evidencia para decir que son diferentes)."</span>)</span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Prueba 1: Xbox One vs. PC
+Calificación promedio Xbox One: 6.59
+Calificación promedio PC: 6.32
+Valor p (p-value): 0.139237120435483
+Resultado: No se puede rechazar la hipótesis nula (No hay evidencia para decir que son diferentes).</code></pre>
+</div>
+</div>
+<div id="cell-36" class="cell" data-execution_count="34">
+<details class="code-fold">
+<summary>🔍 Ver código Python</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Extraemos las calificaciones de usuarios para cada género (eliminando nulos)</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>user_action <span class="op">=</span> df_reciente[(df_reciente[<span class="st">'genre'</span>] <span class="op">==</span> <span class="st">'Action'</span>) <span class="op">&amp;</span> (df_reciente[<span class="st">'user_score'</span>].notna())][<span class="st">'user_score'</span>]</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>user_sports <span class="op">=</span> df_reciente[(df_reciente[<span class="st">'genre'</span>] <span class="op">==</span> <span class="st">'Sports'</span>) <span class="op">&amp;</span> (df_reciente[<span class="st">'user_score'</span>].notna())][<span class="st">'user_score'</span>]</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Ejecutamos la prueba t de Student para muestras independientes</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Usamos equal_var=False debido a la disparidad en el tamaño de las muestras (Prueba de Welch)</span></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>results_h2 <span class="op">=</span> st.ttest_ind(user_action, user_sports, equal_var<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Mostramos los resultados obtenidos</span></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Prueba 2: Acción vs. Deportes"</span>)</span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Calificación promedio Acción:   </span><span class="sc">{</span>user_action<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Calificación promedio Deportes: </span><span class="sc">{</span>user_sports<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Valor p (p-value):               </span><span class="sc">{</span>results_h2<span class="sc">.</span>pvalue<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span>)</span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Evaluamos la decisión estadística frente a nuestro umbral alfa (0.05)</span></span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> results_h2.pvalue <span class="op">&lt;</span> alpha:</span>
+<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Resultado: Se rechaza la hipótesis nula (H0)."</span>)</span>
+<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Conclusión: Sí, es correcto afirmar que las calificaciones promedio SON diferentes."</span>)</span>
+<span id="cb40-19"><a href="#cb40-19" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb40-20"><a href="#cb40-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Resultado: No se puede rechazar la hipótesis nula (H0)."</span>)</span>
+<span id="cb40-21"><a href="#cb40-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Conclusión: No hay evidencia suficiente para decir que son diferentes."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Prueba 2: Acción vs. Deportes
+Calificación promedio Acción:   6.77
+Calificación promedio Deportes: 5.23
+Valor p (p-value):               9.658176026869598e-15
+
+Resultado: Se rechaza la hipótesis nula (H0).
+Conclusión: Sí, es correcto afirmar que las calificaciones promedio SON diferentes.</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusiones-del-análisis-de-hipótesis-estadísticas-paso-5" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones-del-análisis-de-hipótesis-estadísticas-paso-5">Conclusiones del Análisis de Hipótesis Estadísticas (Paso 5)</h2>
+<p>A continuación, se presentan las conclusiones y justificaciones estadísticas definitivas para cada una de las hipótesis planteadas, utilizando un nivel de significancia de <span class="math inline">\(\alpha = 0.05\)</span>.</p>
+<section id="hipótesis-1-calificaciones-de-usuarios-en-xbox-one-vs.-pc" class="level3">
+<h3 class="anchored" data-anchor-id="hipótesis-1-calificaciones-de-usuarios-en-xbox-one-vs.-pc">Hipótesis 1: Calificaciones de Usuarios en Xbox One vs.&nbsp;PC</h3>
+<ul>
+<li><strong>Resultado Métrico:</strong> * Calificación promedio Xbox One: <strong>6.59</strong>
+<ul>
+<li>Calificación promedio PC: <strong>6.32</strong></li>
+<li>Valor p (<em>p-value</em>): <strong>0.1392</strong></li>
+</ul></li>
+</ul>
+<p><strong>Justificación:</strong> Dado que el valor p (<span class="math inline">\(0.1392\)</span>) es <strong>mayor</strong> que nuestro umbral de significancia alfa (<span class="math inline">\(0.05\)</span>), <strong>no podemos rechazar la hipótesis nula (<span class="math inline">\(H_0\)</span>)</strong>. Estadísticamente, la pequeña diferencia de <span class="math inline">\(0.27\)</span> puntos observada entre ambas plataformas no es significativa y se debe enteramente a fluctuaciones normales del azar o del muestreo.</p>
+<p><strong>Conclusión:</strong> Podemos afirmar que <strong>las calificaciones promedio de los usuarios para Xbox One y PC son estadísticamente las mismas</strong>. Desde una perspectiva comercial, esto significa que los jugadores de ambas plataformas tienen niveles de satisfacción y un comportamiento crítico muy homogéneo al evaluar los videojuegos de la actual generación.</p>
+</section>
+<section id="hipótesis-2-calificaciones-de-usuarios-en-los-géneros-de-acción-vs.-deportes" class="level3">
+<h3 class="anchored" data-anchor-id="hipótesis-2-calificaciones-de-usuarios-en-los-géneros-de-acción-vs.-deportes">Hipótesis 2: Calificaciones de Usuarios en los Géneros de Acción vs.&nbsp;Deportes</h3>
+<ul>
+<li><strong>Resultado Métrico:</strong> * Calificación promedio Acción: <strong>6.77</strong>
+<ul>
+<li>Calificación promedio Deportes: <strong>5.23</strong></li>
+<li>Valor p (<em>p-value</em>): <strong><span class="math inline">\(9.65 \times 10^{-15}\)</span></strong> (un valor prácticamente equivalente a <span class="math inline">\(0\)</span>)</li>
+</ul></li>
+</ul>
+<p><strong>Justificación:</strong> Dado que el valor p es drásticamente <strong>menor</strong> que nuestro umbral alfa (<span class="math inline">\(0.05\)</span>), <strong>se rechaza contundentemente la hipótesis nula (<span class="math inline">\(H_0\)</span>)</strong> en favor de la hipótesis alternativa (<span class="math inline">\(H_1\)</span>). Existe una diferencia matemática masiva y real entre las puntuaciones de ambos grupos que no puede explicarse por casualidad.</p>
+<p><strong>Conclusión:</strong> Es <strong>completamente correcto afirmar que las calificaciones promedio de los usuarios para Acción y Deportes son diferentes</strong>. En el mercado real, este fenómeno nos indica que el público que consume videojuegos de deportes es significativamente más estricto y tiende a calificar los títulos de forma más baja (promedio de <span class="math inline">\(5.23\)</span>) que aquellos que disfrutan de juegos de acción (promedio de <span class="math inline">\(6.77\)</span>).</p>
+</section>
+<section id="explicaciónes-finales-del-paso-5" class="level3">
+<h3 class="anchored" data-anchor-id="explicaciónes-finales-del-paso-5">Explicaciónes finales del paso 5</h3>
+</section>
+<section id="formulación-de-las-hipótesis-nula-y-alternativa" class="level3">
+<h3 class="anchored" data-anchor-id="formulación-de-las-hipótesis-nula-y-alternativa">1. Formulación de las Hipótesis Nula y Alternativa</h3>
+<p>Para realizar cualquier contraste estadístico, es necesario traducir las preguntas de negocio en un par de afirmaciones matemáticas que sean mutuamente excluyentes:</p>
+<ul>
+<li><strong>Hipótesis Nula (<span class="math inline">\(H_0\)</span>):</strong> Representa la afirmación del “no cambio”, la <strong>igualdad</strong> o la ausencia de efectos significativos. Esta hipótesis asume de partida que las diferencias observadas entre los grupos se deben puramente al azar o a fluctuaciones del muestreo. <strong>Siempre contiene el signo de igualdad (<span class="math inline">\(=\)</span>).</strong></li>
+<li><strong>Hipótesis Alternativa (<span class="math inline">\(H_1\)</span>):</strong> Es la conjetura que rompe el estado basal; afirma que <strong>sí existe una diferencia o efecto real</strong> y significativo entre las poblaciones analizadas. <strong>Siempre contiene un signo de desigualdad (<span class="math inline">\(\neq\)</span>).</strong></li>
+</ul>
+<section id="aplicación-en-el-proyecto" class="level4">
+<h4 class="anchored" data-anchor-id="aplicación-en-el-proyecto">Aplicación en el Proyecto:</h4>
+<ul>
+<li><strong>Prueba 1 (Plataformas):</strong> Evaluamos si las calificaciones promedio de los usuarios para Xbox One y PC son las mismas.
+<ul>
+<li><span class="math inline">\(H_0: \mu_{\text{Xbox One}} = \mu_{\text{PC}}\)</span> (Las calificaciones promedio son iguales).</li>
+<li><span class="math inline">\(H_1: \mu_{\text{Xbox One}} \neq \mu_{\text{PC}}\)</span> (Las calificaciones promedio son diferentes).</li>
+</ul></li>
+<li><strong>Prueba 2 (Géneros):</strong> Evaluamos si las calificaciones promedio de los usuarios para los géneros de Acción y Deportes son diferentes.
+<ul>
+<li><span class="math inline">\(H_0: \mu_{\text{Acción}} = \mu_{\text{Deportes}}\)</span> (Las calificaciones promedio son iguales).</li>
+<li><span class="math inline">\(H_1: \mu_{\text{Acción}} \neq \mu_{\text{Deportes}}\)</span> (Las calificaciones promedio son diferentes).</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="criterio-utilizado-para-probar-las-hipótesis-y-justificación" class="level3">
+<h3 class="anchored" data-anchor-id="criterio-utilizado-para-probar-las-hipótesis-y-justificación">2. Criterio Utilizado para Probar las Hipótesis y Justificación</h3>
+<p>El criterio matemático seleccionado fue la <strong>Prueba <span class="math inline">\(t\)</span> de Student para dos muestras independientes</strong>, ejecutada mediante la función <code>scipy.stats.ttest_ind()</code> configurada con el parámetro <code>equal_var=False</code> (Prueba de Welch).</p>
+<section id="por-qué-es-el-criterio-correcto" class="level4">
+<h4 class="anchored" data-anchor-id="por-qué-es-el-criterio-correcto">¿Por qué es el criterio correcto?</h4>
+<ol type="1">
+<li><strong>Tipo de Variables:</strong> Estamos comparando una variable cuantitativa continua (las puntuaciones de satisfacción de los usuarios, <code>user_score</code>) dividida a través de grupos categóricos mutuamente excluyentes (o el juego es de PC o es de Xbox One; o pertenece a Acción o a Deportes).</li>
+<li><strong>Muestras Independientes:</strong> Las observaciones de un grupo no influyen ni están relacionadas de manera emparejada con las del otro (las calificaciones de los usuarios de PC son independientes de las de consola).</li>
+<li><strong>Justificación de <code>equal_var=False</code>:</strong> En el dataset real, el volumen de registros difiere sustancialmente entre grupos (por ejemplo, hay una cantidad masiva de juegos de Acción en comparación con los de Deportes). No asumir varianzas poblacionales iguales (aplicar la corrección de Welch) le otorga robustez a la prueba y disminuye drásticamente la probabilidad de cometer un error de Tipo I (falso positivo).</li>
+</ol>
+</section>
+<section id="regla-de-decisión-con-el-valor-p-p-value" class="level4">
+<h4 class="anchored" data-anchor-id="regla-de-decisión-con-el-valor-p-p-value">Regla de Decisión con el Valor p (p-value):</h4>
+<p>Establecimos un umbral de significancia estándar de <strong><span class="math inline">\(\alpha = 0.05\)</span></strong>. * Si <span class="math inline">\(\text{valor p} &lt; 0.05\)</span>: La probabilidad de que la diferencia observada sea obra del azar es menor al 5%. Por ende, <strong>se rechaza <span class="math inline">\(H_0\)</span></strong> en favor de <span class="math inline">\(H_1\)</span>. * Si <span class="math inline">\(\text{valor p} \geq 0.05\)</span>: No hay fuerza estadística suficiente para dudar del estado basal. Por ende, <strong>no se puede rechazar <span class="math inline">\(H_0\)</span></strong>.</p>
+</section>
+</section>
+</section>
+<section id="paso-6.-conclusión-general-del-proyecto" class="level1">
+<h1>Paso 6. Conclusión General del Proyecto</h1>
+<p>Tras llevar a cabo el ciclo completo de análisis de datos —desde la limpieza estructural hasta la inferencia estadística— sobre el histórico de ventas de videojuegos, se presentan los hallazgos definitivos para diseñar la estrategia comercial de cara al año <strong>2017</strong>.</p>
+<section id="síntesis-de-la-preparación-de-los-datos" class="level3">
+<h3 class="anchored" data-anchor-id="síntesis-de-la-preparación-de-los-datos">1. Síntesis de la Preparación de los Datos</h3>
+<p>El dataset original presentaba anomalías críticas que nublaban el análisis. Se homogeneizaron los nombres de las columnas a minúsculas y se detectó que el string <code>'tbd'</code> (<em>To Be Determined</em>) en la columna <code>user_score</code> estaba secuestrando el tipo de dato, forzándolo a texto. Se resolvió de manera estadística transformándolo en un nulo legítimo (<code>NaN</code>) para permitir la conversión a flotante. Asimismo, la columna <code>year_of_release</code> se optimizó a un tipo entero nativo (<code>Int64</code>), logrando rescatar 123 registros nulos mediante el mapeo cruzado de plataformas del mismo título. Las ausencias masivas en calificaciones se conservaron intactas para preservar la varianza natural del mercado.</p>
+</section>
+<section id="dinámica-del-mercado-y-ciclo-de-vida" class="level3">
+<h3 class="anchored" data-anchor-id="dinámica-del-mercado-y-ciclo-de-vida">2. Dinámica del Mercado y Ciclo de Vida</h3>
+<p>La industria experimentó su máximo esplendor histórico entre 2005 y 2011. Sin embargo, los datos demuestran que el mercado es cíclico y dependiente del hardware: * Las plataformas tienen un ciclo de vida útil promedio de <strong>10 a 11 años</strong> desde su lanzamiento hasta su desaparición absoluta. * Una consola tarda entre <strong>3 y 5 años</strong> en alcanzar su madurez comercial y su pico de facturación. * Para construir el modelo predictivo de 2017, se determinó que <strong>solo los datos de 2014 a 2016 son relevantes</strong>, dado que capturan la estabilidad de la octava generación de consolas, dejando fuera plataformas ya obsoletas.</p>
+</section>
+<section id="perfil-comercial-y-potencial-de-rentabilidad-para-2017" class="level3">
+<h3 class="anchored" data-anchor-id="perfil-comercial-y-potencial-de-rentabilidad-para-2017">3. Perfil Comercial y Potencial de Rentabilidad para 2017</h3>
+<p>El mercado global está dominado por la <strong>PlayStation 4</strong> y la <strong>Xbox One</strong>, acompañadas por la <strong>PC</strong> como una plataforma de ingresos estables y linealmente predecibles. El análisis de diagramas de caja reveló que, aunque la mayoría de los juegos individuales venden menos de 500,000 unidades, la rentabilidad de las plataformas líderes está impulsada por éxitos atípicos (<em>outliers</em>) masivos (juegos AAA).</p>
+<p>Las reseñas de la crítica profesional muestran una <strong>correlación positiva moderada (~0.40)</strong> con el éxito financiero de los títulos, consolidándose como un factor predictivo útil. Por el contrario, las calificaciones de los usuarios no muestran relación con las ventas finales, sugiriendo que las decisiones de compra masivas están más influenciadas por el marketing y la lealtad de marca que por la opinión del consumidor digital.</p>
+</section>
+<section id="segmentación-regional-estratégica" class="level3">
+<h3 class="anchored" data-anchor-id="segmentación-regional-estratégica">4. Segmentación Regional Estratégica</h3>
+<p>Para maximizar la inversión publicitaria y la distribución en 2017, se deben seguir tres enfoques completamente diferenciados por región: * <strong>Norteamérica (NA):</strong> Es un mercado de alta competencia. El enfoque debe ser biconsola (<strong>PS4 y Xbox One</strong>). Los géneros prioritarios son <strong>Shooter</strong> y <strong>Action</strong>, apuntando principalmente a clasificaciones <strong>M (Mature)</strong> de la ESRB. * <strong>Europa (UE):</strong> Presenta un monopolio de consumo a favor de Sony (<strong>PS4</strong>). La distribución debe priorizar esta plataforma con títulos de <strong>Action, Shooter y Sports</strong> (con especial énfasis en simuladores de fútbol). * <strong>Japón (JP):</strong> Es un ecosistema aislado que ignora la tendencia occidental de consolas de sobremesa y clasificaciones americanas (ESRB). La inversión aquí debe dirigirse exclusivamente a la consola portátil <strong>Nintendo 3DS</strong> y al desarrollo del género <strong>Role-Playing (RPG)</strong>.</p>
+</section>
+<section id="diagnóstico-estadístico-final" class="level3">
+<h3 class="anchored" data-anchor-id="diagnóstico-estadístico-final">5. Diagnóstico Estadístico Final</h3>
+<p>A través del contraste de hipótesis, se validó con seguridad estadística que <strong>los usuarios de Xbox One y PC comparten los mismos niveles de satisfacción promedio</strong> en sus puntuaciones, abriendo la puerta a estrategias de marketing unificadas para comunidades <em>cross-play</em>. Por otra parte, se confirmó que <strong>las calificaciones del género de Acción y Deportes son significativamente diferentes</strong>, siendo los usuarios de juegos deportivos los más severos y críticos con sus valoraciones anuales.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/andagui-ds\.github\.io\/portfolio\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

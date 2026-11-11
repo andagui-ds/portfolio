@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://andagui-ds.github.io/portfolio/proyectos.html</loc>
-    <lastmod>2026-11-11T01:31:00.570Z</lastmod>
-  </url>
-  <url>
     <loc>https://andagui-ds.github.io/portfolio/about.html</loc>
     <lastmod>2026-11-11T01:36:14.321Z</lastmod>
   </url>
   <url>
+    <loc>https://andagui-ds.github.io/portfolio/videogames-regional-sales-analysis/notebooks/01-analisis-regional.out.html</loc>
+    <lastmod>2026-11-11T03:33:35.455Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andagui-ds.github.io/portfolio/zyfra-gold-recovery/notebooks/01-prediccion-recuperacion.out.html</loc>
+    <lastmod>2026-11-11T03:33:27.732Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andagui-ds.github.io/portfolio/beta-bank-churn-prediction/notebooks/01-analisis-churn.out.html</loc>
+    <lastmod>2026-11-11T03:33:20.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andagui-ds.github.io/portfolio/oilygiant-oil-well-investment/README.html</loc>
+    <lastmod>2026-11-11T02:41:00.362Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andagui-ds.github.io/portfolio/oilygiant-oil-well-investment/notebooks/01-analisis-principal.html</loc>
+    <lastmod>2026-11-10T23:40:42.884Z</lastmod>
+  </url>
+  <url>
     <loc>https://andagui-ds.github.io/portfolio/index.html</loc>
-    <lastmod>2026-11-11T02:37:23.628Z</lastmod>
+    <lastmod>2026-11-11T03:24:23.462Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andagui-ds.github.io/portfolio/oilygiant-oil-well-investment/notebooks/01-analisis-principal.out.html</loc>
+    <lastmod>2026-11-11T03:33:12.326Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andagui-ds.github.io/portfolio/beta-bank-churn-prediction/notebooks/01-analisis-churn.html</loc>
+    <lastmod>2026-11-10T23:40:42.849Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andagui-ds.github.io/portfolio/zyfra-gold-recovery/notebooks/01-prediccion-recuperacion.html</loc>
+    <lastmod>2026-11-10T23:40:42.922Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andagui-ds.github.io/portfolio/videogames-regional-sales-analysis/notebooks/01-analisis-regional.html</loc>
+    <lastmod>2026-11-10T23:40:43.546Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andagui-ds.github.io/portfolio/proyectos.html</loc>
+    <lastmod>2026-11-11T01:31:00.570Z</lastmod>
   </url>
 </urlset>
