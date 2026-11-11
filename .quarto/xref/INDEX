@@ -1,44 +1,50 @@
 {
   "index.qmd": {
-    "index.html": "27593485"
+    "index.html": "92a89ea5"
   },
   "proyectos/Sprint_1_python.ipynb": {
-    "Sprint_1_python.html": "ce955fad"
+    "Sprint_1_python.html": "49561c96"
   },
   "proyectos/Sprint_2_pythonb.ipynb": {
-    "Sprint_2_pythonb.html": "37d2ce2e"
+    "Sprint_2_pythonb.html": "30e5d09e"
   },
   "proyectos/Sprint_3_dw.ipynb": {
-    "Sprint_3_dw.html": "9612e472"
+    "Sprint_3_dw.html": "94b841ce"
   },
   "proyectos/Sprint_4_dwb.ipynb": {
-    "Sprint_4_dwb.html": "9034deaa"
+    "Sprint_4_dwb.html": "9ab11aca"
   },
   "proyectos/Sprint_5_eda.ipynb": {
-    "Sprint_5_eda.html": "47f8af35"
+    "Sprint_5_eda.html": "7d02c29d"
   },
   "proyectos/Sprint_6_proyecto_modulo_1.ipynb": {
-    "Sprint_6_proyecto_modulo_1.html": "a88ab54e"
+    "Sprint_6_proyecto_modulo_1.html": "7a3b83d9"
   },
   "proyectos/Sprint_8_sql.ipynb": {
-    "Sprint_8_sql.html": "c7741502"
+    "Sprint_8_sql.html": "2924dcac"
   },
   "proyectos/Sprint_10_ml.ipynb": {
-    "Sprint_10_ml.html": "43d7583a"
+    "Sprint_10_ml.html": "e083b053"
   },
   "proyectos/Sprint_11_aprensuper.ipynb": {
-    "Sprint_11_aprensuper.html": "4337f143"
+    "Sprint_11_aprensuper.html": "1dd21890"
   },
   "proyectos/Sprint_12_aprenauto.ipynb": {
-    "Sprint_12_aprenauto.html": "10551581"
+    "Sprint_12_aprenauto.html": "9f6aae98"
   },
   "proyectos/Sprint_13_proyecto_modulo_2.ipynb": {
-    "Sprint_13_proyecto_modulo_2.html": "3d7ed71d"
+    "Sprint_13_proyecto_modulo_2.html": "d4401b78"
   },
   "proyectos/Sprint_14_algline.ipynb": {
-    "Sprint_14_algline.html": "11cf29de"
+    "Sprint_14_algline.html": "82158e00"
   },
   "proyectos/Sprint_15_metnume.ipynb": {
-    "Sprint_15_metnume.html": "1f27f30f"
+    "Sprint_15_metnume.html": "a48171cb"
+  },
+  "proyectos.qmd": {
+    "proyectos.html": "96019052"
+  },
+  "about.qmd": {
+    "about.html": "1cad2737"
   }
 }

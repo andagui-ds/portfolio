@@ -12,3 +12,5 @@ proyectos/*.csv
 .quarto/
 _site/
 .venv/
+/.quarto/
+**/*.quarto_ipynb

@@ -3,28 +3,17 @@ project:
   output-dir: _site
   render:
     - "index.qmd"
-    - "proyectos/Sprint_1_python.ipynb"
-    - "proyectos/Sprint_2_pythonb.ipynb"
-    - "proyectos/Sprint_3_dw.ipynb"
-    - "proyectos/Sprint_4_dwb.ipynb"
-    - "proyectos/Sprint_5_eda.ipynb"
-    - "proyectos/Sprint_6_proyecto_modulo_1.ipynb"
-    - "proyectos/Sprint_8_sql.ipynb"
-    - "proyectos/Sprint_10_ml.ipynb"
-    - "proyectos/Sprint_11_aprensuper.ipynb"
-    - "proyectos/Sprint_12_aprenauto.ipynb"
-    - "proyectos/Sprint_13_proyecto_modulo_2.ipynb"
-    - "proyectos/Sprint_14_algline.ipynb"
-    - "proyectos/Sprint_15_metnume.ipynb"
+    - "proyectos.qmd"
+    - "about.qmd"
+    - "proyectos/*.ipynb"  # Esto mantiene tus notebooks accesibles si alguien tiene el link, pero fuera del menú
 
 execute:
-  
   ze: true
 
 website:
   title: "Andrés Aguirre"
   description: "Portafolio de Ciencia de Datos — Análisis, Machine Learning y Visualización."
-  site-url: "https://andagui-ds.github.io"
+  site-url: "https://andagui-ds.github.io/portfolio/"
 
   navbar:
     background: primary
@@ -35,36 +24,12 @@ website:
       - href: index.qmd
         text: Inicio
         icon: house
-      - text: "Proyectos"
-        menu:
-          - text: "--- Módulo 1: Análisis Exploratorio & SQL ---"
-          - href: "proyectos/Sprint_1_python.ipynb"
-            text: "Sprint 1: Python Básico"
-          - href: "proyectos/Sprint_2_pythonb.ipynb"
-            text: "Sprint 2: Python Avanzado"
-          - href: "proyectos/Sprint_3_dw.ipynb"
-            text: "Sprint 3: Data Wrangling"
-          - href: "proyectos/Sprint_4_dwb.ipynb"
-            text: "Sprint 4: Data Wrangling Avanzado"
-          - href: "proyectos/Sprint_5_eda.ipynb"
-            text: "Sprint 5: Análisis Exploratorio (EDA)"
-          - href: "proyectos/Sprint_6_proyecto_modulo_1.ipynb"
-            text: "🎮 Proyecto Módulo 1: Ventas Gamer"
-          - href: "proyectos/Sprint_8_sql.ipynb"
-            text: "Sprint 8: Consultas SQL"
-          - text: "--- Módulo 2: Machine Learning ---"
-          - href: "proyectos/Sprint_10_ml.ipynb"
-            text: "Sprint 10: Clasificación (Churn Bancario)"
-          - href: "proyectos/Sprint_11_aprensuper.ipynb"
-            text: "Sprint 11: Regresión & Bootstrapping (OilyGiant)"
-          - href: "proyectos/Sprint_12_aprenauto.ipynb"
-            text: "Sprint 12: Aprendizaje No Supervisado"
-          - href: "proyectos/Sprint_13_proyecto_modulo_2.ipynb"
-            text: "⛏️ Proyecto Módulo 2: Zyfra Gold Recovery"
-          - href: "proyectos/Sprint_14_algline.ipynb"
-            text: "Sprint 14: Álgebra Lineal & Privacidad"
-          - href: "proyectos/Sprint_15_metnume.ipynb"
-            text: "Sprint 15: Métodos Numéricos & Optimización"
+      - href: proyectos.qmd
+        text: Proyectos
+        icon: folder
+      - href: about.qmd
+        text: Sobre mí
+        icon: person
     right:
       - icon: linkedin
         href: https://www.linkedin.com/in/andagui-ds/
