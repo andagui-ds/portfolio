@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Resumen de la revisión v2  – Andrés Aguirre</title>
+<title>Resumen de la revisión v2  – Andrés Aguirre - Portafolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -65,6 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -77,14 +78,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6ece9ef07fa529c24901ce5324fc6822.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-56ed4685856ad6e467c20e8dbc90ddbf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-6ece9ef07fa529c24901ce5324fc6822.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e3b6304807752e699624c4037db73bf8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -119,177 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455).
-    // Not run on load: stylesheets are set before first paint there, and
-    // scrolling would undo the scroll to a URL fragment (#14973).
-    // The one pixel nudge keeps the reader where they were.
-    const refreshSafariScrollbar = () => {
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        const scrollY = window.scrollY;
-        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
-        setTimeout(() => {
-          window.scrollTo(0, scrollY);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      refreshSafariScrollbar();
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -297,50 +124,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Andrés Aguirre</span>
+    <span class="navbar-title">Andrés Aguirre - Portafolio</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> <i class="bi bi-house" role="img">
-</i> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../proyectos.html"> <i class="bi bi-folder" role="img">
-</i> 
-<span class="menu-text">Proyectos</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../about.html"> <i class="bi bi-person" role="img">
-</i> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Sobre mí</span></a>
   </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="https://www.linkedin.com/in/andagui-ds/"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text">LinkedIn</span></a>
-  </li>  
-  <li class="nav-item">
+  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/andagui-ds"> <i class="bi bi-github" role="img">
 </i> 
-<span class="menu-text">GitHub</span></a>
+<span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="mailto:andagui.ds@gmail.com"> <i class="bi bi-envelope" role="img">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/andagui-ds/"> <i class="bi bi-linkedin" role="img">
 </i> 
-<span class="menu-text">Contacto</span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
 </div>
             <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
@@ -350,73 +162,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
-    <h2 id="toc-title">En esta página</h2>
-   
-  <ul>
-  <li><a href="#llena-ese-carrito" id="toc-llena-ese-carrito" class="nav-link active" data-scroll-target="#llena-ese-carrito">¡Llena ese carrito!</a></li>
-  <li><a href="#introducción" id="toc-introducción" class="nav-link" data-scroll-target="#introducción">Introducción</a>
-  <ul class="collapse">
-  <li><a href="#diccionario-de-datos" id="toc-diccionario-de-datos" class="nav-link" data-scroll-target="#diccionario-de-datos">Diccionario de datos</a></li>
-  </ul></li>
-  <li><a href="#paso-1.-descripción-de-los-datos" id="toc-paso-1.-descripción-de-los-datos" class="nav-link" data-scroll-target="#paso-1.-descripción-de-los-datos">Paso 1. Descripción de los datos</a>
-  <ul class="collapse">
-  <li><a href="#plan-de-solución" id="toc-plan-de-solución" class="nav-link" data-scroll-target="#plan-de-solución">Plan de solución</a></li>
-  <li><a href="#conclusiones" id="toc-conclusiones" class="nav-link" data-scroll-target="#conclusiones">Conclusiones</a></li>
-  </ul></li>
-  <li><a href="#paso-2.-preprocesamiento-de-los-datos" id="toc-paso-2.-preprocesamiento-de-los-datos" class="nav-link" data-scroll-target="#paso-2.-preprocesamiento-de-los-datos">Paso 2. Preprocesamiento de los datos</a>
-  <ul class="collapse">
-  <li><a href="#plan-de-solución-1" id="toc-plan-de-solución-1" class="nav-link" data-scroll-target="#plan-de-solución-1">Plan de solución</a></li>
-  <li><a href="#encuentra-y-elimina-los-valores-duplicados-y-describe-cómo-tomaste-tus-decisiones." id="toc-encuentra-y-elimina-los-valores-duplicados-y-describe-cómo-tomaste-tus-decisiones." class="nav-link" data-scroll-target="#encuentra-y-elimina-los-valores-duplicados-y-describe-cómo-tomaste-tus-decisiones.">Encuentra y elimina los valores duplicados (y describe cómo tomaste tus decisiones).</a>
-  <ul class="collapse">
-  <li><a href="#orders-data-frame" id="toc-orders-data-frame" class="nav-link" data-scroll-target="#orders-data-frame"><code>orders</code> data frame</a></li>
-  <li><a href="#products-data-frame" id="toc-products-data-frame" class="nav-link" data-scroll-target="#products-data-frame"><code>products</code> data frame</a></li>
-  <li><a href="#departments-data-frame" id="toc-departments-data-frame" class="nav-link" data-scroll-target="#departments-data-frame"><code>departments</code> data frame</a></li>
-  <li><a href="#aisles-data-frame" id="toc-aisles-data-frame" class="nav-link" data-scroll-target="#aisles-data-frame"><code>aisles</code> data frame</a></li>
-  <li><a href="#order_products-data-frame" id="toc-order_products-data-frame" class="nav-link" data-scroll-target="#order_products-data-frame"><code>order_products</code> data frame</a></li>
-  </ul></li>
-  <li><a href="#encuentra-y-elimina-los-valores-ausentes" id="toc-encuentra-y-elimina-los-valores-ausentes" class="nav-link" data-scroll-target="#encuentra-y-elimina-los-valores-ausentes">Encuentra y elimina los valores ausentes</a>
-  <ul class="collapse">
-  <li><a href="#products-data-frame-1" id="toc-products-data-frame-1" class="nav-link" data-scroll-target="#products-data-frame-1"><code>products</code> data frame</a></li>
-  <li><a href="#orders-data-frame-1" id="toc-orders-data-frame-1" class="nav-link" data-scroll-target="#orders-data-frame-1"><code>orders</code> data frame</a></li>
-  <li><a href="#order_products-data-frame-1" id="toc-order_products-data-frame-1" class="nav-link" data-scroll-target="#order_products-data-frame-1"><code>order_products</code> data frame</a></li>
-  </ul></li>
-  <li><a href="#conclusiones-1" id="toc-conclusiones-1" class="nav-link" data-scroll-target="#conclusiones-1">Conclusiones</a></li>
-  </ul></li>
-  <li><a href="#paso-3.-análisis-de-los-datos" id="toc-paso-3.-análisis-de-los-datos" class="nav-link" data-scroll-target="#paso-3.-análisis-de-los-datos">Paso 3. Análisis de los datos</a></li>
-  <li><a href="#a-fácil-deben-completarse-todos-para-aprobar" id="toc-a-fácil-deben-completarse-todos-para-aprobar" class="nav-link" data-scroll-target="#a-fácil-deben-completarse-todos-para-aprobar">[A] Fácil (deben completarse todos para aprobar)</a>
-  <ul class="collapse">
-  <li><a href="#a1-verifica-que-los-valores-sean-sensibles" id="toc-a1-verifica-que-los-valores-sean-sensibles" class="nav-link" data-scroll-target="#a1-verifica-que-los-valores-sean-sensibles">[A1] Verifica que los valores sean sensibles</a></li>
-  <li><a href="#a2-para-cada-hora-del-día-cuántas-personas-hacen-órdenes" id="toc-a2-para-cada-hora-del-día-cuántas-personas-hacen-órdenes" class="nav-link" data-scroll-target="#a2-para-cada-hora-del-día-cuántas-personas-hacen-órdenes">[A2] Para cada hora del día, ¿cuántas personas hacen órdenes?</a></li>
-  <li><a href="#a3-qué-día-de-la-semana-compran-víveres-las-personas" id="toc-a3-qué-día-de-la-semana-compran-víveres-las-personas" class="nav-link" data-scroll-target="#a3-qué-día-de-la-semana-compran-víveres-las-personas">[A3] ¿Qué día de la semana compran víveres las personas?</a></li>
-  <li><a href="#a4-cuánto-tiempo-esperan-las-personas-hasta-hacer-otro-pedido-comenta-sobre-los-valores-mínimos-y-máximos." id="toc-a4-cuánto-tiempo-esperan-las-personas-hasta-hacer-otro-pedido-comenta-sobre-los-valores-mínimos-y-máximos." class="nav-link" data-scroll-target="#a4-cuánto-tiempo-esperan-las-personas-hasta-hacer-otro-pedido-comenta-sobre-los-valores-mínimos-y-máximos.">[A4] ¿Cuánto tiempo esperan las personas hasta hacer otro pedido? Comenta sobre los valores mínimos y máximos.</a></li>
-  </ul></li>
-  <li><a href="#b-intermedio-deben-completarse-todos-para-aprobar" id="toc-b-intermedio-deben-completarse-todos-para-aprobar" class="nav-link" data-scroll-target="#b-intermedio-deben-completarse-todos-para-aprobar">[B] Intermedio (deben completarse todos para aprobar)</a>
-  <ul class="collapse">
-  <li><a href="#b1-diferencia-entre-miércoles-y-sábados-para-order_hour_of_day.-traza-gráficos-de-barra-para-los-dos-días-y-describe-las-diferencias-que-veas." id="toc-b1-diferencia-entre-miércoles-y-sábados-para-order_hour_of_day.-traza-gráficos-de-barra-para-los-dos-días-y-describe-las-diferencias-que-veas." class="nav-link" data-scroll-target="#b1-diferencia-entre-miércoles-y-sábados-para-order_hour_of_day.-traza-gráficos-de-barra-para-los-dos-días-y-describe-las-diferencias-que-veas.">[B1] Diferencia entre miércoles y sábados para <code>'order_hour_of_day'</code>. Traza gráficos de barra para los dos días y describe las diferencias que veas.</a></li>
-  <li><a href="#b2-cuál-es-la-distribución-para-el-número-de-pedidos-por-cliente" id="toc-b2-cuál-es-la-distribución-para-el-número-de-pedidos-por-cliente" class="nav-link" data-scroll-target="#b2-cuál-es-la-distribución-para-el-número-de-pedidos-por-cliente">[B2] ¿Cuál es la distribución para el número de pedidos por cliente?</a></li>
-  <li><a href="#b3-cuáles-son-los-20-productos-más-populares-muestra-su-id-y-nombre" id="toc-b3-cuáles-son-los-20-productos-más-populares-muestra-su-id-y-nombre" class="nav-link" data-scroll-target="#b3-cuáles-son-los-20-productos-más-populares-muestra-su-id-y-nombre">[B3] ¿Cuáles son los 20 productos más populares (muestra su ID y nombre)?</a></li>
-  </ul></li>
-  <li><a href="#c-difícil-deben-completarse-todos-para-aprobar" id="toc-c-difícil-deben-completarse-todos-para-aprobar" class="nav-link" data-scroll-target="#c-difícil-deben-completarse-todos-para-aprobar">[C] Difícil (deben completarse todos para aprobar)</a>
-  <ul class="collapse">
-  <li><a href="#c1-cuántos-artículos-compran-normalmente-las-personas-en-un-pedido-cómo-es-la-distribución" id="toc-c1-cuántos-artículos-compran-normalmente-las-personas-en-un-pedido-cómo-es-la-distribución" class="nav-link" data-scroll-target="#c1-cuántos-artículos-compran-normalmente-las-personas-en-un-pedido-cómo-es-la-distribución">[C1] ¿Cuántos artículos compran normalmente las personas en un pedido? ¿Cómo es la distribución?</a></li>
-  <li><a href="#c2-cuáles-son-los-20-principales-artículos-que-vuelven-a-pedirse-con-mayor-frecuencia-muestra-sus-nombres-e-ids-de-los-productos" id="toc-c2-cuáles-son-los-20-principales-artículos-que-vuelven-a-pedirse-con-mayor-frecuencia-muestra-sus-nombres-e-ids-de-los-productos" class="nav-link" data-scroll-target="#c2-cuáles-son-los-20-principales-artículos-que-vuelven-a-pedirse-con-mayor-frecuencia-muestra-sus-nombres-e-ids-de-los-productos">[C2] ¿Cuáles son los 20 principales artículos que vuelven a pedirse con mayor frecuencia (muestra sus nombres e IDs de los productos)?</a></li>
-  <li><a href="#c3-para-cada-producto-cuál-es-la-proporción-de-las-veces-que-se-pide-y-que-se-vuelve-a-pedir" id="toc-c3-para-cada-producto-cuál-es-la-proporción-de-las-veces-que-se-pide-y-que-se-vuelve-a-pedir" class="nav-link" data-scroll-target="#c3-para-cada-producto-cuál-es-la-proporción-de-las-veces-que-se-pide-y-que-se-vuelve-a-pedir">[C3] Para cada producto, ¿cuál es la proporción de las veces que se pide y que se vuelve a pedir?</a></li>
-  <li><a href="#c4-para-cada-cliente-qué-proporción-de-sus-productos-ya-los-había-pedido" id="toc-c4-para-cada-cliente-qué-proporción-de-sus-productos-ya-los-había-pedido" class="nav-link" data-scroll-target="#c4-para-cada-cliente-qué-proporción-de-sus-productos-ya-los-había-pedido">[C4] Para cada cliente, ¿qué proporción de sus productos ya los había pedido?</a></li>
-  <li><a href="#c5-cuáles-son-los-20-principales-artículos-que-las-personas-ponen-primero-en-sus-carritos" id="toc-c5-cuáles-son-los-20-principales-artículos-que-las-personas-ponen-primero-en-sus-carritos" class="nav-link" data-scroll-target="#c5-cuáles-son-los-20-principales-artículos-que-las-personas-ponen-primero-en-sus-carritos">[C5] ¿Cuáles son los 20 principales artículos que las personas ponen primero en sus carritos?</a></li>
-  <li><a href="#conclusion-general-del-proyecto" id="toc-conclusion-general-del-proyecto" class="nav-link" data-scroll-target="#conclusion-general-del-proyecto">Conclusion general del proyecto:</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content" tabindex="-1">
 
-
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Resumen de la revisión v2 <a class="tocSkip"></a></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+<h1 class="title">Resumen de la revisión v2 <a class="tocSkip"></a></h1>
 </div>
 
 
@@ -489,27 +241,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Escribe aquí tu plan de solución para el Paso 1. Descripción de los datos.</p>
 <p>Para la carga de archivos utilizo “pd.red_csv” dentro del cual añado el separador con “sep=‘;’” siendo que así viene el formato desde el csv. Realizo la carga de forma individual para cada DataSet, añadiendo show_counts=True, porque de esa forma siendo un dataset muy grande se cuentan todas las filas sin importar el tamaño del archivo.</p>
 <div id="fbf1adab" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np<span class="co"># importar librerías</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 </div>
 <div id="ad36396d" class="cell" data-execution_count="2">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df_orders <span class="op">=</span> pd.read_csv (<span class="st">"/datasets/instacart_orders.csv"</span>, sep<span class="op">=</span><span class="st">";"</span>) </span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df_products <span class="op">=</span> pd.read_csv (<span class="st">"/datasets/products.csv"</span>, sep<span class="op">=</span><span class="st">";"</span>) <span class="co"># leer conjuntos de datos en los DataFrames</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df_aisles <span class="op">=</span> pd.read_csv (<span class="st">"/datasets/aisles.csv"</span>, sep<span class="op">=</span><span class="st">";"</span>) </span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df_departments <span class="op">=</span> pd.read_csv (<span class="st">"/datasets/departments.csv"</span>, sep<span class="op">=</span><span class="st">";"</span>) </span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df_order_products <span class="op">=</span> pd.read_csv (<span class="st">"/datasets/order_products.csv"</span>, sep<span class="op">=</span><span class="st">";"</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 </div>
 <div id="ad6a1efa" class="cell" data-execution_count="3">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_orders.info(show_counts<span class="op">=</span><span class="va">True</span>) <span class="co"># mostrar información del DataFrame</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 478967 entries, 0 to 478966
@@ -527,10 +270,7 @@ memory usage: 21.9 MB</code></pre>
 </div>
 </div>
 <div id="5130e05e" class="cell" data-execution_count="4">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_products.info(show_counts<span class="op">=</span><span class="va">True</span>) <span class="co"># mostrar información del DataFrame</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 49694 entries, 0 to 49693
@@ -546,10 +286,7 @@ memory usage: 1.5+ MB</code></pre>
 </div>
 </div>
 <div id="d8370c05" class="cell" data-execution_count="5">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_aisles.info(show_counts<span class="op">=</span><span class="va">True</span>) <span class="co"># mostrar información del DataFrame</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 134 entries, 0 to 133
@@ -563,10 +300,7 @@ memory usage: 2.2+ KB</code></pre>
 </div>
 </div>
 <div id="59e2090f" class="cell" data-execution_count="6">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_departments.info(show_counts<span class="op">=</span><span class="va">True</span>) <span class="co"># mostrar información del DataFrame</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 21 entries, 0 to 20
@@ -580,10 +314,7 @@ memory usage: 464.0+ bytes</code></pre>
 </div>
 </div>
 <div id="6fc81694" class="cell" data-execution_count="7">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df_order_products.info(show_counts<span class="op">=</span><span class="va">True</span>) <span class="co"># mostrar información del DataFrame</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 4545007 entries, 0 to 4545006
@@ -627,8 +358,6 @@ memory usage: 138.7 MB</code></pre>
 <section id="orders-data-frame" class="level3">
 <h3 class="anchored" data-anchor-id="orders-data-frame"><code>orders</code> data frame</h3>
 <div id="b99297a5-405a-463d-8535-9adc3da4ad74" class="cell" data-execution_count="8">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa si hay pedidos duplicados</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Duplicados en df_orders</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_orders.duplicated().<span class="bu">sum</span>())</span>
@@ -653,7 +382,6 @@ memory usage: 138.7 MB</code></pre>
 <span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Duplicados en df_order_products</span></span>
 <span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_order_products.duplicated().<span class="bu">sum</span>())</span>
 <span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_order_products[df_order_products.duplicated()])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>15
         order_id  user_id  order_number  order_dow  order_hour_of_day  \
@@ -713,8 +441,6 @@ Index: []</code></pre>
 </div>
 <p>¿Tienes líneas duplicadas? Si sí, ¿qué tienen en común? Si, al parecer todas las líneas duplicadas que aparecen en df_orders fueron órdenes realizadas el miércoles a las 2:00 am. Lo que equivale a 15 filas duplicadas.</p>
 <div id="0d44de5d" class="cell" data-execution_count="9">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Basándote en tus hallazgos,</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Verifica todos los pedidos que se hicieron el miércoles a las 2:00 a.m.</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>pedidos_miercoles_2am <span class="op">=</span> df_orders[(df_orders[<span class="st">'order_dow'</span>] <span class="op">==</span> <span class="dv">3</span>) <span class="op">&amp;</span> (df_orders[<span class="st">'order_hour_of_day'</span>] <span class="op">==</span> <span class="dv">2</span>)]</span>
@@ -727,7 +453,6 @@ Index: []</code></pre>
 <span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Aquí se muestran los pedidos únicos del miércoles a las 2:00 am. Que equivalen a 106 filas no duplicadas.</span></span>
 <span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
 <span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pedidos_miercoles_2am[<span class="st">'order_id'</span>].nunique())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 
@@ -1149,27 +874,19 @@ Index: []</code></pre>
 </div>
 <p>¿Qué sugiere este resultado? 1. En el segmento de Miércoles a las 2:00AM hay 121 filas. 2. Las filas duplicadas en todas las columnas son 15. 3. Con el comando .nunique() se muestra que quedan solamente 106 resultados realmente únicos dentro del mismo horario y fecha del miércoles a las 2:00 am.</p>
 <div id="480563c7" class="cell" data-execution_count="10">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Elimina los pedidos duplicados</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Eliminamos duplicados en todo el dataset original</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>df_orders <span class="op">=</span> df_orders.drop_duplicates().reset_index(drop<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 </div>
 <div id="0b2396a2" class="cell" data-execution_count="11">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Vuelve a verificar si hay filas duplicadas</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificamos si en el horario conflictivo ahora todo está bien</span></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_orders[(df_orders[<span class="st">'order_dow'</span>] <span class="op">==</span> <span class="dv">3</span>) <span class="op">&amp;</span> (df_orders[<span class="st">'order_hour_of_day'</span>] <span class="op">==</span> <span class="dv">2</span>)].shape[<span class="dv">0</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>106</code></pre>
 </div>
 </div>
 <div id="f6113ef1" class="cell" data-execution_count="12">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Vuelve a verificar únicamente si hay IDs duplicados de pedidos</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificación de IDs duplicados en la columna order_id</span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>duplicados_final <span class="op">=</span> df_orders[<span class="st">'order_id'</span>].duplicated().<span class="bu">sum</span>()</span>
@@ -1179,7 +896,6 @@ Index: []</code></pre>
 <span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificación específica para el grupo del miércoles a las 2:00 a.m.</span></span>
 <span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>check_horario <span class="op">=</span> df_orders[(df_orders[<span class="st">'order_dow'</span>] <span class="op">==</span> <span class="dv">3</span>) <span class="op">&amp;</span> (df_orders[<span class="st">'order_hour_of_day'</span>] <span class="op">==</span> <span class="dv">2</span>)]</span>
 <span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Filas restantes el miércoles a las 2 a.m.: </span><span class="sc">{</span><span class="bu">len</span>(check_horario)<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Número de IDs de pedido duplicados: 0
 Filas restantes el miércoles a las 2 a.m.: 106</code></pre>
@@ -1191,34 +907,25 @@ Filas restantes el miércoles a las 2 a.m.: 106</code></pre>
 <section id="products-data-frame" class="level3">
 <h3 class="anchored" data-anchor-id="products-data-frame"><code>products</code> data frame</h3>
 <div id="5f526b5b-8175-46fa-a0fd-441767d50e64" class="cell" data-execution_count="13">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verifica si hay filas totalmente duplicadas</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_products.duplicated().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>0</code></pre>
 </div>
 </div>
 <div id="88daa4f4" class="cell" data-execution_count="14">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa únicamente si hay ID de productos duplicados</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_products[<span class="st">'product_id'</span>].duplicated().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>0</code></pre>
 </div>
 </div>
 <div id="c773f0bf" class="cell" data-execution_count="15">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df_products[<span class="st">'product_name'</span>] <span class="op">=</span> df_products[<span class="st">'product_name'</span>].<span class="bu">str</span>.lower()</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_products[<span class="st">'product_name'</span>].duplicated().<span class="bu">sum</span>())</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_products[<span class="st">'product_name'</span>].head(<span class="dv">20</span>))</span>
 <span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
 <span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Se han cambiado todos los nombres a minúsculas, para evitar duplicados."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>1361
 0                            chocolate sandwich cookies
@@ -1247,14 +954,11 @@ Se han cambiado todos los nombres a minúsculas, para evitar duplicados.</code><
 </div>
 </div>
 <div id="01efd02e" class="cell" data-execution_count="16">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Se eliminan los duplicados físicamente del DataFrame</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>df_products <span class="op">=</span> df_products.drop_duplicates(subset<span class="op">=</span>[<span class="st">'product_name'</span>]).reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprobación que ahora hay 0 duplicados</span></span>
 <span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Duplicados restantes: </span><span class="sc">{</span>df_products[<span class="st">'product_name'</span>]<span class="sc">.</span>duplicated()<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Duplicados restantes: 0</code></pre>
 </div>
@@ -1265,21 +969,15 @@ Se han cambiado todos los nombres a minúsculas, para evitar duplicados.</code><
 <section id="departments-data-frame" class="level3">
 <h3 class="anchored" data-anchor-id="departments-data-frame"><code>departments</code> data frame</h3>
 <div id="fb410ad4-0fbf-4b80-bb09-23fdea79afe3" class="cell" data-execution_count="17">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa si hay filas totalmente duplicadas</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_departments.duplicated().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>0</code></pre>
 </div>
 </div>
 <div id="332b12bb" class="cell" data-execution_count="18">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa únicamente si hay IDs duplicadas de departamentos</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_departments[<span class="st">'department_id'</span>].duplicated().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>0</code></pre>
 </div>
@@ -1289,21 +987,15 @@ Se han cambiado todos los nombres a minúsculas, para evitar duplicados.</code><
 <section id="aisles-data-frame" class="level3">
 <h3 class="anchored" data-anchor-id="aisles-data-frame"><code>aisles</code> data frame</h3>
 <div id="9da89fb9-4679-40f5-ad0d-c34df753a3f8" class="cell" data-execution_count="19">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa si hay filas totalmente duplicadas</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_aisles.duplicated().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>0</code></pre>
 </div>
 </div>
 <div id="da7c2822" class="cell" data-execution_count="20">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa únicamente si hay IDs duplicadas de pasillos</span></span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_aisles[<span class="st">'aisle_id'</span>].duplicated().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>0</code></pre>
 </div>
@@ -1313,21 +1005,15 @@ Se han cambiado todos los nombres a minúsculas, para evitar duplicados.</code><
 <section id="order_products-data-frame" class="level3">
 <h3 class="anchored" data-anchor-id="order_products-data-frame"><code>order_products</code> data frame</h3>
 <div id="52326689-84a8-4b8f-a881-7c68780f62c9" class="cell" data-execution_count="21">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa si hay filas totalmente duplicadas</span></span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_order_products.duplicated().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>0</code></pre>
 </div>
 </div>
 <div id="7b861391" class="cell" data-execution_count="22">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Vuelve a verificar si hay cualquier otro duplicado engañoso</span></span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_order_products.duplicated(subset<span class="op">=</span>[<span class="st">'order_id'</span>, <span class="st">'product_id'</span>]).<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>0</code></pre>
 </div>
@@ -1346,46 +1032,34 @@ Se han cambiado todos los nombres a minúsculas, para evitar duplicados.</code><
 <section id="products-data-frame-1" class="level3">
 <h3 class="anchored" data-anchor-id="products-data-frame-1"><code>products</code> data frame</h3>
 <div id="fe4a8b0f" class="cell" data-execution_count="23">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Encuentra los valores ausentes en la columna 'product_name'</span></span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_products[<span class="st">'product_name'</span>].isna().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>1</code></pre>
 </div>
 </div>
 <p>Describe brevemente cuáles son tus hallazgos. La columna “product_name” tiene 1,258 valores ausentes.</p>
 <div id="e96167bc" class="cell" data-execution_count="24">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  ¿Todos los nombres de productos ausentes están relacionados con el pasillo con ID 100?</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>nulos_pasillo_100 <span class="op">=</span> df_products[df_products[<span class="st">'product_name'</span>].isna()]</span>
 <span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nulos_pasillo_100[<span class="st">'aisle_id'</span>].unique())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[100]</code></pre>
 </div>
 </div>
 <p>Describe brevemente cuáles son tus hallazgos. Si, todos los nombres de productos ausentes están relacionados con el pasillo con ID 100. Porque todos están ahí, en el pasillo [100] al ser el resiltado de imprimir los valores nulos.</p>
 <div id="8fd0a541" class="cell" data-execution_count="25">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ¿Todos los nombres de productos ausentes están relacionados con el departamento con ID 21?</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nulos_pasillo_100[<span class="st">'department_id'</span>].unique())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[21]</code></pre>
 </div>
 </div>
 <p>Describe brevemente cuáles son tus hallazgos. Si, todos los nombres de productos ausentes están relacionados con el departamento con ID 21. Porque todos están ahí, en el pasillo [21] al ser el resiltado de imprimir los valores nulos.</p>
 <div id="325c3464" class="cell" data-execution_count="26">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Usa las tablas department y aisle para revisar los datos del pasillo con ID 100 y el departamento con ID 21.</span></span>
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>display(df_aisles[df_aisles[<span class="st">'aisle_id'</span>] <span class="op">==</span> <span class="dv">100</span>])</span>
 <span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>display(df_departments[df_departments[<span class="st">'department_id'</span>] <span class="op">==</span> <span class="dv">21</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 
@@ -1435,12 +1109,9 @@ Se han cambiado todos los nombres a minúsculas, para evitar duplicados.</code><
 </div>
 <p>Describe brevemente cuáles son tus hallazgos. Los datos del pasillo con ID 100 y el departamento con ID 21, muestran el valore “missing” porque los productos ahí no tienen nombre.</p>
 <div id="6b295120" class="cell" data-execution_count="27">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Completa los nombres de productos ausentes con 'Unknown'</span></span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>df_products[<span class="st">'product_name'</span>] <span class="op">=</span> df_products[<span class="st">'product_name'</span>].fillna(<span class="st">'Unknown'</span>)</span>
 <span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_products[<span class="st">'product_name'</span>].isna().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>0</code></pre>
 </div>
@@ -1450,11 +1121,8 @@ Se han cambiado todos los nombres a minúsculas, para evitar duplicados.</code><
 <section id="orders-data-frame-1" class="level3">
 <h3 class="anchored" data-anchor-id="orders-data-frame-1"><code>orders</code> data frame</h3>
 <div id="93e41d96" class="cell" data-execution_count="28">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Encuentra los valores ausentes</span></span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_orders.isna().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>order_id                      0
 user_id                       0
@@ -1466,12 +1134,9 @@ dtype: int64</code></pre>
 </div>
 </div>
 <div id="166e5a86" class="cell" data-execution_count="29">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ¿Hay algún valor ausente que no sea el primer pedido del cliente?</span></span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>nulos_orders <span class="op">=</span> df_orders[df_orders[<span class="st">'days_since_prior_order'</span>].isna()]</span>
 <span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nulos_orders[nulos_orders[<span class="st">'order_number'</span>] <span class="op">!=</span> <span class="dv">1</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Empty DataFrame
 Columns: [order_id, user_id, order_number, order_dow, order_hour_of_day, days_since_prior_order]
@@ -1483,11 +1148,8 @@ Index: []</code></pre>
 <section id="order_products-data-frame-1" class="level3">
 <h3 class="anchored" data-anchor-id="order_products-data-frame-1"><code>order_products</code> data frame</h3>
 <div id="b8240253" class="cell" data-execution_count="30">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Encuentra los valores ausentes</span></span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_order_products.isna().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>order_id               0
 product_id             0
@@ -1497,12 +1159,9 @@ dtype: int64</code></pre>
 </div>
 </div>
 <div id="9a78e5ee" class="cell" data-execution_count="31">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ¿Cuáles son los valores mínimos y máximos en esta columna?</span></span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mínimo: </span><span class="sc">{</span>df_order_products[<span class="st">'add_to_cart_order'</span>]<span class="sc">.</span><span class="bu">min</span>()<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Máximo: </span><span class="sc">{</span>df_order_products[<span class="st">'add_to_cart_order'</span>]<span class="sc">.</span><span class="bu">max</span>()<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Mínimo: 1.0
 Máximo: 64.0</code></pre>
@@ -1510,21 +1169,15 @@ Máximo: 64.0</code></pre>
 </div>
 <p>Describe brevemente cuáles son tus hallazgos. Se identificaron 836 valores ausentes en la columna add_to_cart_order. Un dato clave es que el valor máximo registrado en ésta columna es 64. Se observa que los valores nulos aparecen únicamente en pedidos que tienen una gran cantidad de artículos. Existe una limitación técnica donde el sistema solo registra la posición del producto en el carrito hasta el artículo número 64. Cualquier producto añadido después, del 65 en adelante, aparece como valor ausente.</p>
 <div id="ab9d0c2b" class="cell" data-execution_count="32">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda todas las IDs de pedidos que tengan un valor ausente en 'add_to_cart_order'</span></span>
 <span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>orders_with_nans <span class="op">=</span> df_order_products[df_order_products[<span class="st">'add_to_cart_order'</span>].isna()][<span class="st">'order_id'</span>].unique()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 </div>
 <div id="54c31695" class="cell" data-execution_count="33">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ¿Todos los pedidos con valores ausentes tienen más de 64 productos?</span></span>
 <span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Agrupa todos los pedidos con datos ausentes por su ID de pedido.</span></span>
 <span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Cuenta el número de 'product_id' en cada pedido y revisa el valor mínimo del conteo.</span></span>
 <span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>check_64 <span class="op">=</span> df_order_products[df_order_products[<span class="st">'order_id'</span>].isin(orders_with_nans)].groupby(<span class="st">'order_id'</span>)[<span class="st">'product_id'</span>].count()</span>
 <span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mínimo de productos en pedidos con nulos: </span><span class="sc">{</span>check_64<span class="sc">.</span><span class="bu">min</span>()<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Mínimo de productos en pedidos con nulos: 65</code></pre>
 </div>
@@ -1532,8 +1185,6 @@ Máximo: 64.0</code></pre>
 <p>Describe brevemente cuáles son tus hallazgos.</p>
 <p>Todos los pedidos que presentan valores ausentes en la columna add_to_cart_order tienen un conteo total de al menos 65 artículos. Existe un límite técnico en el registro del sistema, donde solo se guardaba la secuencia de los primeros 64 productos añadidos al carrito. Por lo tanto, cualquier producto añadido a partir de la posición 65, el valor no se registra, resultando en un dato ausente (NaN).</p>
 <div id="7a987d08" class="cell" data-execution_count="34">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remplaza los valores ausentes en la columna 'add_to_cart? con 999 y convierte la columna al tipo entero.</span></span>
 <span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Llenamos nulos con 999 y convertimos el tipo de dato</span></span>
@@ -1542,7 +1193,6 @@ Máximo: 64.0</code></pre>
 <span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificamos el cambio</span></span>
 <span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_order_products[<span class="st">'add_to_cart_order'</span>].isna().<span class="bu">sum</span>())</span>
 <span id="cb62-8"><a href="#cb62-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_order_products[<span class="st">'add_to_cart_order'</span>].dtype)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>0
 int64</code></pre>
@@ -1576,22 +1226,17 @@ int64</code></pre>
 <section id="a1-verifica-que-los-valores-sean-sensibles" class="level3">
 <h3 class="anchored" data-anchor-id="a1-verifica-que-los-valores-sean-sensibles">[A1] Verifica que los valores sean sensibles</h3>
 <div id="growing-fruit" class="cell" data-execution_count="35">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificación de valores para la hora del día (0-23)</span></span>
 <span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Rango de horas:"</span>, df_orders[<span class="st">'order_hour_of_day'</span>].<span class="bu">min</span>(), <span class="st">"-"</span>, df_orders[<span class="st">'order_hour_of_day'</span>].<span class="bu">max</span>())</span>
 <span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificación de valores para el día de la semana (0-6)</span></span>
 <span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Rango de días:"</span>, df_orders[<span class="st">'order_dow'</span>].<span class="bu">min</span>(), <span class="st">"-"</span>, df_orders[<span class="st">'order_dow'</span>].<span class="bu">max</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rango de horas: 0 - 23
 Rango de días: 0 - 6</code></pre>
 </div>
 </div>
 <div id="accessory-malaysia" class="cell" data-execution_count="36">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>usuarios_por_hora <span class="op">=</span> df_orders.groupby(<span class="st">'order_hour_of_day'</span>)[<span class="st">'user_id'</span>].nunique()</span>
@@ -1608,7 +1253,6 @@ Rango de días: 0 - 6</code></pre>
 <span id="cb66-14"><a href="#cb66-14" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">'y'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
 <span id="cb66-15"><a href="#cb66-15" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">'x'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
 <span id="cb66-16"><a href="#cb66-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1618,8 +1262,6 @@ Rango de días: 0 - 6</code></pre>
 </div>
 </div>
 <div id="aeaca65c-0434-406c-8233-9ced658fa43c" class="cell" data-execution_count="37">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>usuarios_por_dia <span class="op">=</span> df_orders.groupby(<span class="st">'order_dow'</span>)[<span class="st">'user_id'</span>].nunique()</span>
 <span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Graficamos</span></span>
@@ -1634,7 +1276,6 @@ Rango de días: 0 - 6</code></pre>
 <span id="cb67-12"><a href="#cb67-12" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">'x'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
 <span id="cb67-13"><a href="#cb67-13" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">40000</span>, <span class="dv">60000</span>)</span>
 <span id="cb67-14"><a href="#cb67-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1644,8 +1285,6 @@ Rango de días: 0 - 6</code></pre>
 </div>
 </div>
 <div id="673ba91d-c8a2-445d-94e2-511db6d7ae50" class="cell" data-execution_count="38">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>df_orders[<span class="st">'days_since_prior_order'</span>].value_counts().sort_index().plot(</span>
 <span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>    kind<span class="op">=</span><span class="st">'bar'</span>, </span>
 <span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">'Días de espera hasta el próximo pedido'</span>,</span>
@@ -1655,7 +1294,6 @@ Rango de días: 0 - 6</code></pre>
 <span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">'purple'</span></span>
 <span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb68-9"><a href="#cb68-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1678,8 +1316,6 @@ Rango de días: 0 - 6</code></pre>
 <section id="a2-para-cada-hora-del-día-cuántas-personas-hacen-órdenes" class="level3">
 <h3 class="anchored" data-anchor-id="a2-para-cada-hora-del-día-cuántas-personas-hacen-órdenes">[A2] Para cada hora del día, ¿cuántas personas hacen órdenes?</h3>
 <div id="a36cca27" class="cell" data-execution_count="39">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>usuarios_por_hora <span class="op">=</span> df_orders.groupby(<span class="st">'order_hour_of_day'</span>)[<span class="st">'user_id'</span>].nunique()</span>
 <span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Graficamos según lo solicitado</span></span>
@@ -1693,7 +1329,6 @@ Rango de días: 0 - 6</code></pre>
 <span id="cb69-11"><a href="#cb69-11" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">'y'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
 <span id="cb69-12"><a href="#cb69-12" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">'x'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
 <span id="cb69-13"><a href="#cb69-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1707,8 +1342,6 @@ Rango de días: 0 - 6</code></pre>
 <section id="a3-qué-día-de-la-semana-compran-víveres-las-personas" class="level3">
 <h3 class="anchored" data-anchor-id="a3-qué-día-de-la-semana-compran-víveres-las-personas">[A3] ¿Qué día de la semana compran víveres las personas?</h3>
 <div id="chief-digit" class="cell" data-execution_count="40">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Agrupar por usuarios únicos</span></span>
@@ -1730,7 +1363,6 @@ Rango de días: 0 - 6</code></pre>
 <span id="cb70-19"><a href="#cb70-19" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Cantidad de personas'</span>)</span>
 <span id="cb70-20"><a href="#cb70-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb70-21"><a href="#cb70-21" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1744,8 +1376,6 @@ Rango de días: 0 - 6</code></pre>
 <section id="a4-cuánto-tiempo-esperan-las-personas-hasta-hacer-otro-pedido-comenta-sobre-los-valores-mínimos-y-máximos." class="level3">
 <h3 class="anchored" data-anchor-id="a4-cuánto-tiempo-esperan-las-personas-hasta-hacer-otro-pedido-comenta-sobre-los-valores-mínimos-y-máximos.">[A4] ¿Cuánto tiempo esperan las personas hasta hacer otro pedido? Comenta sobre los valores mínimos y máximos.</h3>
 <div id="c231f523" class="cell" data-execution_count="41">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>t<span class="op">=</span> df_orders[<span class="st">'days_since_prior_order'</span>].value_counts().sort_index().plot(</span>
 <span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>    kind<span class="op">=</span><span class="st">'bar'</span>, </span>
 <span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">'Días de espera hasta el próximo pedido'</span>,</span>
@@ -1756,7 +1386,6 @@ Rango de días: 0 - 6</code></pre>
 <span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1779,8 +1408,6 @@ Rango de días: 0 - 6</code></pre>
 <section id="b1-diferencia-entre-miércoles-y-sábados-para-order_hour_of_day.-traza-gráficos-de-barra-para-los-dos-días-y-describe-las-diferencias-que-veas." class="level3">
 <h3 class="anchored" data-anchor-id="b1-diferencia-entre-miércoles-y-sábados-para-order_hour_of_day.-traza-gráficos-de-barra-para-los-dos-días-y-describe-las-diferencias-que-veas.">[B1] Diferencia entre miércoles y sábados para <code>'order_hour_of_day'</code>. Traza gráficos de barra para los dos días y describe las diferencias que veas.</h3>
 <div id="d89b8403" class="cell" data-execution_count="42">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Filtramos y preparamos los datos (esto ya lo tienes bien)</span></span>
@@ -1803,7 +1430,6 @@ Rango de días: 0 - 6</code></pre>
 <span id="cb72-20"><a href="#cb72-20" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">'y'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
 <span id="cb72-21"><a href="#cb72-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb72-22"><a href="#cb72-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1817,8 +1443,6 @@ Rango de días: 0 - 6</code></pre>
 <section id="b2-cuál-es-la-distribución-para-el-número-de-pedidos-por-cliente" class="level3">
 <h3 class="anchored" data-anchor-id="b2-cuál-es-la-distribución-para-el-número-de-pedidos-por-cliente">[B2] ¿Cuál es la distribución para el número de pedidos por cliente?</h3>
 <div id="d8c26c23" class="cell" data-execution_count="43">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Se obtiene la serie de datos </span></span>
@@ -1840,7 +1464,6 @@ Rango de días: 0 - 6</code></pre>
 <span id="cb73-19"><a href="#cb73-19" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
 <span id="cb73-20"><a href="#cb73-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb73-21"><a href="#cb73-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"El máximo de pedidos que un solo cliente ha realizado es: </span><span class="sc">{</span>df_orders<span class="sc">.</span>groupby(<span class="st">'user_id'</span>)[<span class="st">'order_number'</span>]<span class="sc">.</span><span class="bu">max</span>()<span class="sc">.</span><span class="bu">max</span>()<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1857,8 +1480,6 @@ Rango de días: 0 - 6</code></pre>
 <section id="b3-cuáles-son-los-20-productos-más-populares-muestra-su-id-y-nombre" class="level3">
 <h3 class="anchored" data-anchor-id="b3-cuáles-son-los-20-productos-más-populares-muestra-su-id-y-nombre">[B3] ¿Cuáles son los 20 productos más populares (muestra su ID y nombre)?</h3>
 <div id="exterior-arizona" class="cell" data-scrolled="true" data-execution_count="44">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Se unen las tablas por la columna 'product_id'</span></span>
 <span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Se combinan ambos DataFrames por el ID y el Nombre</span></span>
 <span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a>df_productos_nombres <span class="op">=</span> df_order_products.merge(df_products[[<span class="st">'product_id'</span>, <span class="st">'product_name'</span>]], on<span class="op">=</span><span class="st">'product_id'</span>)</span>
@@ -1872,7 +1493,6 @@ Rango de días: 0 - 6</code></pre>
 <span id="cb75-11"><a href="#cb75-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb75-12"><a href="#cb75-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostramos el resultado</span></span>
 <span id="cb75-13"><a href="#cb75-13" aria-hidden="true" tabindex="-1"></a>display(top_20_productos)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 
@@ -2029,8 +1649,6 @@ Rango de días: 0 - 6</code></pre>
 <section id="c1-cuántos-artículos-compran-normalmente-las-personas-en-un-pedido-cómo-es-la-distribución" class="level3">
 <h3 class="anchored" data-anchor-id="c1-cuántos-artículos-compran-normalmente-las-personas-en-un-pedido-cómo-es-la-distribución">[C1] ¿Cuántos artículos compran normalmente las personas en un pedido? ¿Cómo es la distribución?</h3>
 <div id="virtual-punch" class="cell" data-execution_count="45">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Conteo de productos por cada orden</span></span>
 <span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>articulos_por_pedido <span class="op">=</span> df_order_products.groupby(<span class="st">'order_id'</span>)[<span class="st">'product_id'</span>].count()</span>
 <span id="cb76-3"><a href="#cb76-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -2050,7 +1668,6 @@ Rango de días: 0 - 6</code></pre>
 <span id="cb76-17"><a href="#cb76-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"La mínima cantidad de artículos por pedido es: </span><span class="sc">{</span>articulos_por_pedido<span class="sc">.</span><span class="bu">min</span>()<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb76-18"><a href="#cb76-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"La mediana cantidad de artículos por pedido es: </span><span class="sc">{</span>articulos_por_pedido<span class="sc">.</span>median()<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb76-19"><a href="#cb76-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"La máxima cantidad de artículos por pedido es: </span><span class="sc">{</span>articulos_por_pedido<span class="sc">.</span><span class="bu">max</span>()<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2069,8 +1686,6 @@ La máxima cantidad de artículos por pedido es: 127</code></pre>
 <section id="c2-cuáles-son-los-20-principales-artículos-que-vuelven-a-pedirse-con-mayor-frecuencia-muestra-sus-nombres-e-ids-de-los-productos" class="level3">
 <h3 class="anchored" data-anchor-id="c2-cuáles-son-los-20-principales-artículos-que-vuelven-a-pedirse-con-mayor-frecuencia-muestra-sus-nombres-e-ids-de-los-productos">[C2] ¿Cuáles son los 20 principales artículos que vuelven a pedirse con mayor frecuencia (muestra sus nombres e IDs de los productos)?</h3>
 <div id="9374e55a" class="cell" data-execution_count="46">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Se filtran re-pedidos y se unen con nombres de productos</span></span>
 <span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>df_reorders <span class="op">=</span> df_order_products[df_order_products[<span class="st">'reordered'</span>] <span class="op">==</span> <span class="dv">1</span>]</span>
 <span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>df_reorders_nombres <span class="op">=</span> df_reorders.merge(df_products[[<span class="st">'product_id'</span>, <span class="st">'product_name'</span>]], on<span class="op">=</span><span class="st">'product_id'</span>)</span>
@@ -2080,7 +1695,6 @@ La máxima cantidad de artículos por pedido es: 127</code></pre>
 <span id="cb78-7"><a href="#cb78-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb78-8"><a href="#cb78-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Top 20 productos con mayor frecuencia de re-pedido (ID y Nombre):"</span>)</span>
 <span id="cb78-9"><a href="#cb78-9" aria-hidden="true" tabindex="-1"></a>display(top_20_completo)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Top 20 productos con mayor frecuencia de re-pedido (ID y Nombre):</code></pre>
 </div>
@@ -2115,8 +1729,6 @@ dtype: int64</code></pre>
 <section id="c3-para-cada-producto-cuál-es-la-proporción-de-las-veces-que-se-pide-y-que-se-vuelve-a-pedir" class="level3">
 <h3 class="anchored" data-anchor-id="c3-para-cada-producto-cuál-es-la-proporción-de-las-veces-que-se-pide-y-que-se-vuelve-a-pedir">[C3] Para cada producto, ¿cuál es la proporción de las veces que se pide y que se vuelve a pedir?</h3>
 <div id="8ae9f4b1" class="cell" data-execution_count="47">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb81"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Como 'reordered' es 1 (sí) o 0 (no), la media da directamente la proporción</span></span>
 <span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a>tasa_repeticion <span class="op">=</span> df_order_products.groupby(<span class="st">'product_id'</span>)[<span class="st">'reordered'</span>].mean().reset_index()</span>
 <span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -2136,7 +1748,6 @@ dtype: int64</code></pre>
 <span id="cb81-17"><a href="#cb81-17" aria-hidden="true" tabindex="-1"></a>top<span class="op">=</span>tasa_final[tasa_final[<span class="st">'total_pedidos'</span>] <span class="op">&gt;</span> <span class="dv">50</span>].sort_values(by<span class="op">=</span><span class="st">'reorder_rate'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb81-18"><a href="#cb81-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(top)</span>
 <span id="cb81-19"><a href="#cb81-19" aria-hidden="true" tabindex="-1"></a>display(top_repeticion[[<span class="st">'product_id'</span>,<span class="st">'product_name'</span>, <span class="st">'reorder_rate'</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>       product_id  reorder_rate                             product_name  \
 43029       48041      0.907692  danactive vanilla probiotic dairy drink   
@@ -2311,8 +1922,6 @@ dtype: int64</code></pre>
 <section id="c4-para-cada-cliente-qué-proporción-de-sus-productos-ya-los-había-pedido" class="level3">
 <h3 class="anchored" data-anchor-id="c4-para-cada-cliente-qué-proporción-de-sus-productos-ya-los-había-pedido">[C4] Para cada cliente, ¿qué proporción de sus productos ya los había pedido?</h3>
 <div id="medical-couple" class="cell" data-scrolled="true" data-execution_count="53">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb83"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Se une df_orders con df_order_products para tener el 'user_id' junto al campo 'reordered'</span></span>
 <span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>df_merged_user_reorder <span class="op">=</span> df_order_products.merge(df_orders[[<span class="st">'order_id'</span>, <span class="st">'user_id'</span>]], on<span class="op">=</span><span class="st">'order_id'</span>)</span>
 <span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -2342,7 +1951,6 @@ dtype: int64</code></pre>
 <span id="cb83-27"><a href="#cb83-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Resumen numérico de la proporción de reorden o reincidencia por usuario y cuantiles clave:"</span>)</span>
 <span id="cb83-28"><a href="#cb83-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(resumen_stats)</span>
 <span id="cb83-29"><a href="#cb83-29" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2443,8 +2051,6 @@ Name: user_reorder_ratio, dtype: float64</code></pre>
 <section id="c5-cuáles-son-los-20-principales-artículos-que-las-personas-ponen-primero-en-sus-carritos" class="level3">
 <h3 class="anchored" data-anchor-id="c5-cuáles-son-los-20-principales-artículos-que-las-personas-ponen-primero-en-sus-carritos">[C5] ¿Cuáles son los 20 principales artículos que las personas ponen primero en sus carritos?</h3>
 <div id="0ae57274" class="cell" data-scrolled="true" data-execution_count="54">
-<details class="code-fold">
-<summary>🔍 Ver código Python</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtro de los primeros productos en añadirse</span></span>
 <span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>first_choice <span class="op">=</span> df_order_products[df_order_products[<span class="st">'add_to_cart_order'</span>] <span class="op">==</span> <span class="dv">1</span>]</span>
 <span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>top_20_first <span class="op">=</span> first_choice.merge(df_products, on<span class="op">=</span><span class="st">'product_id'</span>)</span>
@@ -2459,7 +2065,6 @@ Name: user_reorder_ratio, dtype: float64</code></pre>
 <span id="cb85-12"><a href="#cb85-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb85-13"><a href="#cb85-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Tabla limpia</span></span>
 <span id="cb85-14"><a href="#cb85-14" aria-hidden="true" tabindex="-1"></a>display(resultado_c5)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div>
 
@@ -2613,54 +2218,6 @@ Name: user_reorder_ratio, dtype: float64</code></pre>
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const toggle = window.document.createElement('button');
-      toggle.type = "button";
-      toggle.setAttribute("role", "switch");
-      toggle.setAttribute("aria-checked", "false");
-      toggle.classList.add('top-right');
-      toggle.classList.add('quarto-color-scheme-toggle');
-      toggle.setAttribute("aria-label", "Toggle dark mode");
-      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      toggle.appendChild(i);
-      // Put the toggle in a landmark of its own, so that landmark navigation
-      // can reach it.
-      //
-      // The container is always a fresh direct child of body, and the toggle is
-      // never moved into page furniture that the theme or the author controls.
-      // The toggle is positioned against the page, so any ancestor that
-      // establishes a containing block captures it: a positioned element or a
-      // grid for position: absolute, and transform, filter, will-change or
-      // contain for position: fixed. A direct child of body has none of these
-      // to inherit, and the shift when one appears is silent and visual.
-      //
-      // ARIA says a document should have at most one banner, and axe reports a
-      // duplicate whether or not the banners carry distinct labels. So use a
-      // header when the page has no banner yet, and a named region otherwise.
-      //
-      // A header is a banner wherever it sits, unless it is inside sectioning
-      // content, so this cannot just look at the children of body: a custom
-      // page layout wraps the title block header in a plain div. An explicit
-      // role="banner" always counts.
-      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
-      const hasBanner = Array.from(
-        window.document.querySelectorAll('header:not([role]), [role="banner"]')
-      ).some(function(el) {
-        return el.hasAttribute("role") || el.closest(sectioning) === null;
-      });
-      const container = window.document.createElement(hasBanner ? "div" : "header");
-      if (hasBanner) {
-        container.setAttribute("role", "region");
-        container.setAttribute("aria-label", "Toggle dark mode");
-      }
-      container.classList.add('quarto-color-scheme-toggle-container');
-      container.appendChild(toggle);
-      window.document.body.appendChild(container);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -2730,78 +2287,9 @@ Name: user_reorder_ratio, dtype: float64</code></pre>
       });
       clipboardModal.on('success', onCopySuccess);
     }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
-        for (let i=0; i<cellDetails.length; i++) {
-          const details = cellDetails[i];
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
-    }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/andagui-ds\.github\.io\/portfolio\/");
-      const newWindowLabel = "(opens in a new tab)";
-      const newWindowNoteId = "quarto-ext-newwindow-label";
-      // Links reference one hidden label through aria-describedby, so the
-      // announcement never changes their accessible name.
-      var describeNewWindow = (link) => {
-        if (!window.document.getElementById(newWindowNoteId)) {
-          var newWindowNote = window.document.createElement("span");
-          newWindowNote.id = newWindowNoteId;
-          newWindowNote.hidden = true;
-          newWindowNote.textContent = newWindowLabel;
-          window.document.body.appendChild(newWindowNote);
-        }
-        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
-        if (!describedBy.includes(newWindowNoteId)) {
-          describedBy.push(newWindowNoteId);
-          link.setAttribute("aria-describedby", describedBy.join(" "));
-        }
-      }
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -2816,15 +2304,7 @@ Name: user_reorder_ratio, dtype: float64</code></pre>
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
-            describeNewWindow(link);
           if (!link.classList.contains('no-external-icon')) {
-            // default icon
-            link.classList.add("external");
           }
         }
       }
@@ -3213,38 +2693,6 @@ Name: user_reorder_ratio, dtype: float64</code></pre>
   window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>© 2026 <strong>Andrés Aguirre</strong> · Data Scientist</p>
-</div>   
-    <div class="nav-footer-center">
-<p>Hecho con <a href="https://quarto.org">Quarto</a> + ❤️</p>
-</div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/andagui-ds/">
-      <i class="bi bi-linkedin" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/andagui-ds">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="mailto:andagui.ds@gmail.com">
-      <i class="bi bi-envelope" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
-  </div>
-</footer>
 
 
 

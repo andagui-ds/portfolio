@@ -1,32 +1,24 @@
 ---
-title: "Andrés Aguirre"
-subtitle: "Data Scientist · Machine Learning · 9 años de experiencia"
-format:
-  html:
-    page-layout: full
+title: "Andrés Aguirre Gómez | Data Scientist & Analytics"
+subtitle: "Transformando datos complejos en soluciones predictivas y modelos de Machine Learning"
+page-layout: full
+title-block-banner: true
+listing:
+  contents: 
+    - "beta-bank-churn-prediction/README.md"
+    - "oilygiant-oil-well-investment/README.MD"
+    - "videogames-regional-sales-analysis/README.md"
+    - "zyfra-gold-recovery/README.md"
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
 ---
 
-::: {.hero}
-# Hola, soy Andrés 👋
+## Sobre mí
+¡Hola! Soy **Andrés Aguirre Gómez**. Cuento con 9 años de experiencia en arquitectura y diseño, enfocado ahora en la resolución de problemas mediante **Data Science**, **Machine Learning** y **Analytics**.
 
-Soy **Data Scientist** con 9 años de experiencia en arquitectura. Aplico pensamiento estructural y rigor analítico para resolver problemas de negocio con Machine Learning.
-
-[Ver mis proyectos](proyectos.qmd){.btn .btn-primary}
-[Conóceme más](about.qmd){.btn .btn-outline-secondary}
-:::
+---
 
 ## Proyectos Destacados
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6}
-### 🏗️ [OilyGiant: ¿Dónde perforar $100M?](https://github.com/andagui-ds/oilygiant-oil-well-investment)
-Decisión de inversión con *bootstrapping*. **Riesgo: 0.6%. Beneficio: $5.12M.**
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### 🏦 [Beta Bank: Predicción de Churn](https://github.com/andagui-ds/beta-bank-churn-prediction)
-Clasificación con desbalance de clases. **F1-score: 0.63. AUC-ROC: 0.87.**
-:::
-
-:::

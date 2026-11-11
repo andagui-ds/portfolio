@@ -1,71 +1,16 @@
 project:
   type: website
   output-dir: _site
-  render:
-    - "index.qmd"
-    - "proyectos.qmd"
-    - "about.qmd"
-    - "proyectos/*.ipynb"  # Esto mantiene tus notebooks accesibles si alguien tiene el link, pero fuera del menú
-
-execute:
-  ze: true
 
 website:
-  title: "Andrés Aguirre"
-  description: "Portafolio de Ciencia de Datos — Análisis, Machine Learning y Visualización."
-  site-url: "https://andagui-ds.github.io/portfolio/"
-
+  title: "Andrés Aguirre - Portafolio"
   navbar:
-    background: primary
-    foreground: light
-    pinned: true
-    search: true
-    left:
-      - href: index.qmd
-        text: Inicio
-        icon: house
-      - href: proyectos.qmd
-        text: Proyectos
-        icon: folder
-      - href: about.qmd
-        text: Sobre mí
-        icon: person
     right:
-      - icon: linkedin
-        href: https://www.linkedin.com/in/andagui-ds/
-        text: LinkedIn
+      - text: "Inicio"
+        href: index.qmd
+      - text: "Sobre mí"
+        href: about.qmd
       - icon: github
         href: https://github.com/andagui-ds
-        text: GitHub
-      - icon: envelope
-        href: mailto:andagui.ds@gmail.com
-        text: Contacto
-
-  page-footer:
-    left: |
-      © 2026 **Andrés Aguirre** · Data Scientist
-    center: |
-      Hecho con [Quarto](https://quarto.org) + ❤️
-    right:
       - icon: linkedin
         href: https://www.linkedin.com/in/andagui-ds/
-      - icon: github
-        href: https://github.com/andagui-ds
-      - icon: envelope
-        href: mailto:andagui.ds@gmail.com
-
-format:
-  html:
-    theme:
-      light: [flatly, custom.scss]
-      dark: [darkly, custom.scss]
-    toc: true
-    toc-title: "En esta página"
-    toc-location: right
-    code-fold: true
-    code-summary: "🔍 Ver código Python"
-    code-tools: true
-    code-copy: true
-    code-overflow: wrap
-    link-external-newwindow: true
-    link-external-icon: true
