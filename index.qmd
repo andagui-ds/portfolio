@@ -1,24 +1,44 @@
 ---
-title: "Andrés Aguirre Gómez | Data Scientist & Analytics"
-subtitle: "Transformando datos complejos en soluciones predictivas y modelos de Machine Learning"
-page-layout: full
-title-block-banner: true
-listing:
-  contents: 
-    - "beta-bank-churn-prediction/README.md"
-    - "oilygiant-oil-well-investment/README.MD"
-    - "videogames-regional-sales-analysis/README.md"
-    - "zyfra-gold-recovery/README.md"
-  type: grid
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  fields: [title, subtitle, description, categories, image]
+title: "Andrés Aguirre Gómez"
+subtitle: "Data Scientist & Arquitecto"
+format:
+  html:
+    page-layout: article
+    toc: false
 ---
 
-## Sobre mí
-¡Hola! Soy **Andrés Aguirre Gómez**. Cuento con 9 años de experiencia en arquitectura y diseño, enfocado ahora en la resolución de problemas mediante **Data Science**, **Machine Learning** y **Analytics**.
+::: {.profile-block style="background-color: #f8f9fa; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;"}
+### 👋 ¡Hola! Soy Andrés
+
+Arquitecto y Data Scientist especializado en análisis de datos, Machine Learning y automatización de procesos. 
+
+Mi trabajo consiste en transformar volúmenes de información cruda en decisiones estratégicas. Utilizo herramientas como Python y SQL para limpiar y analizar datos, y construyo modelos predictivos que permiten anticipar escenarios, optimizar recursos y automatizar procesos complejos.
+
+**Perfil:** Arquitecto con 9 años de experiencia en coordinación y diseño de proyectos, actualmente enfocado en la Ciencia de Datos. Experiencia en EDA, pruebas de hipótesis, modelado predictivo (clasificación y regresión) y despliegue de aplicaciones interactivas con Python, SQL y Streamlit.
+:::
 
 ---
 
-## Proyectos Destacados
+## 🏗️ Proyecto 1: OilyGiant (Inversión de $100M)
+
+{{< embed proyectos/Sprint_12_aprenauto.ipynb >}}
+
+---
+
+## 🏦 Proyecto 2: Beta Bank (Churn)
+
+{{< embed proyectos/Sprint_11_aprensuper.ipynb >}}
+
+---
+
+## ⛏️ Proyecto 3: Zyfra (Recuperación de Oro)
+
+{{< embed proyectos/Sprint_13_proyecto_modulo_2.ipynb >}}
+
+---
+
+## 🎮 Proyecto 4: Games (Estrategia Regional)
+
+{{< embed proyectos/Sprint_6_proyecto_modulo_1.ipynb >}}
+
+---

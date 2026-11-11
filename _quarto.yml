@@ -1,24 +1,25 @@
-project:
-  type: website
-  output-dir: _site
-  render:
-    - "*.qmd"
-    - "*/*.md"
-    - "!proyectos/**"
-
-execute:
-  eval: false
-  freeze: false
-
 website:
-  title: "Andrés Aguirre - Portafolio"
+  title: "Andrés Aguirre"
   navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+        icon: house
+      - href: about.qmd
+        text: Sobre mí
+        icon: person
     right:
-      - text: "Inicio"
-        href: index.qmd
-      - text: "Sobre mí"
-        href: about.qmd
-      - icon: github
-        href: https://github.com/andagui-ds
       - icon: linkedin
         href: https://www.linkedin.com/in/andagui-ds/
+      - icon: github
+        href: https://github.com/andagui-ds
+      - icon: envelope
+        href: mailto:andagui.ds@gmail.com
+format:
+  html:
+    theme:
+      light: [flatly, custom.scss]
+      dark: [darkly, custom.scss]
+    code-fold: true
+    code-summary: "🔍 Ver código Python"
+    toc: true
