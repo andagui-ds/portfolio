@@ -1,3 +1,7 @@
+project:
+  type: website
+  output-dir: _site
+
 website:
   title: "Andrés Aguirre"
   navbar:
@@ -15,6 +19,7 @@ website:
         href: https://github.com/andagui-ds
       - icon: envelope
         href: mailto:andagui.ds@gmail.com
+
 format:
   html:
     theme:
