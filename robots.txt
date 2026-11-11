@@ -1,1 +1,1 @@
-Sitemap: https://andagui-ds.github.io/sitemap.xml
+Sitemap: https://andagui-ds.github.io/portfolio/sitemap.xml
