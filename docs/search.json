@@ -46,6 +46,6 @@
     "href": "proyectos.html",
     "title": "Proyectos",
     "section": "",
-    "text": "Proyecto\nTipo\nTécnicas clave\nResultado destacado\nEnlaces\n\n\n\n\n🚗 Rusty Bargain\nRegresión\nLightGBM, CatBoost, XGBoost\nRMSE 1,630 € · 1.96 s entrenamiento\nDemo · Repo\n\n\n🔐 Sure Tomorrow\nML + Privacidad\nKNN, ofuscación matricial\nModelo inalterado tras ofuscación\nDemo · Repo\n\n\n⛏️ Zyfra\nRegresión\nRandom Forest, sMAPE\nsMAPE 7.72 % en test\nDemo · Repo\n\n\n⛽ OilyGiant\nRegresión + Riesgo\nBootstrapping, IC 95 %\nRiesgo de pérdida 0.6 %\nDemo · Repo\n\n\n🏦 Beta Bank\nClasificación\nUpsampling, F1, AUC‑ROC\nF1 0.63 · AUC 0.87\nDemo · Repo\n\n\n🎮 Videojuegos\nEDA + Hipótesis\nPruebas t, análisis regional\nHallazgos por región\nDemo · Repo\n\n\n\n\n\n\n Back to top"
+    "text": "Proyecto\nTipo\nTécnicas clave\nResultado destacado\nEnlaces\n\n\n\n\n🚗 Rusty Bargain\nRegresión\nLightGBM, CatBoost, XGBoost\nRMSE 1,630 € · 1.96 s entrenamiento\nDemo · Repo\n\n\n🔐 Sure Tomorrow\nML + Privacidad\nKNN, ofuscación matricial\nModelo inalterado tras ofuscación\nDemo · Repo\n\n\n⛏️ Zyfra\nRegresión\nRandom Forest, sMAPE\nsMAPE 7.72 % en test\nDemo · Repo\n\n\n⛽ OilyGiant\nRegresión + Riesgo\nBootstrapping, IC 95 %\nRiesgo de pérdida 1.0 %\nDemo · Repo\n\n\n🏦 Beta Bank\nClasificación\nUpsampling, F1, AUC‑ROC\nF1 0.63 · AUC 0.87\nDemo · Repo\n\n\n🎮 Videojuegos\nEDA + Hipótesis\nPruebas t, análisis regional\nHallazgos por región\nDemo · Repo\n\n\n\n\n\n\n Back to top"
   }
 ]

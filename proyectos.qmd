@@ -9,9 +9,9 @@ format:
 
 | Proyecto | Tipo | Técnicas clave | Resultado destacado | Enlaces |
 | :--- | :--- | :--- | :--- | :--- |
-| 🚗 **Rusty Bargain** | Regresión | LightGBM, CatBoost, XGBoost | RMSE 1,630 € · 1.96 s entrenamiento | [Demo](...) · [Repo](...) |
-| 🔐 **Sure Tomorrow** | ML + Privacidad | KNN, ofuscación matricial | Modelo inalterado tras ofuscación | [Demo](...) · [Repo](...) |
-| ⛏️ **Zyfra** | Regresión | Random Forest, sMAPE | sMAPE 7.72 % en test | [Demo](...) · [Repo](...) |
-| ⛽ **OilyGiant** | Regresión + Riesgo | Bootstrapping, IC 95 % | Riesgo de pérdida 0.6 % | [Demo](...) · [Repo](...) |
-| 🏦 **Beta Bank** | Clasificación | Upsampling, F1, AUC‑ROC | F1 0.63 · AUC 0.87 | [Demo](...) · [Repo](...) |
-| 🎮 **Videojuegos** | EDA + Hipótesis | Pruebas t, análisis regional | Hallazgos por región | [Demo](...) · [Repo](...) |
+| 🚗 **Rusty Bargain** | Regresión | LightGBM, CatBoost, XGBoost | RMSE 1,630 € · 1.96 s entrenamiento | [Demo](https://andagui-ds.github.io/rusty-bargain-car-price/){target="_blank"} · [Repo](https://github.com/andagui-ds/rusty-bargain-car-price){target="_blank"} |
+| 🔐 **Sure Tomorrow** | ML + Privacidad | KNN, ofuscación matricial | Modelo inalterado tras ofuscación | [Demo](https://andagui-ds.github.io/sure-tomorrow-insurance/){target="_blank"} · [Repo](https://github.com/andagui-ds/sure-tomorrow-insurance){target="_blank"} |
+| ⛏️ **Zyfra** | Regresión | Random Forest, sMAPE | sMAPE 7.72 % en test | [Demo](https://andagui-ds.github.io/zyfra-gold-recovery/){target="_blank"} · [Repo](https://github.com/andagui-ds/zyfra-gold-recovery){target="_blank"} |
+| ⛽ **OilyGiant** | Regresión + Riesgo | Bootstrapping, IC 95 % | Riesgo de pérdida 1.0 % | [Demo](https://andagui-ds.github.io/oilygiant-oil-well-investment/){target="_blank"} · [Repo](https://github.com/andagui-ds/oilygiant-oil-well-investment){target="_blank"} |
+| 🏦 **Beta Bank** | Clasificación | Upsampling, F1, AUC‑ROC | F1 0.63 · AUC 0.87 | [Demo](https://andagui-ds.github.io/beta-bank-churn-prediction/){target="_blank"} · [Repo](https://github.com/andagui-ds/beta-bank-churn-prediction){target="_blank"} |
+| 🎮 **Videojuegos** | EDA + Hipótesis | Pruebas t, análisis regional | Hallazgos por región | [Demo](https://andagui-ds.github.io/videogames-regional-sales-analysis/){target="_blank"} · [Repo](https://github.com/andagui-ds/videogames-regional-sales-analysis){target="_blank"} |
