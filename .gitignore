@@ -1,0 +1,14 @@
+# Ignorar carpetas de proyectos independientes
+oilygiant-oil-well-investment/
+beta-bank-churn-prediction/
+zyfra-gold-recovery/
+videogames-regional-sales-analysis/
+
+# Ignorar CSVs pesados
+proyectos/*.csv
+*.csv
+
+# Ignorar carpetas temporales
+.quarto/
+_site/
+.venv/
