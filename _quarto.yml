@@ -37,7 +37,7 @@ website:
       Actualizado: noviembre 2025
     border: true
 
-  back-to-top-button: true
+  back-to-top-navigation: true
 
 format:
   html:
