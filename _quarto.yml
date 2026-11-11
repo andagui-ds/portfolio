@@ -1,14 +1,22 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs
 
 website:
   title: "Andrés Aguirre"
+  description: "Portafolio de Ciencia de Datos: análisis, modelado y soluciones basadas en datos."
+  site-url: https://andagui-ds.github.io/portfolio/
+  repo-url: https://github.com/andagui-ds/portfolio
+  repo-actions: [edit, issue]
+
   navbar:
     left:
       - href: index.qmd
         text: Inicio
         icon: house
+      - href: projects.qmd
+        text: Proyectos
+        icon: folder2-open
       - href: about.qmd
         text: Sobre mí
         icon: person
@@ -20,11 +28,30 @@ website:
       - icon: envelope
         href: mailto:andagui.ds@gmail.com
 
+  page-footer:
+    left: |
+      © 2025 **Andrés Aguirre** · Hecho con [Quarto](https://quarto.org)
+    center: |
+      [LinkedIn](https://www.linkedin.com/in/andagui-ds/) · [GitHub](https://github.com/andagui-ds)
+    right: |
+      Actualizado: noviembre 2025
+    border: true
+
+  back-to-top-button: true
+
 format:
   html:
     theme:
       light: [flatly, custom.scss]
       dark: [darkly, custom.scss]
+    css: styles.css
     code-fold: true
-    code-summary: "🔍 Ver código Python"
+    code-summary: "🔍 Ver código"
     toc: true
+    toc-depth: 3
+    toc-location: right
+    fig-cap-location: bottom
+    tbl-cap-location: top
+
+execute:
+  freeze: auto

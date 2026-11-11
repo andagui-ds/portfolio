@@ -1,37 +1,17 @@
 ---
-title: "Casos de Estudio"
-subtitle: "Proyectos de Ciencia de Datos y Machine Learning"
+title: "Proyectos"
+subtitle: "Selección de casos donde el dato se convirtió en decisión"
 format:
   html:
     page-layout: full
+    toc: false
 ---
 
-Aquí presento una selección de proyectos end-to-end. Cada caso de estudio incluye el problema de negocio, la metodología aplicada, los resultados medibles y el enlace al repositorio con el código completo.
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6}
-### 🏗️ [OilyGiant: ¿Dónde perforar $100M?](https://github.com/andagui-ds/oilygiant-oil-well-investment)
-Decisión de inversión con bootstrapping y análisis de riesgo.
-**Impacto:** Beneficio esperado de $5.12M con solo 0.6% de riesgo de pérdida.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### 🏦 [Beta Bank: Predicción de Churn](https://github.com/andagui-ds/beta-bank-churn-prediction)
-Clasificación desbalanceada para retención de clientes.
-**Impacto:** F1-score de 0.63 y AUC-ROC de 0.87 detectando clientes en riesgo.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### ⛏️ [Zyfra: Recuperación de Oro](https://github.com/andagui-ds/zyfra-gold-recovery)
-Optimización de procesos industriales con regresión y métrica sMAPE.
-**Impacto:** Predicción precisa para eliminar parámetros operativos no rentables.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### 🎮 [Games: Estrategia Regional](https://github.com/andagui-ds/videogames-regional-sales-analysis)
-EDA y pruebas de hipótesis para planificar campañas en 2017.
-**Impacto:** Identificación de preferencias por región (NA, EU, JP) para optimizar presupuesto.
-:::
-
-:::
+| Proyecto | Tipo | Técnicas clave | Resultado destacado | Enlaces |
+| :--- | :--- | :--- | :--- | :--- |
+| 🚗 **Rusty Bargain** | Regresión | LightGBM, CatBoost, XGBoost | RMSE 1,630 € · 1.96 s entrenamiento | [Demo](...) · [Repo](...) |
+| 🔐 **Sure Tomorrow** | ML + Privacidad | KNN, ofuscación matricial | Modelo inalterado tras ofuscación | [Demo](...) · [Repo](...) |
+| ⛏️ **Zyfra** | Regresión | Random Forest, sMAPE | sMAPE 7.72 % en test | [Demo](...) · [Repo](...) |
+| ⛽ **OilyGiant** | Regresión + Riesgo | Bootstrapping, IC 95 % | Riesgo de pérdida 0.6 % | [Demo](...) · [Repo](...) |
+| 🏦 **Beta Bank** | Clasificación | Upsampling, F1, AUC‑ROC | F1 0.63 · AUC 0.87 | [Demo](...) · [Repo](...) |
+| 🎮 **Videojuegos** | EDA + Hipótesis | Pruebas t, análisis regional | Hallazgos por región | [Demo](...) · [Repo](...) |
