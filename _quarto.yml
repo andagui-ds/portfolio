@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: _site
+  ignore:
+    - "proyectos/**"
+
+execute:
+  eval: false
+  freeze: false
 
 website:
   title: "Andrés Aguirre - Portafolio"
