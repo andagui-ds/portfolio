@@ -19,26 +19,26 @@ Mi trabajo consiste en transformar volúmenes de información cruda en decisione
 
 ---
 
-## 🏗️ Proyecto 1: OilyGiant (Inversión de $100M)
+## ⛽ Proyecto 1: OilyGiant (Inversión de Pozos Petroleros)
 
-{{< embed proyectos/Sprint_12_aprenauto.ipynb >}}
+{{< embed oilygiant-oil-well-investment/notebooks/01-analisis-principal.ipynb >}}
 
 ---
 
-## 🏦 Proyecto 2: Beta Bank (Churn)
+## 🏦 Proyecto 2: Beta Bank (Predicción de Churn)
 
-{{< embed proyectos/Sprint_11_aprensuper.ipynb >}}
+{{< embed beta-bank-churn-prediction/notebooks/01-analisis-churn.ipynb >}}
 
 ---
 
 ## ⛏️ Proyecto 3: Zyfra (Recuperación de Oro)
 
-{{< embed proyectos/Sprint_13_proyecto_modulo_2.ipynb >}}
+{{< embed zyfra-gold-recovery/notebooks/01-prediccion-recuperacion.ipynb >}}
 
 ---
 
-## 🎮 Proyecto 4: Games (Estrategia Regional)
+## 🎮 Proyecto 4: Games (Estrategia Regional de Ventas)
 
-{{< embed proyectos/Sprint_6_proyecto_modulo_1.ipynb >}}
+{{< embed videogames-regional-sales-analysis/notebooks/01-analisis-regional.ipynb >}}
 
 ---
