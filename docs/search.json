@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre mí",
+    "section": "",
+    "text": "Durante casi una década diseñé y construí espacios. Aprendí que un proyecto exitoso no empieza en la construcción, sino en un riguroso análisis topográfico y estructural. Un mal cálculo en los cimientos compromete toda la obra.\nHoy aplico esa misma disciplina a los datos: antes de modelar, entiendo el terreno, identifico las restricciones y diseño una estructura que resista.\nMi transición a la ciencia de datos no es un cambio de carrera: es una evolución. La arquitectura me dio:\n\nPensamiento estructural: cómo descomponer problemas complejos en partes medibles.\nVisualización espacial: cómo comunicar información compleja de forma clara.\nRigor con las restricciones: todo proyecto tiene límites; el trabajo es encontrar la solución óptima dentro de ellos.\n\nLos datos me dan las herramientas para aplicar eso a problemas de negocio con impacto medible.\n\n\n\nLenguajes: Python, SQL\nAnálisis: Pandas, NumPy, SciPy\nML: Scikit-learn (Regresión, Clasificación, Clustering)\nVisualización: Matplotlib, Seaborn, Plotly\nDeploy: Streamlit, Quarto, Git\n\n\n\n\n\nMi perfil de GitHub\nMi perfil de LinkedIn"
+  },
+  {
+    "objectID": "about.html#de-arquitecto-a-científico-de-datos",
+    "href": "about.html#de-arquitecto-a-científico-de-datos",
+    "title": "Sobre mí",
+    "section": "",
+    "text": "Durante casi una década diseñé y construí espacios. Aprendí que un proyecto exitoso no empieza en la construcción, sino en un riguroso análisis topográfico y estructural. Un mal cálculo en los cimientos compromete toda la obra.\nHoy aplico esa misma disciplina a los datos: antes de modelar, entiendo el terreno, identifico las restricciones y diseño una estructura que resista.\nMi transición a la ciencia de datos no es un cambio de carrera: es una evolución. La arquitectura me dio:\n\nPensamiento estructural: cómo descomponer problemas complejos en partes medibles.\nVisualización espacial: cómo comunicar información compleja de forma clara.\nRigor con las restricciones: todo proyecto tiene límites; el trabajo es encontrar la solución óptima dentro de ellos.\n\nLos datos me dan las herramientas para aplicar eso a problemas de negocio con impacto medible.\n\n\n\nLenguajes: Python, SQL\nAnálisis: Pandas, NumPy, SciPy\nML: Scikit-learn (Regresión, Clasificación, Clustering)\nVisualización: Matplotlib, Seaborn, Plotly\nDeploy: Streamlit, Quarto, Git\n\n\n\n\n\nMi perfil de GitHub\nMi perfil de LinkedIn"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Andrés Aguirre Gómez",
+    "section": "",
+    "text": "Arquitecto y Data Scientist especializado en análisis de datos, Machine Learning y automatización de procesos. Transformo información cruda en decisiones estratégicas con Python, SQL y modelos predictivos.\n9 años de experiencia en coordinación de proyectos, ahora enfocados en Ciencia de Datos: EDA, pruebas de hipótesis, clasificación, regresión y despliegue con Streamlit.\n📄 Conóceme mejor 📁 Ver todos los proyectos"
+  },
+  {
+    "objectID": "index.html#hola-soy-andrés",
+    "href": "index.html#hola-soy-andrés",
+    "title": "Andrés Aguirre Gómez",
+    "section": "",
+    "text": "Arquitecto y Data Scientist especializado en análisis de datos, Machine Learning y automatización de procesos. Transformo información cruda en decisiones estratégicas con Python, SQL y modelos predictivos.\n9 años de experiencia en coordinación de proyectos, ahora enfocados en Ciencia de Datos: EDA, pruebas de hipótesis, clasificación, regresión y despliegue con Streamlit.\n📄 Conóceme mejor 📁 Ver todos los proyectos"
+  },
+  {
+    "objectID": "index.html#proyectos-destacados",
+    "href": "index.html#proyectos-destacados",
+    "title": "Andrés Aguirre Gómez",
+    "section": "🚀 Proyectos destacados",
+    "text": "🚀 Proyectos destacados\n\n\n\n🚗 Rusty Bargain — Tasación de autos\nRegresión · LightGBM · CatBoost · XGBoost\nComparación de modelos priorizando calidad predictiva y velocidad de producción. LightGBM ganó con RMSE de 1,630 € y solo 1.96 s de entrenamiento.\nVer proyecto →\n\n\n\n\n🔐 Sure Tomorrow — Seguros y privacidad\nKNN · Regresión matricial · Ofuscación de datos\nRecomendación de clientes similares y predicción de prestaciones, con transformación de datos que preserva la calidad del modelo.\nVer proyecto →\n\n\n\n\n⛏️ Zyfra — Recuperación de oro\nRegresión · Series temporales · sMAPE\nPredicción de la recuperación de oro en dos etapas del proceso industrial. Random Forest alcanzó un sMAPE de 7.72 % en producción.\nVer proyecto →\n\n\n\n\n⛽ OilyGiant — Prospección de pozos\nRegresión · Bootstrapping · Evaluación de riesgo\nSelección de la mejor región para perforar 200 pozos petroleros minimizando el riesgo de pérdida al &lt; 2.5 %.\nVer proyecto →\n\n\n\n\n🏦 Beta Bank — Predicción de churn\nClasificación · Desbalanceo · F1 · AUC‑ROC\nModelo para anticipar la fuga de clientes. Técnicas de balanceo y ajuste de hiperparámetros llevaron el F1 de 0.55 → 0.63 y el AUC‑ROC a 0.87.\nVer proyecto →\n\n\n\n\n🎮 Mercado de videojuegos\nEDA · Pruebas de hipótesis · Análisis regional\nIdentificación de patrones de venta por región (NA/EU/JP) y validación estadística de hipótesis sobre preferencias de plataformas y géneros.\nVer proyecto →"
+  },
+  {
+    "objectID": "index.html#stack-técnico",
+    "href": "index.html#stack-técnico",
+    "title": "Andrés Aguirre Gómez",
+    "section": "🛠️ Stack técnico",
+    "text": "🛠️ Stack técnico\n\n\nLenguajes\nPython · SQL · Bash\n\n\nAnálisis\nPandas · NumPy · SciPy · Matplotlib · Seaborn · Plotly\n\n\nML\nscikit‑learn · LightGBM · CatBoost · XGBoost\n\n\nDespliegue\nStreamlit · Quarto · Git · GitHub Pages"
+  },
+  {
+    "objectID": "proyectos.html",
+    "href": "proyectos.html",
+    "title": "Proyectos",
+    "section": "",
+    "text": "Proyecto\nTipo\nTécnicas clave\nResultado destacado\nEnlaces\n\n\n\n\n🚗 Rusty Bargain\nRegresión\nLightGBM, CatBoost, XGBoost\nRMSE 1,630 € · 1.96 s entrenamiento\nDemo · Repo\n\n\n🔐 Sure Tomorrow\nML + Privacidad\nKNN, ofuscación matricial\nModelo inalterado tras ofuscación\nDemo · Repo\n\n\n⛏️ Zyfra\nRegresión\nRandom Forest, sMAPE\nsMAPE 7.72 % en test\nDemo · Repo\n\n\n⛽ OilyGiant\nRegresión + Riesgo\nBootstrapping, IC 95 %\nRiesgo de pérdida 0.6 %\nDemo · Repo\n\n\n🏦 Beta Bank\nClasificación\nUpsampling, F1, AUC‑ROC\nF1 0.63 · AUC 0.87\nDemo · Repo\n\n\n🎮 Videojuegos\nEDA + Hipótesis\nPruebas t, análisis regional\nHallazgos por región\nDemo · Repo\n\n\n\n\n\n\n Back to top"
+  }
+]

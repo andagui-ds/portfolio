@@ -19,7 +19,7 @@ Ciencia de Datos: EDA, pruebas de hipótesis, clasificación, regresión y
 despliegue con Streamlit.
 
 [📄 Conóceme mejor](about.qmd){.btn .btn-primary}
-[📁 Ver todos los proyectos](projects.qmd){.btn .btn-outline-secondary}
+[📁 Ver todos los proyectos](proyectos.qmd){.btn .btn-outline-secondary}
 :::
 
 ## 🚀 Proyectos destacados

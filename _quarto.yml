@@ -14,7 +14,7 @@ website:
       - href: index.qmd
         text: Inicio
         icon: house
-      - href: projects.qmd
+      - href: proyectos.qmd
         text: Proyectos
         icon: folder2-open
       - href: about.qmd
