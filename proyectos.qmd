@@ -7,11 +7,86 @@ format:
     toc: false
 ---
 
-| Proyecto | Tipo | Técnicas clave | Resultado destacado | Enlaces |
-| :--- | :--- | :--- | :--- | :--- |
-| 🚗 **Rusty Bargain** | Regresión | LightGBM, CatBoost, XGBoost | RMSE 1,630 € · 1.96 s entrenamiento | [Demo](https://andagui-ds.github.io/rusty-bargain-car-price/){target="_blank"} · [Repo](https://github.com/andagui-ds/rusty-bargain-car-price){target="_blank"} |
-| 🔐 **Sure Tomorrow** | ML + Privacidad | KNN, ofuscación matricial | Modelo inalterado tras ofuscación | [Demo](https://andagui-ds.github.io/sure-tomorrow-insurance/){target="_blank"} · [Repo](https://github.com/andagui-ds/sure-tomorrow-insurance){target="_blank"} |
-| ⛏️ **Zyfra** | Regresión | Random Forest, sMAPE | sMAPE 7.72 % en test | [Demo](https://andagui-ds.github.io/zyfra-gold-recovery/){target="_blank"} · [Repo](https://github.com/andagui-ds/zyfra-gold-recovery){target="_blank"} |
-| ⛽ **OilyGiant** | Regresión + Riesgo | Bootstrapping, IC 95 % | Riesgo de pérdida 1.0 % | [Demo](https://andagui-ds.github.io/oilygiant-oil-well-investment/){target="_blank"} · [Repo](https://github.com/andagui-ds/oilygiant-oil-well-investment){target="_blank"} |
-| 🏦 **Beta Bank** | Clasificación | Upsampling, F1, AUC‑ROC | F1 0.63 · AUC 0.87 | [Demo](https://andagui-ds.github.io/beta-bank-churn-prediction/){target="_blank"} · [Repo](https://github.com/andagui-ds/beta-bank-churn-prediction){target="_blank"} |
-| 🎮 **Videojuegos** | EDA + Hipótesis | Pruebas t, análisis regional | Hallazgos por región | [Demo](https://andagui-ds.github.io/videogames-regional-sales-analysis/){target="_blank"} · [Repo](https://github.com/andagui-ds/videogames-regional-sales-analysis){target="_blank"} |
+Aquí puedes explorar mis proyectos de Ciencia de Datos. Cada uno incluye una **aplicación web interactiva** desplegada en Streamlit para que puedas probar los modelos en vivo, junto con el acceso al código fuente en GitHub.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.project-card}
+<img src="images/rusty.png" class="project-thumb" alt="Rusty Bargain">
+### 🚗 Rusty Bargain — Tasación de autos
+**Regresión · LightGBM · CatBoost · XGBoost**
+
+Comparación de modelos priorizando calidad predictiva **y** velocidad de producción. LightGBM ganó con RMSE de 1,630 € y solo 1.96 s de entrenamiento.
+
+[Ver App en Vivo →](https://rusty-bargain-car-price.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/rusty-bargain-car-price){.btn .btn-sm .btn-outline-secondary target="_blank"}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.project-card}
+<img src="images/sure.png" class="project-thumb" alt="Sure Tomorrow">
+### 🔐 Sure Tomorrow — Seguros y privacidad
+**KNN · Regresión matricial · Ofuscación de datos**
+
+Recomendación de clientes similares y predicción de prestaciones, con **transformación de datos que preserva la calidad del modelo**.
+
+[Ver App en Vivo →](https://sure-tomorrow-insurance.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/sure-tomorrow-insurance){.btn .btn-sm .btn-outline-secondary target="_blank"}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.project-card}
+<img src="images/zyfra.png" class="project-thumb" alt="Zyfra Gold Recovery">
+### ⛏️ Zyfra — Recuperación de oro
+**Regresión · Series temporales · sMAPE**
+
+Predicción de la recuperación de oro en dos etapas del proceso industrial. Random Forest alcanzó un **sMAPE de 7.72 % en producción**.
+
+[Ver App en Vivo →](https://zyfra-gold-recovery.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/zyfra-gold-recovery){.btn .btn-sm .btn-outline-secondary target="_blank"}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.project-card}
+<img src="images/oily.png" class="project-thumb" alt="OilyGiant">
+### ⛽ OilyGiant — Prospección de pozos
+**Regresión · Bootstrapping · Evaluación de riesgo**
+
+Selección de la mejor región para perforar 200 pozos petroleros minimizando el riesgo de pérdida al **< 2.5 %**.
+
+[Ver App en Vivo →](https://oilygiant-oil-well-investment.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/oilygiant-oil-well-investment){.btn .btn-sm .btn-outline-secondary target="_blank"}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.project-card}
+<img src="images/beta.png" class="project-thumb" alt="Beta Bank">
+### 🏦 Beta Bank — Predicción de churn
+**Clasificación · Desbalanceo · F1 · AUC‑ROC**
+
+Modelo para anticipar la fuga de clientes. Técnicas de balanceo y ajuste de hiperparámetros llevaron el **F1 de 0.55 → 0.63** y el **AUC‑ROC a 0.87**.
+
+[Ver App en Vivo →](https://beta-bank-churn-prediction.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/beta-bank-churn-prediction){.btn .btn-sm .btn-outline-secondary target="_blank"}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.project-card}
+<img src="images/videojuegos.png" class="project-thumb" alt="Videojuegos">
+### 🎮 Mercado de videojuegos
+**EDA · Pruebas de hipótesis · Análisis regional**
+
+Identificación de patrones de venta por región (NA/EU/JP) y validación estadística de hipótesis sobre preferencias de plataformas y géneros.
+
+[Ver App en Vivo →](https://videogames-regional-sales-analysis.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/videogames-regional-sales-analysis){.btn .btn-sm .btn-outline-secondary target="_blank"}
+:::
+:::
+
+:::

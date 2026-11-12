@@ -1,132 +1,83 @@
----
-title: "Andrés Aguirre Gómez"
-subtitle: "Data Scientist & Arquitecto"
-format:
-  html:
-    page-layout: full
-    toc: false
----
-
-::: {.hero-block}
-## 👋 ¡Hola! Soy Andrés
-
-Arquitecto y Data Scientist especializado en análisis de datos, Machine Learning
-y automatización de procesos. Transformo información cruda en decisiones
-estratégicas con Python, SQL y modelos predictivos.
-
-**9 años de experiencia** en coordinación de proyectos, ahora enfocados en
-Ciencia de Datos: EDA, pruebas de hipótesis, clasificación, regresión y
-despliegue con Streamlit.
-
-[📄 Conóceme mejor](about.qmd){.btn .btn-primary}
-[📁 Ver todos los proyectos](proyectos.qmd){.btn .btn-outline-secondary}
-:::
-
 ## 🚀 Proyectos destacados
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.project-card}
+<img src="images/rusty.png" class="project-thumb" alt="Rusty Bargain">
 ### 🚗 Rusty Bargain — Tasación de autos
 **Regresión · LightGBM · CatBoost · XGBoost**
 
-Comparación de modelos priorizando calidad predictiva **y** velocidad de
-producción. LightGBM ganó con RMSE de 1,630 € y solo 1.96 s de entrenamiento.
+Comparación de modelos priorizando calidad predictiva **y** velocidad de producción. LightGBM ganó con RMSE de 1,630 € y solo 1.96 s de entrenamiento.
 
-[Ver proyecto →](https://andagui-ds.github.io/rusty-bargain-car-price/){.btn .btn-sm .btn-primary target="_blank"}
-[Código](https://github.com/andagui-ds/rusty-bargain-car-price/blob/main/notebooks/analisis-rusty-bargain.ipynb){.btn .btn-sm .btn-outline-secondary target="_blank"}
+[Ver App en Vivo →](https://rusty-bargain-car-price.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/rusty-bargain-car-price){.btn .btn-sm .btn-outline-secondary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.project-card}
+<img src="images/sure.png" class="project-thumb" alt="Sure Tomorrow">
 ### 🔐 Sure Tomorrow — Seguros y privacidad
 **KNN · Regresión matricial · Ofuscación de datos**
 
-Recomendación de clientes similares y predicción de prestaciones, con
-**transformación de datos que preserva la calidad del modelo**.
+Recomendación de clientes similares y predicción de prestaciones, con **transformación de datos que preserva la calidad del modelo**.
 
-[Ver proyecto →](https://andagui-ds.github.io/sure-tomorrow-insurance/){.btn .btn-sm .btn-primary target="_blank"}
-[Código](https://github.com/andagui-ds/sure-tomorrow-insurance/blob/main/notebooks/analisis-sure-tomorrow.ipynb){.btn .btn-sm .btn-outline-secondary target="_blank"}
+[Ver App en Vivo →](https://sure-tomorrow-insurance.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/sure-tomorrow-insurance){.btn .btn-sm .btn-outline-secondary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.project-card}
+<img src="images/zyfra.png" class="project-thumb" alt="Zyfra Gold Recovery">
 ### ⛏️ Zyfra — Recuperación de oro
 **Regresión · Series temporales · sMAPE**
 
-Predicción de la recuperación de oro en dos etapas del proceso industrial.
-Random Forest alcanzó un **sMAPE de 7.72 % en producción**.
+Predicción de la recuperación de oro en dos etapas del proceso industrial. Random Forest alcanzó un **sMAPE de 7.72 % en producción**.
 
-[Ver proyecto →](https://andagui-ds.github.io/zyfra-gold-recovery/){.btn .btn-sm .btn-primary target="_blank"}
-[Código](https://github.com/andagui-ds/zyfra-gold-recovery/blob/main/notebooks/analisis-zyfra.ipynb){.btn .btn-sm .btn-outline-secondary target="_blank"}
+[Ver App en Vivo →](https://zyfra-gold-recovery.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/zyfra-gold-recovery){.btn .btn-sm .btn-outline-secondary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.project-card}
+<img src="images/oily.png" class="project-thumb" alt="OilyGiant">
 ### ⛽ OilyGiant — Prospección de pozos
 **Regresión · Bootstrapping · Evaluación de riesgo**
 
-Selección de la mejor región para perforar 200 pozos petroleros
-minimizando el riesgo de pérdida al **< 2.5 %**.
+Selección de la mejor región para perforar 200 pozos petroleros minimizando el riesgo de pérdida al **< 2.5 %**.
 
-[Ver proyecto →](https://andagui-ds.github.io/oilygiant-oil-well-investment/){.btn .btn-sm .btn-primary target="_blank"}
-[Código](https://github.com/andagui-ds/oilygiant-oil-well-investment/blob/main/notebooks/analisis-oily-giant.ipynb){.btn .btn-sm .btn-outline-secondary target="_blank"}
+[Ver App en Vivo →](https://oilygiant-oil-well-investment.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/oilygiant-oil-well-investment){.btn .btn-sm .btn-outline-secondary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.project-card}
+<img src="images/beta.png" class="project-thumb" alt="Beta Bank">
 ### 🏦 Beta Bank — Predicción de churn
 **Clasificación · Desbalanceo · F1 · AUC‑ROC**
 
-Modelo para anticipar la fuga de clientes. Técnicas de balanceo y ajuste de
-hiperparámetros llevaron el **F1 de 0.55 → 0.63** y el **AUC‑ROC a 0.87**.
+Modelo para anticipar la fuga de clientes. Técnicas de balanceo y ajuste de hiperparámetros llevaron el **F1 de 0.55 → 0.63** y el **AUC‑ROC a 0.87**.
 
-[Ver proyecto →](https://andagui-ds.github.io/beta-bank-churn-prediction/){.btn .btn-sm .btn-primary target="_blank"}
-[Código](https://github.com/andagui-ds/beta-bank-churn-prediction/blob/main/notebooks/analisis-beta-bank.ipynb){.btn .btn-sm .btn-outline-secondary target="_blank"}
+[Ver App en Vivo →](https://beta-bank-churn-prediction.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/beta-bank-churn-prediction){.btn .btn-sm .btn-outline-secondary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.project-card}
+<img src="images/videojuegos.png" class="project-thumb" alt="Videojuegos">
 ### 🎮 Mercado de videojuegos
 **EDA · Pruebas de hipótesis · Análisis regional**
 
-Identificación de patrones de venta por región (NA/EU/JP) y validación
-estadística de hipótesis sobre preferencias de plataformas y géneros.
+Identificación de patrones de venta por región (NA/EU/JP) y validación estadística de hipótesis sobre preferencias de plataformas y géneros.
 
-[Ver proyecto →](https://andagui-ds.github.io/videogames-regional-sales-analysis/){.btn .btn-sm .btn-primary target="_blank"}
-[Código](https://github.com/andagui-ds/videogames-regional-sales-analysis/blob/main/notebooks/analisis-videojuegos.ipynb){.btn .btn-sm .btn-outline-secondary target="_blank"}
+[Ver App en Vivo →](https://videogames-regional-sales-analysis.streamlit.app/){.btn .btn-sm .btn-primary target="_blank"}
+[Código](https://github.com/andagui-ds/videogames-regional-sales-analysis){.btn .btn-sm .btn-outline-secondary target="_blank"}
 :::
 :::
 
-:::
-
-## 🛠️ Stack técnico
-
-::: {.grid}
-::: {.g-col-6 .g-col-md-3}
-**Lenguajes**
-
-Python · SQL · Bash
-:::
-::: {.g-col-6 .g-col-md-3}
-**Análisis**
-
-Pandas · NumPy · SciPy · Matplotlib · Seaborn · Plotly
-:::
-::: {.g-col-6 .g-col-md-3}
-**ML**
-
-scikit‑learn · LightGBM · CatBoost · XGBoost
-:::
-::: {.g-col-6 .g-col-md-3}
-**Despliegue**
-
-Streamlit · Quarto · Git · GitHub Pages
-:::
 :::
