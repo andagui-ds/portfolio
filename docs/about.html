@@ -384,23 +384,27 @@ ul.task-list li input[type="checkbox"] {
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script data-goatcounter="https://andagui.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
-<!-- Botón para volver al Español -->
+<!-- Contenedor flexbox para alinear ambos botones sin que se encimen -->
 
-<div id="reset-language" style="position: fixed; bottom: 20px; right: 180px; z-index: 9999;">
+<div id="translate-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; align-items: center; gap: 10px;">
 
-    <button onclick="resetToSpanish()" style="background-color: #1a2332; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+
+
+    <!-- Botón para volver al Español -->
+
+    <button onclick="resetToSpanish()" style="background-color: #1a2332; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap;">
 
         🇪🇸 Español
 
     </button>
 
-</div>
 
 
+    <!-- Widget de Google Translate -->
 
-<!-- Widget de Google Translate -->
+    <div id="google_translate_element" style="background: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></div>
 
-<div id="google_translate_element" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+
 
 </div>
 
