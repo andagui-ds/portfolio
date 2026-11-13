@@ -27,5 +27,5 @@ Los datos me dan las herramientas para aplicar eso a problemas de negocio con **
 - **Deploy:** Streamlit, Quarto, Git
 
 ### Contacto
-- [Mi perfil de GitHub](https://github.com/andagui-ds)
-- [Mi perfil de LinkedIn](https://www.linkedin.com/in/andagui-ds/)
+- [Mi perfil de GitHub](https://github.com/andagui-ds){target="_blank"}
+- [Mi perfil de LinkedIn](https://www.linkedin.com/in/andagui-ds/){target="_blank"}

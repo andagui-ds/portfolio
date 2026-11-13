@@ -30,11 +30,11 @@ website:
 
   page-footer:
     left: |
-      © 2025 **Andrés Aguirre** · Hecho con [Quarto](https://quarto.org)
+      © 2026 **Andrés Aguirre** · Hecho con <a href="https://quarto.org" target="_blank">Quarto</a>
     center: |
-      [LinkedIn](https://www.linkedin.com/in/andagui-ds/) · [GitHub](https://github.com/andagui-ds)
+      <a href="https://www.linkedin.com/in/andagui-ds/" target="_blank">LinkedIn</a> · <a href="https://github.com/andagui-ds" target="_blank">GitHub</a>
     right: |
-      Actualizado: noviembre 2025
+      Actualizado: noviembre 2026
     border: true
 
   back-to-top-navigation: true
