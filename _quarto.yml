@@ -52,6 +52,7 @@ format:
     toc-location: right
     fig-cap-location: bottom
     tbl-cap-location: top
-
+    include-after-body: traffic.html
+    
 execute:
   freeze: auto
