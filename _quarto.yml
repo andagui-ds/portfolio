@@ -15,7 +15,7 @@ website:
         text: Inicio
         icon: house
       - href: proyectos.qmd
-        text: Proyectos
+        text: Repositorios
         icon: folder2-open
       - href: about.qmd
         text: Sobre mí
