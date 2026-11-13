@@ -80,7 +80,7 @@ Modelo para anticipar la fuga de clientes. Técnicas de balanceo y ajuste de hip
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.project-card}
-<img src="./images/videojuegos-regional.png" class="project-thumb" alt="Videojuegos">
+<img src="./images/videogames-regional.png" class="project-thumb" alt="Videojuegos">
 
 ### 🎮 Mercado de videojuegos
 
