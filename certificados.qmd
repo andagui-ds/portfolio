@@ -13,73 +13,65 @@ A lo largo de mi trayectoria he completado distintas certificaciones enfocadas e
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.cert-card}
-[![Introducción a la Ciencia de Datos](./images/certificados/intro-ds.png){.cert-thumb}](./images/certificados/intro-ds.png)
+<img src="./images/certificados/intro-ds.png" class="cert-thumb" alt="Introducción a la Ciencia de Datos">
+
 ### Introducción a la Ciencia de Datos
-**TripleTen**
-[Ver PDF original →](./certificados/Cert-Introducción%20a%20la%20Ciencia%20de%20Datos.pdf){.btn .btn-sm .btn-primary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.cert-card}
-[![Curador de datos](./images/certificados/curador-datos.png){.cert-thumb}](./images/certificados/curador-datos.png)
+<img src="./images/certificados/curador-datos.png" class="cert-thumb" alt="Curador de datos">
+
 ### Curador de datos
-**TripleTen**
-[Ver PDF original →](./certificados/Curador%20de%20datos.pdf){.btn .btn-sm .btn-primary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.cert-card}
-[![Finder](./images/certificados/finder.png){.cert-thumb}](./images/certificados/finder.png)
+<img src="./images/certificados/finder.png" class="cert-thumb" alt="Finder">
+
 ### Finder
-**TripleTen**
-[Ver PDF original →](./certificados/Finder.pdf){.btn .btn-sm .btn-primary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.cert-card}
-[![Fundamentos de IA](./images/certificados/ia-fundamentos.png){.cert-thumb}](./images/certificados/ia-fundamentos.png)
+<img src="./images/certificados/ia-fundamentos.png" class="cert-thumb" alt="Fundamentos de IA">
+
 ### Fundamentos de inteligencia artificial
-**TripleTen**
-[Ver PDF original →](./certificados/Fundamentos%20de%20inteligencia%20artificial.pdf){.btn .btn-sm .btn-primary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.cert-card}
-[![IA Generativa](./images/certificados/ia-generativa.png){.cert-thumb}](./images/certificados/ia-generativa.png)
+<img src="./images/certificados/ia-generativa.png" class="cert-thumb" alt="IA Generativa">
+
 ### IA Generativa
-**TripleTen**
-[Ver PDF original →](./certificados/IA%20Generativa.pdf){.btn .btn-sm .btn-primary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.cert-card}
-[![Programador OO](./images/certificados/poo.png){.cert-thumb}](./images/certificados/poo.png)
+<img src="./images/certificados/poo.png" class="cert-thumb" alt="Programador OO">
+
 ### Programador (orientado a objetos)
-**TripleTen**
-[Ver PDF original →](./certificados/Programador%20(orientado%20a%20objetos).pdf){.btn .btn-sm .btn-primary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.cert-card}
-[![Safe and Fair AI](./images/certificados/safe-ai.png){.cert-thumb}](./images/certificados/safe-ai.png)
+<img src="./images/certificados/safe-ai.png" class="cert-thumb" alt="Safe and Fair AI">
+
 ### Safe, Fair and Legal AI use
-**TripleTen**
-[Ver PDF original →](./certificados/Safe,%20Fair%20and%20Legal%20AI%20use%20certificado.pdf){.btn .btn-sm .btn-primary target="_blank"}
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.cert-card}
-[![Understanding ML](./images/certificados/understanding-ml.png){.cert-thumb}](./images/certificados/understanding-ml.png)
+<img src="./images/certificados/understanding-ml.png" class="cert-thumb" alt="Understanding ML">
+
 ### Understanding machine learning
-**TripleTen**
-[Ver PDF original →](./certificados/Understanding%20machine%20learning.pdf){.btn .btn-sm .btn-primary target="_blank"}
 :::
 :::
 
