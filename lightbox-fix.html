@@ -1,0 +1,26 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Escuchamos los clics en todo el documento
+        document.addEventListener('click', function (event) {
+            // Buscamos si el clic ocurrió dentro de un lightbox abierto de GLightbox
+            const lightboxOverlay = event.target.closest('.glightbox-container');
+            const lightboxImage = event.target.closest('.gslide-image');
+            const lightboxContent = event.target.closest('.gslide-content');
+
+            // Si el clic fue en el contenedor del lightbox (el fondo oscuro),
+            // pero NO en la imagen ni en el contenido, forzamos el cierre.
+            if (lightboxOverlay && !lightboxImage && !lightboxContent) {
+                // GLightbox expone una instancia global que podemos usar para cerrar
+                if (window.lightbox) {
+                    window.lightbox.close();
+                } else {
+                    // Si no existe la instancia global, simulamos un clic en el botón de cerrar
+                    const closeBtn = document.querySelector('.gclose');
+                    if (closeBtn) {
+                        closeBtn.click();
+                    }
+                }
+            }
+        });
+    });
+</script>

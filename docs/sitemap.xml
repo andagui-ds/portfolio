@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://andagui-ds.github.io/portfolio/about.html</loc>
-    <lastmod>2026-11-13T01:04:10.519Z</lastmod>
+    <loc>https://andagui-ds.github.io/portfolio/certificados.html</loc>
+    <lastmod>2026-11-17T02:48:38.797Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andagui-ds.github.io/portfolio/proyectos.html</loc>
+    <lastmod>2026-11-13T00:18:44.914Z</lastmod>
   </url>
   <url>
     <loc>https://andagui-ds.github.io/portfolio/index.html</loc>
     <lastmod>2026-11-13T01:04:21.955Z</lastmod>
   </url>
   <url>
-    <loc>https://andagui-ds.github.io/portfolio/proyectos.html</loc>
-    <lastmod>2026-11-13T00:18:44.914Z</lastmod>
+    <loc>https://andagui-ds.github.io/portfolio/about.html</loc>
+    <lastmod>2026-11-13T01:04:10.519Z</lastmod>
   </url>
 </urlset>

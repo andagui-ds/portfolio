@@ -77,3 +77,60 @@
     border-color: #495057;
     /* Ajusta el borde de la imagen al modo oscuro */
 }
+
+/* --- Tarjetas de certificados --- */
+.cert-card {
+    height: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    background: var(--bs-body-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cert-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    border-color: #0d6efd;
+}
+
+.cert-badge {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: rgba(0, 180, 216, 0.1);
+    border: 1px solid rgba(0, 180, 216, 0.25);
+    margin-bottom: 1rem;
+}
+
+.cert-card h3 {
+    font-size: 1.05rem;
+    margin: 0.25rem 0 0.5rem 0;
+}
+
+.cert-card p {
+    font-size: 0.92rem;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.cert-card .btn {
+    margin-top: auto;
+}
+
+/* Modo oscuro */
+.quarto-dark .cert-card {
+    border-color: #495057;
+}
+
+.quarto-dark .cert-badge {
+    background: rgba(0, 180, 216, 0.15);
+}

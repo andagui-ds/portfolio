@@ -14,6 +14,9 @@ website:
       - href: index.qmd
         text: Inicio
         icon: house
+      - href: certificados.qmd
+        text: Certificados
+        icon: patch-check
       - href: proyectos.qmd
         text: Repositorios
         icon: folder2-open
@@ -52,7 +55,7 @@ format:
     toc-location: right
     fig-cap-location: bottom
     tbl-cap-location: top
-    include-after-body: [traffic.html, translate.html]
+    include-after-body: [traffic.html, translate.html, lightbox-fix.html]
     
 execute:
   freeze: auto

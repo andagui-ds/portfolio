@@ -275,6 +275,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./certificados.html"> <i class="bi bi-patch-check" role="img">
+</i> 
+<span class="menu-text">Certificados</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./proyectos.html"> <i class="bi bi-folder2-open" role="img">
 </i> 
 <span class="menu-text">Repositorios</span></a>
@@ -538,6 +543,57 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Escuchamos los clics en todo el documento
+
+        document.addEventListener('click', function (event) {
+
+            // Buscamos si el clic ocurrió dentro de un lightbox abierto de GLightbox
+
+            const lightboxOverlay = event.target.closest('.glightbox-container');
+
+            const lightboxImage = event.target.closest('.gslide-image');
+
+            const lightboxContent = event.target.closest('.gslide-content');
+
+
+
+            // Si el clic fue en el contenedor del lightbox (el fondo oscuro),
+
+            // pero NO en la imagen ni en el contenido, forzamos el cierre.
+
+            if (lightboxOverlay && !lightboxImage && !lightboxContent) {
+
+                // GLightbox expone una instancia global que podemos usar para cerrar
+
+                if (window.lightbox) {
+
+                    window.lightbox.close();
+
+                } else {
+
+                    // Si no existe la instancia global, simulamos un clic en el botón de cerrar
+
+                    const closeBtn = document.querySelector('.gclose');
+
+                    if (closeBtn) {
+
+                        closeBtn.click();
+
+                    }
+
+                }
+
+            }
+
+        });
+
+    });
+
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
