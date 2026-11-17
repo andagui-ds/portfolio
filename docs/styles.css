@@ -91,6 +91,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
     /* Mantiene la imagen arriba y el título abajo */
 }
 
@@ -130,4 +131,26 @@
 
 .quarto-dark .cert-thumb {
     border-color: #495057;
+}
+
+/* Mantener ancho completo del enlace lightbox dentro de .cert-card */
+.cert-card p,
+.cert-card figure,
+.cert-card a.cert-lightbox {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+/* Ocultar el pie de foto automático debajo de la miniatura para no duplicar el título h3 */
+.cert-card figcaption {
+    display: none;
+}
+
+/* Asegurar que las flechas del carrusel estén por encima de cualquier capa */
+.glightbox-container .gnext,
+.glightbox-container .gprev,
+.glightbox-container .gclose {
+    z-index: 999999 !important;
+    pointer-events: auto !important;
 }

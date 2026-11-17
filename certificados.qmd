@@ -12,7 +12,7 @@ A lo largo de mi trayectoria he completado distintas certificaciones enfocadas e
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-::: {.cert-card}
+::: {.cert-card onclick="verCertificado(0)"}
 <img src="./images/certificados/intro-ds.png" class="cert-thumb" alt="Introducción a la Ciencia de Datos">
 
 ### Introducción a la Ciencia de Datos
@@ -20,7 +20,7 @@ A lo largo de mi trayectoria he completado distintas certificaciones enfocadas e
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-::: {.cert-card}
+::: {.cert-card onclick="verCertificado(1)"}
 <img src="./images/certificados/curador-datos.png" class="cert-thumb" alt="Curador de datos">
 
 ### Curador de datos
@@ -28,7 +28,7 @@ A lo largo de mi trayectoria he completado distintas certificaciones enfocadas e
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-::: {.cert-card}
+::: {.cert-card onclick="verCertificado(2)"}
 <img src="./images/certificados/finder.png" class="cert-thumb" alt="Finder">
 
 ### Finder
@@ -36,7 +36,7 @@ A lo largo de mi trayectoria he completado distintas certificaciones enfocadas e
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-::: {.cert-card}
+::: {.cert-card onclick="verCertificado(3)"}
 <img src="./images/certificados/ia-fundamentos.png" class="cert-thumb" alt="Fundamentos de IA">
 
 ### Fundamentos de inteligencia artificial
@@ -44,7 +44,7 @@ A lo largo de mi trayectoria he completado distintas certificaciones enfocadas e
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-::: {.cert-card}
+::: {.cert-card onclick="verCertificado(4)"}
 <img src="./images/certificados/ia-generativa.png" class="cert-thumb" alt="IA Generativa">
 
 ### IA Generativa
@@ -52,7 +52,7 @@ A lo largo de mi trayectoria he completado distintas certificaciones enfocadas e
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-::: {.cert-card}
+::: {.cert-card onclick="verCertificado(5)"}
 <img src="./images/certificados/poo.png" class="cert-thumb" alt="Programador OO">
 
 ### Programador (orientado a objetos)
@@ -60,7 +60,7 @@ A lo largo de mi trayectoria he completado distintas certificaciones enfocadas e
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-::: {.cert-card}
+::: {.cert-card onclick="verCertificado(6)"}
 <img src="./images/certificados/safe-ai.png" class="cert-thumb" alt="Safe and Fair AI">
 
 ### Safe, Fair and Legal AI use
@@ -68,7 +68,7 @@ A lo largo de mi trayectoria he completado distintas certificaciones enfocadas e
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-::: {.cert-card}
+::: {.cert-card onclick="verCertificado(7)"}
 <img src="./images/certificados/understanding-ml.png" class="cert-thumb" alt="Understanding ML">
 
 ### Understanding machine learning
@@ -76,3 +76,62 @@ A lo largo de mi trayectoria he completado distintas certificaciones enfocadas e
 :::
 
 :::
+
+<!-- Visor Modal Nativo (sin dependencias externas) -->
+<div id="certModal" style="display:none; position:fixed; inset:0; z-index:99999; background:rgba(10,15,25,0.92); align-items:center; justify-content:center; flex-direction:column; padding:20px;" onclick="if(event.target===this) cerrarCertificado()">
+  <button type="button" onclick="cerrarCertificado()" aria-label="Cerrar" style="position:absolute; top:20px; right:28px; background:none; border:none; color:#fff; font-size:2.4rem; cursor:pointer; line-height:1;">&times;</button>
+  
+  <button type="button" onclick="cambiarCertificado(-1)" aria-label="Anterior" style="position:absolute; left:20px; top:50%; transform:translateY(-50%); background:rgba(255,255,255,0.12); border:none; color:#fff; font-size:2.2rem; width:50px; height:50px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center;">&#10094;</button>
+  
+  <img id="certModalImg" src="" alt="" style="max-width:88vw; max-height:80vh; border-radius:8px; box-shadow:0 12px 40px rgba(0,0,0,0.6); object-fit:contain;">
+  <p id="certModalTitle" style="color:#f8f9fa; margin-top:14px; font-size:1.1rem; font-weight:500; text-align:center;"></p>
+  
+  <button type="button" onclick="cambiarCertificado(1)" aria-label="Siguiente" style="position:absolute; right:20px; top:50%; transform:translateY(-50%); background:rgba(255,255,255,0.12); border:none; color:#fff; font-size:2.2rem; width:50px; height:50px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center;">&#10095;</button>
+</div>
+
+<script>
+  const listaCertificados = [
+    { src: './images/certificados/intro-ds.png', title: 'Introducción a la Ciencia de Datos' },
+    { src: './images/certificados/curador-datos.png', title: 'Curador de datos' },
+    { src: './images/certificados/finder.png', title: 'Finder' },
+    { src: './images/certificados/ia-fundamentos.png', title: 'Fundamentos de inteligencia artificial' },
+    { src: './images/certificados/ia-generativa.png', title: 'IA Generativa' },
+    { src: './images/certificados/poo.png', title: 'Programador (orientado a objetos)' },
+    { src: './images/certificados/safe-ai.png', title: 'Safe, Fair and Legal AI use' },
+    { src: './images/certificados/understanding-ml.png', title: 'Understanding machine learning' }
+  ];
+
+  let indiceActual = 0;
+
+  function verCertificado(index) {
+    indiceActual = index;
+    actualizarVista();
+    document.getElementById('certModal').style.display = 'flex';
+  }
+
+  function cerrarCertificado() {
+    document.getElementById('certModal').style.display = 'none';
+  }
+
+  function cambiarCertificado(direccion) {
+    indiceActual = (indiceActual + direccion + listaCertificados.length) % listaCertificados.length;
+    actualizarVista();
+  }
+
+  function actualizarVista() {
+    const item = listaCertificados[indiceActual];
+    const img = document.getElementById('certModalImg');
+    img.src = item.src;
+    img.alt = item.title;
+    document.getElementById('certModalTitle').textContent = `${item.title} (${indiceActual + 1} / ${listaCertificados.length})`;
+  }
+
+  document.addEventListener('keydown', function(e) {
+    const modal = document.getElementById('certModal');
+    if (modal.style.display === 'flex') {
+      if (e.key === 'ArrowRight') cambiarCertificado(1);
+      if (e.key === 'ArrowLeft') cambiarCertificado(-1);
+      if (e.key === 'Escape') cerrarCertificado();
+    }
+  });
+</script>

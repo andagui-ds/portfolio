@@ -347,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
 <p>A lo largo de mi trayectoria he completado distintas certificaciones enfocadas en análisis de datos, machine learning y desarrollo. Aquí tienes las credenciales verificables.</p>
 <div class="grid">
 <div class="g-col-12 g-col-md-6 g-col-lg-4">
-<div class="cert-card">
+<div class="cert-card" onclick="verCertificado(0)">
 <p><img src="./images/certificados/intro-ds.png" class="cert-thumb" alt="Introducción a la Ciencia de Datos"></p>
 <section id="introducción-a-la-ciencia-de-datos" class="level3">
 <h3 class="anchored" data-anchor-id="introducción-a-la-ciencia-de-datos">Introducción a la Ciencia de Datos</h3>
@@ -355,7 +355,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="g-col-12 g-col-md-6 g-col-lg-4">
-<div class="cert-card">
+<div class="cert-card" onclick="verCertificado(1)">
 <p><img src="./images/certificados/curador-datos.png" class="cert-thumb" alt="Curador de datos"></p>
 <section id="curador-de-datos" class="level3">
 <h3 class="anchored" data-anchor-id="curador-de-datos">Curador de datos</h3>
@@ -363,7 +363,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="g-col-12 g-col-md-6 g-col-lg-4">
-<div class="cert-card">
+<div class="cert-card" onclick="verCertificado(2)">
 <p><img src="./images/certificados/finder.png" class="cert-thumb" alt="Finder"></p>
 <section id="finder" class="level3">
 <h3 class="anchored" data-anchor-id="finder">Finder</h3>
@@ -371,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="g-col-12 g-col-md-6 g-col-lg-4">
-<div class="cert-card">
+<div class="cert-card" onclick="verCertificado(3)">
 <p><img src="./images/certificados/ia-fundamentos.png" class="cert-thumb" alt="Fundamentos de IA"></p>
 <section id="fundamentos-de-inteligencia-artificial" class="level3">
 <h3 class="anchored" data-anchor-id="fundamentos-de-inteligencia-artificial">Fundamentos de inteligencia artificial</h3>
@@ -379,7 +379,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="g-col-12 g-col-md-6 g-col-lg-4">
-<div class="cert-card">
+<div class="cert-card" onclick="verCertificado(4)">
 <p><img src="./images/certificados/ia-generativa.png" class="cert-thumb" alt="IA Generativa"></p>
 <section id="ia-generativa" class="level3">
 <h3 class="anchored" data-anchor-id="ia-generativa">IA Generativa</h3>
@@ -387,7 +387,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="g-col-12 g-col-md-6 g-col-lg-4">
-<div class="cert-card">
+<div class="cert-card" onclick="verCertificado(5)">
 <p><img src="./images/certificados/poo.png" class="cert-thumb" alt="Programador OO"></p>
 <section id="programador-orientado-a-objetos" class="level3">
 <h3 class="anchored" data-anchor-id="programador-orientado-a-objetos">Programador (orientado a objetos)</h3>
@@ -395,7 +395,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="g-col-12 g-col-md-6 g-col-lg-4">
-<div class="cert-card">
+<div class="cert-card" onclick="verCertificado(6)">
 <p><img src="./images/certificados/safe-ai.png" class="cert-thumb" alt="Safe and Fair AI"></p>
 <section id="safe-fair-and-legal-ai-use" class="level3">
 <h3 class="anchored" data-anchor-id="safe-fair-and-legal-ai-use">Safe, Fair and Legal AI use</h3>
@@ -403,7 +403,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="g-col-12 g-col-md-6 g-col-lg-4">
-<div class="cert-card">
+<div class="cert-card" onclick="verCertificado(7)">
 <p><img src="./images/certificados/understanding-ml.png" class="cert-thumb" alt="Understanding ML"></p>
 <section id="understanding-machine-learning" class="level3">
 <h3 class="anchored" data-anchor-id="understanding-machine-learning">Understanding machine learning</h3>
@@ -411,6 +411,61 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<!-- Visor Modal Nativo (sin dependencias externas) -->
+<div id="certModal" style="display:none; position:fixed; inset:0; z-index:99999; background:rgba(10,15,25,0.92); align-items:center; justify-content:center; flex-direction:column; padding:20px;" onclick="if(event.target===this) cerrarCertificado()">
+<p><button type="button" onclick="cerrarCertificado()" aria-label="Cerrar" style="position:absolute; top:20px; right:28px; background:none; border:none; color:#fff; font-size:2.4rem; cursor:pointer; line-height:1;">×</button></p>
+<p><button type="button" onclick="cambiarCertificado(-1)" aria-label="Anterior" style="position:absolute; left:20px; top:50%; transform:translateY(-50%); background:rgba(255,255,255,0.12); border:none; color:#fff; font-size:2.2rem; width:50px; height:50px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center;">❮</button></p>
+<img id="certModalImg" src="" alt="" style="max-width:88vw; max-height:80vh; border-radius:8px; box-shadow:0 12px 40px rgba(0,0,0,0.6); object-fit:contain;">
+<p id="certModalTitle" style="color:#f8f9fa; margin-top:14px; font-size:1.1rem; font-weight:500; text-align:center;">
+</p>
+<p><button type="button" onclick="cambiarCertificado(1)" aria-label="Siguiente" style="position:absolute; right:20px; top:50%; transform:translateY(-50%); background:rgba(255,255,255,0.12); border:none; color:#fff; font-size:2.2rem; width:50px; height:50px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center;">❯</button></p>
+</div>
+<script>
+  const listaCertificados = [
+    { src: './images/certificados/intro-ds.png', title: 'Introducción a la Ciencia de Datos' },
+    { src: './images/certificados/curador-datos.png', title: 'Curador de datos' },
+    { src: './images/certificados/finder.png', title: 'Finder' },
+    { src: './images/certificados/ia-fundamentos.png', title: 'Fundamentos de inteligencia artificial' },
+    { src: './images/certificados/ia-generativa.png', title: 'IA Generativa' },
+    { src: './images/certificados/poo.png', title: 'Programador (orientado a objetos)' },
+    { src: './images/certificados/safe-ai.png', title: 'Safe, Fair and Legal AI use' },
+    { src: './images/certificados/understanding-ml.png', title: 'Understanding machine learning' }
+  ];
+
+  let indiceActual = 0;
+
+  function verCertificado(index) {
+    indiceActual = index;
+    actualizarVista();
+    document.getElementById('certModal').style.display = 'flex';
+  }
+
+  function cerrarCertificado() {
+    document.getElementById('certModal').style.display = 'none';
+  }
+
+  function cambiarCertificado(direccion) {
+    indiceActual = (indiceActual + direccion + listaCertificados.length) % listaCertificados.length;
+    actualizarVista();
+  }
+
+  function actualizarVista() {
+    const item = listaCertificados[indiceActual];
+    const img = document.getElementById('certModalImg');
+    img.src = item.src;
+    img.alt = item.title;
+    document.getElementById('certModalTitle').textContent = `${item.title} (${indiceActual + 1} / ${listaCertificados.length})`;
+  }
+
+  document.addEventListener('keydown', function(e) {
+    const modal = document.getElementById('certModal');
+    if (modal.style.display === 'flex') {
+      if (e.key === 'ArrowRight') cambiarCertificado(1);
+      if (e.key === 'ArrowLeft') cambiarCertificado(-1);
+      if (e.key === 'Escape') cerrarCertificado();
+    }
+  });
+</script>
 
 
 
